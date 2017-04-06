@@ -1,0 +1,10 @@
+use qiyao;
+insert into check_department(id,name) values(1, "管理层");
+insert into check_department(id,name) values(2, "综合部");
+insert into check_department(id,name) values(3, "斩仙2");
+insert into check_department(id,name) values(4, "定海");
+insert into check_department(id,name) values(5, "手游1");
+insert into check_department(id,name) values(6, "手游2");
+insert into check_department(id,name) values(7, "手游3");
+insert into check_department(id,name) values(8, "美术公共部");
+insert into check_department(id,name) values(9, "公共支持部");

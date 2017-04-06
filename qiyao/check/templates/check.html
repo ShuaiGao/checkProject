@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}考勤{% endblock %}  
+  
+{% block content %}  
+<p>今日时间：{{ current_date }}</p>
+
+<form action="change_date" method="get" >
+   <select  name="a" selected  = {{year}}>  
+            <option>2017</option>  
+            <option>2018</option>  
+            <option>2019</option>  
+            <option>2020</option>  
+    </select>  年
+    <select  name="b" selected  = {{day}} onchange="change_date">  
+      <option>1</option>  
+      <option>2</option>  
+      <option>3</option>  
+      <option>4</option>  
+      <option>5</option>  
+      <option>7</option>  
+      <option>8</option>  
+      <option>9</option>  
+      <option>10</option>  
+      <option>11</option>  
+      <option>12</option>  
+    </select>  月
+     
+    <input type="submit" value="提交">
+</form>
+
+
+
+
+<table border="0" content="200">
+<tr>
+  <td>日</td>
+  <td>一</td>
+  <td>二</td>
+  <td>三</td>
+  <td>四</td>
+  <td>五</td>
+  <td>六</td>
+</tr>
+{%for line in daytable%}
+<tr>
+	{% for i in line %}
+		{% if i == 0 %}
+			<td> </td>
+		{% else %}
+			<td><input type="checkbox" name="radioday" value={{i}}>{{i}}</td>
+		{% endif %}
+	{% endfor %}  
+</tr>
+{% endfor %}
+</table>
+
+
+    <form enctype="multipart/form-data" action="upload_file" method="post">
+      {% csrf_token %}
+       <input type="file" name="myfile" />
+       <br/>
+       <input type="submit" value="upload"/>
+    </form>
+
+{% endblock %} 
+
+
+
+

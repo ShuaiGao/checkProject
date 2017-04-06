@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+a.file_movie,a.file_img { padding:2px 0 2px 22px;}
+a.file_movie { background:url(../images/img_32.gif) no-repeat left top}
+a.file_img { background:url(../images/img_33.gif) no-repeat left top}
+a.file_folder { padding-left:22px; background:url(../images/img_34.gif) no-repeat left top}
+
+
+
+#file_removefile {}
+#file_removefile .d_title label { background:url(../images/bg-Series4.gif) no-repeat left -497px;}
+
+#file_movefile {}
+#file_movefile .d_title label { background-position:left -2405px;}
+
+#file_settype .Per_sel_title,#file_mewtype .Per_sel_title { background-position:left -1500px;}
+
+.file_Per_sel {margin-left:-320px;}
+.file_Per_sel .Per_sel_middle .text1 { border:solid 1px #CFCFCF; width:210px; background:url(../images/bg_8.gif) repeat-x left top}
+.file_Per_sel .Per_sel_middle textarea.file_textarea { border:solid 1px #CFCFCF; width:210px; height:256px;*height:251px;color:#646464; padding:5px; line-height:12px; overflow:auto; background:url(../images/bg_8.gif) repeat-x left top}
+.file_Per_sel .Per_sel_middle .td_editmegg { padding: 0 10px 0 0px}
+.file_Per_sel .Per_sel_middle .sel_str { line-height:26px;*line-height:23px; padding-top:2px;}
+.file_Per_sel .Per_sel_middle .sel_str2 { line-height:26px;*line-height:23px; padding-top:2px; background:url(../images/icoS.gif) no-repeat left -2450px; padding-left:22px;}
+.file_Per_sel .Per_sel_middle .Per_sel_list1,
+.file_Per_sel .Per_sel_middle .Per_sel_list2 { height:300px;}
+
+.file_Per_sel .Per_sel_middle .Per_sel_ul label.ft_0{ background:url(../images/img_32.gif) no-repeat left 0px}
+.file_Per_sel .Per_sel_middle .Per_sel_ul label.ft_1{ background:url(../images/img_33.gif) no-repeat left 0px}
+
+.tab_11 .td_title a { font-weight:bold}
+
+#file_movie_play_v { float:left; width:500px; margin-right:5px;}
+#file_movie_play { float:left; border:solid 1px #D6D6D6; padding:2px;}
+
+#file_info { border:solid 1px #BAD5DC; background:#F7FAFF; padding:10px;}
+
+.tab_fileinfo {}
+	.tab_fileinfo caption{ text-align:left; color:#557493; font-weight:bold; padding-bottom:5px;}
+	.tab_fileinfo th,.tab_fileinfo td { vertical-align:top; line-height:25px; padding-bottom:4px;}
+	.tab_fileinfo th{ width:60px; color:#567490;}
+	.tab_fileinfo td{ color:#656364;}

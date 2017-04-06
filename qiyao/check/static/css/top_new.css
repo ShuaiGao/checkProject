@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+html{SCROLLBAR-FACE-COLOR: #C2E0FA; /*主色*/
+SCROLLBAR-3DLIGHT-COLOR: #9DC5DE; /*左上*/
+SCROLLBAR-HIGHLIGHT-COLOR:#FFFFFF; /*左上立体*/
+SCROLLBAR-ARROW-COLOR: #9FC4DE;    /*箭头*/
+SCROLLBAR-TRACK-COLOR: #DEEFFF; /*背景色*/
+SCROLLBAR-SHADOW-COLOR:#A1C3DC;	/*右下*/
+SCROLLBAR-DARKSHADOW-COLOR:#DEF0FE;  /*右下立体*/
+width:100%;
+overflow-x:hidden;
+}
+
+
+img { border:0px;}
+form { border:none;}
+ul,li{ padding:0px; list-style:none;}
+*{margin:0;padding:0;} 
+h1, h2, h3, h4, h5, h6 { font-size: 12px; font-weight:normal}
+input { vertical-align:middle}
+th { font-weight:normal;}
+
+.cl { clear:both}
+
+.cls {zoom:1;}
+.cls:after {content:"";visibility:hidden;display:block;height:0;clear:both;}
+
+.left{ float:left}
+.right{ float:right}
+.Enter { text-overflow: ellipsis; -moz-text-overflow: ellipsis; overflow:hidden; white-space:nowrap}
+.middle{ vertical-align:middle}
+
+.radio { margin:0 4px 2px 0;*margin:0 0 2px -1px;}
+
+
+.text1 { border:solid 1px #C7D9E7; color:#646464; height:23px; padding:1px 5px 0px;*padding:3px 5px 0px; line-height:16px;}
+
+.textarea1,.textarea2 { color:#646464; padding:5px; font-size:12px; line-height:15px; overflow:auto}
+.textarea1 { border:solid 1px #C7D9E7;}
+.textarea2 { border:solid 1px #DEDEDE; background:url(../images/bg_8.gif) repeat-x left top;}
+
+.button_Basic { width:auto; height:23px; padding:0px 5px;*padding:3px 0px 0px;}
+
+.button1,.button2,.button3,.button4,.button5 {border:none; height:23px; cursor:pointer; *padding:2px 0 0 0; background:url(../images/bu_bgs.gif) no-repeat;}
+.button1 { width:50px; color:#4E7586; background-position:left top;}
+.button2 { width:70px; color:#587293; background-position:left -50px;}
+.button3 { width:88px; color:#587293; background-position:left -400px;}
+
+.button_21,.button_22 { padding:0px 12px 0;*padding:2px 10px 0; height:22px;  border-top:solid 1px #FFF; border-left:solid 1px #FFF; border-bottom:solid 1px #404040; border-right:solid 1px #404040;}
+.button_21 { width:75px}
+.button_22 { width:130px}
+
+#maintab { width:100%; height:100%; font-size:12px;}
+.left{ float:left}
+#m_min-width {WIDTH: 1000px;height: 0px;line-height: 0px;}
+
+
+
+
+
+
+
+
+
+
+
+/*头部css开始*/
+#m_top_n { height:63px; vertical-align:top; background:url(../images/top_bg.gif) repeat-x left top;}
+#A_head_n { height:58px;}
+#nav_n {height:27px; background:url(../images/nav_bg.gif) repeat-x left;}
+	.navul_n { margin:0 0 0 5px}
+		.navul_n li { float:left; border-right:1px solid #6094c0; padding:0px 25px; height:27px; line-height:27px; color:#FFFFFF; font-weight:bold;}
+			.navul_n li.frist_li{ padding:0 10px}
+			.navul_n li.index { border:1px solid #fff; background:url(../images/nav_this_bg.gif) repeat-x; height:26px; line-height:26px; border-bottom:none}
+			.navul_n li.index01 { background:url(../images/nav_my_bg.gif) repeat-x; height:27px; line-height:27px;}
+			.navul_n li.index01 a.my_c_bg{ background:url(../images/nav_my_bg01.gif) no-repeat 0 3px; *background:url(../images/nav_my_bg01.gif) no-repeat 0 1px; padding-left:17px; }
+			.navul_n li.index a.my_c_bg{ background:url(../images/nav_my_bg02.gif) no-repeat 0 3px; *background:url(../images/nav_my_bg02.gif) no-repeat 0 1px; padding-left:17px; color:#53585b}
+			.navul_n li.last_but_hidden{ float:left; padding:0 10px; position:relative;z-index:10; cursor:pointer}
+			.navul_n li.last_but_hidden img{ margin-top:8px}
+			.navul_n li.index a{ color:#53585b}
+
+	#hostname_n { float:left; padding-left:25px; margin:7px 0 0 0; color:#FFF; line-height:22px; width:500px; }
+	#hostname_n left{ width:40px; height:40px; background:}
+	#hostname_n div {  margin: 0 15px 0 0;}
+	#hostname_n span{ display:block; float:left ; margin-right:8px}
+	#hostname_n span.name{ margin-right:20px;}
+		#hostname_n div img{ width:40px; height:40px;}
+	#hostname_n h1 { font-weight:bold; font-size:14px; color:#FFF;}
+	#hostname_n span.line_s{ color:#7bc2e2}
+		#hostname_n span a.top_application{ display:inline-block; color:#FFFFFF; background:url(../images/top_point.gif) no-repeat right 5px; padding-right:15px; }
+		.pop_up_box{position:absolute; z-index:999999; zoom:1; left:-35px; top:19px; display:none}
+	.pop_up_box .pop_up_box_top{ background:url(../images/box_top_arrow.gif) no-repeat; width:186px; height:5px; overflow:hidden}
+	.pop_up_box .top_pop_content{ border:1px solid #7799b5; width:184px; background:#FFF; border-top:none; overflow:hidden}
+	.pop_up_box .top_pop_content li{float:left; width:92px; height:24px; line-height:24px; color:#585455; border-left:1px solid #dae1e9; margin-left:-1px; border-top:1px solid #dae1e9; margin-top:-1px; display:inline; text-align:center; overflow:hidden  }
+	.pop_up_box .top_pop_content li a{float:left; width:92px; height:24px; }
+	.pop_up_box .top_pop_content li a:hover{ background:#5a9ad7; color:#FFFFFF;}
+	.gr_app_box{position:relative;}
+
+
+#mtr_Search_n { clear:both; float:right; width:175px;  height:21px;   margin:2px 10px 0 0; display:inline  }
+		#mtr_Search_n .mtr_key{  width:152px; height:19px; line-height:19px; float:left; border:none; margin:1px; color:#999999; font-size:12px; padding-left:2px; margin-right:0;}
+		#mtr_Search_n .qm_search_cf{ margin-top:1px; float:left}
+		#mtr_Search_n .mtr_bu{ float:left; *margin:2px 0 0 0;}
+#mtright_n { float:right; text-align:right; color:#666;}	
+#mtr_funs_n { float:right; padding:0px 10px 0 35px; height:18px; line-height:18px; margin:7px 0 0 0; overflow:hidden}
+		#mtr_funs_n a { float:left;  display:block; height:24px; *padding-top:2px;}
+		#mtr_funs_n span{ float:left; padding:0 10px; display:block;height:24px; color:#96c5da}
+		
+		
+		
+#if_sidebar1{ margin-top:-96px; padding-top:96px}		
+
+
+
+.hidden-item{ display:none; } 
+#nav_menu{ position:absolute; right:0px;  top:27px; border:1px solid #8A9DAA; background:#FFF ; line-height:25px !important;white-space:nowrap;     } 
+#nav_menu li{ float:none; border:0; display:block; padding:0 ;text-align:center; width:100%  }
+#nav_menu li a{ display:block; color:#555555; font-weight:normal;  padding:0 5px}
+#nav_menu li a:hover{ display:block; color:#FFF; font-weight:normal;  background:#5D99CE;}
+
+		
+		

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0043)http://yun.kaoqin.com/Default/Sidebar/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<link href="./static/css/sidebar_add.css" rel="stylesheet" type="text/css">
+<script src="./static/jquery-1.3.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="./static/js/sidebar.js" language="javascript" type="text/javascript"></script>
+<script src="./static/js/common.sidebar.js" language="javascript" type="text/javascript"></script>
+<script>
+
+function remove_class(){
+	$(':li[value="1"]').removeClass('index');
+}
+
+function referer_url(url){
+	var href = top.document.getElementById('if_content').contentWindow.location.href;
+	href = encodeURIComponent(href.replace(/http:\/\/.+\//, ''));
+	url += url.indexOf('?') != -1? '&url='+href:'?url='+href;
+	rehref(url);
+}
+
+function disableLinks(){
+	$("#sidebar_w a").attr('onClick','return false;');
+}
+</script>
+<script src="./static/jquery-1.3.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="./static/js/js.js" language="javascript" type="text/javascript"></script>
+
+</head><body class="series">
+
+    <div id="sidebar_w">
+        <div class="myleft">
+            <ul class="menu">
+                
+                    <li expanded="1" class="open_zk more_line" id="group-1" isck="2" style="border-top:none;margin-top:3px;">
+                        <h3 class="cls"><span style="*margin-top:6px" class="left"><img src="/static/images/oc_left_02.gif" class="title_ico"> <a href="javascript:;" class="font_bold inherit">考勤管理</a></span><span class="right title_option"><a target="if_content_t" href="http://yun.kaoqin.com/Default/Sidebar/index"><u></u></a></span></h3>
+                        <ul class="none menu_1" style="display: block;">
+                            <li isck="1" id="item_1_1" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Attendance/Record/logs" target="if_content_t">打卡记录</a>
+                            </li>
+
+                            <li isck="1" id="item_1_4" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Attendance/Error/" target="if_content_t">当天异常</a>
+                            </li>
+
+                            <li isck="1" id="item_1_2" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Attendance/Count/" target="if_content_t">考勤记录</a>
+                            </li>
+                            <li isck="1" id="item_1_3" class="">
+                                    <a class="block_w" href="http://yun.kaoqin.com/Attendance/Report/" target="if_content_t">考勤报表</a>
+                                </li>                        </ul>
+                    </li>
+
+                    <li expanded="1" class="open_zk more_line" id="group-2" isck="2" style="border-top:none;margin-top:3px;">
+                        <h3 class="cls"><span style="*margin-top:6px" class="left"><img src="/static/images/oc_left_02.gif" class="title_ico"> <a href="javascript:;" class="font_bold inherit">工作安排</a></span>
+                        </h3>
+                        <ul class="none menu_1" style="display: block;">
+                            <li isck="1" id="item_2_1" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Work/Schedule/myschedule" target="if_content_t">我的排班</a>
+                            </li>
+                            <li isck="1" id="item_2_2" class="">
+                                    <a class="block_w" href="http://yun.kaoqin.com/Work/Schedule/Index" target="if_content_t">管理排班</a>
+                                </li>
+                                
+                                <li isck="1" id="item_2_3" class="">
+                                	<a class="block_w" href="http://yun.kaoqin.com/Work/Schedule/scheduleNew" target="if_content_t">新增排班</a>
+                                </li>
+                        </ul>
+                    </li>
+
+
+                    <li expanded="1" class="open_zk more_line" id="group-5" isck="2" style="border-top: none;"><h3 class="cls"><span style="*margin-top:6px" class="left"><img src="/static/images/oc_left_02.gif" class="title_ico"> <a href="http://yun.kaoqin.com/Default/Sidebar/index" class="font_bold inherit">考勤申请</a></span><span class="right title_option"><a target="if_content_t" href="http://yun.kaoqin.com/Default/Sidebar/index"><u></u></a></span></h3>
+                        <ul class="none menu_1" style="display: block;">
+                            <li isck="1" id="item_5_1" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Personnel/Leave/index" target="if_content_t">新增申请</a>
+                            </li>
+                            <li isck="1" id="item_5_2" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Personnel/leave/leaveSended" target="if_content_t">申 请 单</a>
+                            </li>
+                            <li isck="1" id="item_5_3" class="">
+                                    <a class="block_w" href="http://yun.kaoqin.com/Personnel/leaveType/index" target="if_content_t">请假类别</a>
+                                </li>
+                        </ul>
+                    </li>
+
+                    <li expanded="1" class="open_zk more_line" id="group-3" isck="2" style="border-top: none;"><h3 class="cls"><span style="*margin-top:6px" class="left"><img src="/static/images/oc_left_02.gif" class="title_ico"> <a href="http://yun.kaoqin.com/Default/Sidebar/index" class="font_bold inherit">人事管理</a></span><span class="right title_option"><a target="if_content_t" href="http://yun.kaoqin.com/Default/Sidebar/index"><u></u></a></span></h3>
+                            <ul class="none menu_1" style="display: block;">
+                                <li isck="1" id="item_3_1" class="on">
+                                        <a class="block_w" href="http://yun.kaoqin.com/Personnel/Staff/index" target="if_content_t">组织架构</a>
+                                    </li>                                <li isck="1" id="item_3_3" class="">
+                                        <a class="block_w" href="http://yun.kaoqin.com/Personnel/Employee/index" target="if_content_t">添加员工</a>
+                                    </li>                            </ul>
+                        </li>                    <li expanded="1" class="open_zk more_line" id="group-4" isck="2" style="border-top: none;"><h3 class="cls"><span style="*margin-top:6px" class="left"><img src="/static/images/oc_left_02.gif" class="title_ico"> <a href="http://yun.kaoqin.com/Default/Sidebar/index" class="font_bold inherit">系统设置</a></span><span class="right title_option"><a target="if_content_t" href="http://yun.kaoqin.com/Default/Sidebar/index"><u></u></a></span></h3>
+                        <ul class="none menu_1" style="display: block;">
+                            <li isck="1" id="item_4_1" class="">
+                                    <a class="block_w" href="http://yun.kaoqin.com/Work/WorkTime" target="if_content_t">工作时段</a>
+                                </li>
+                            <li isck="1" id="item_4_2" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Work/WorkClass" target="if_content_t">工作班次</a>
+                            </li>
+                            
+                            <li isck="1" id="item_4_7" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Work/Rule" target="if_content_t">考勤规则</a>
+                            </li>
+                            <li isck="1" id="item_4_3" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Attendance/Holiday" target="if_content_t">假日管理</a>
+                            </li>                            <li isck="1" id="item_4_4" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Device/Device" target="if_content_t">设备管理</a>
+                            </li>                            <li isck="1" id="item_4_5" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Device/Api/apiSet" target="if_content_t">API设 置</a>
+                            </li>                            <li isck="1" id="item_4_6" class="">
+                                <a class="block_w" href="http://yun.kaoqin.com/Right/Authority/index" target="if_content_t">权限设置</a>
+                            </li>
+                        </ul>
+                    </li>            </ul>
+        </div>
+    </div>
+	
+</body></html>

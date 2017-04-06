@@ -1,0 +1,551 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>考勤统计</title>
+<meta name="keywords" content="群英云考勤 网络考勤 广域网考勤 异地考勤">
+<meta name="author" content="GaoShuai">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,chrome=1">
+<link href="/static/css/frame.css" rel="stylesheet" type="text/css">
+<link href="/static/css/frame_add.css" rel="stylesheet" type="text/css">
+<link href="/static/css/main_add.css" rel="stylesheet" type="text/css">
+<link href="/static/css/top_new.css" rel="stylesheet" type="text/css">
+<link href="/static/css/sidebar_add.css" rel="stylesheet" type="text/css">
+<link href="/static/css/font.css" rel="stylesheet" type="text/css">
+<link href="/static/css/file_style.css" rel="stylesheet" type="text/css">
+<link href="/static/css/message_style.css" rel="stylesheet" type="text/css">
+<script src="/static/js/jquery-1.7.min.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/js.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/float_pre_sel.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/js.function.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/user.list.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/jqDnR.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript">
+//语音视频返回地址
+var flash_file_path = '';
+function begin_btn(dir)
+{
+	$('#sound').hide();
+	if(dir != 'cancel'){
+		document.getElementById('if_content').contentWindow.flash_callback(dir);
+	}
+
+}
+function ifr_callback(callback)
+{
+	try{
+		eval("document.getElementById('if_content').contentWindow."+callback);
+	} catch(e){}}
+
+function sound_video(obj){
+	$('#sound').empty();
+	var html = $('#'+obj,get_main_win()).html();
+	$('#sound').append(html);
+	$('#sound').css({left:Math.floor((document.body.clientWidth - 246)/2), top:Math.floor((document.body.clientHeight - 220)/2)});
+	$('#sound').show();
+}
+function ifr_dlg(id,force,drag)
+{
+	$('#'+id).remove();
+	if($('#'+id).length == 0 || force==1) {
+		if(drag==1) {
+			var html = '<div id="'+id+'" class="float_hint_1_w" style="display:none;position:absolute;top:10px;left:300px;">';
+		} else {
+			var html = '<div id="'+id+'" class="float_hint_1_w" style="display:none;">';
+		}
+		html += $('#'+id,get_main_win()).html();
+		html += '</div>';
+		$('#float_warp').append(html);
+		if(drag==1) {
+			$('#'+id).jqDrag($('#title_'+id)); //拖动
+		}
+	}
+	showfloathint(id);
+}
+
+if (window.top != window)
+{
+  window.top.location.href = "index.php";
+}
+
+
+function left_refresh(){
+	document.getElementById("if_sidebar").contentWindow.count_refresh();
+}
+
+function clear_tips(){
+	clearTimeout(setid);
+	var setid = setTimeout(function(){ $('#edit_hint', top.document).hide(); }, 5000);
+}
+function logout(){
+	window.location.href = "/Synlogin/Index/logout";
+}
+
+</script>
+<script type="text/javascript">
+   $(document).ready(function(){
+       //个人应用
+       $(".gr_app_box").hover(function(){
+           $(this).children('.pop_up_box').show();
+       },function(){
+           $(this).children('.pop_up_box').hide();
+       })
+   });
+
+</script>
+</head>
+
+<body style="overflow-y:hidden;overflow-x:auto;">
+	<div id="sound" style="display:none;position:absolute;z-index:100;"></div>
+	<!-- 浮动窗透明底色 -->
+	<input type="hidden" id="s_cfgid" name="s_cfgid" value="441833">
+	<input type="hidden" id="s_userid" name="s_userid" value="1578433">
+	<div id="float_bg" style="display:none"><div id="m_min-width"><!--控制最小宽度--></div></div>
+	
+	<!-- 浮动窗外框 -->	
+	
+	<div id="float_warp" style="display:none;">
+		<div id="xprogress" class="xprogress" style="width:60%;height:30px;background-color: #f7f7f7;overflow: hidden;border-radius:4px; display:none;margin:300px auto 0 auto;padding: 5px;text-align:left;">
+		  <div id="xprogress-bar" class="xprogress-bar" style="height:30px;width:0%;background-color: #5eb95e;line-height:30px;color:#f00;text-align:center;">正在统计中...</div>
+		</div>
+		<!-- 查看照片浮动窗 -->
+		<div id="readuserphoto" class="float_hint_1_w">
+		  <div class="float_hint1">
+			<div class="d_title">
+			  <label>查看照片</label>
+			  <a href="javascript:closefloathint()">&nbsp;</a> </div>
+			<div class="warp_1">
+			  <div class="warp_1_t">
+				<div class="warp_1_t_l"></div>
+				<div class="warp_1_t_r"></div>
+			  </div>
+			  <div class="warp_1_m">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				  <tbody><tr>
+					<td width="100%" height="260" align="center"><img src="/static/images/user_photo.gif" width="230" height="230" class="headpic" style="border:solid 1px #CDCED0;"></td>
+				  </tr>
+				</tbody></table>
+			  </div>
+			  <div class="warp_1_b">
+				<div class="warp_1_b_l"></div>
+				<div class="warp_1_b_r"></div>
+			  </div>
+			</div>
+			<div class="s_bottom">
+			  <input name="Per_sel_bu1" type="button" value="确定" class="button_21" onclick="closefloathint()">
+			  <input name="Per_sel_bu2" type="button" value="取消" class="button_21" onclick="closefloathint()">
+			</div>
+		  </div>
+		</div>
+		<!-- 添加设备浮动窗 -->
+		<div id="add_device" class="float_hint_1_w" style="display:none;">
+		  <div class="float_hint1">
+			<div class="d_title">
+			  <label>
+				新增设备
+				<span id="set_tip_msg" style="padding-left: 15px; display: none;"></span>
+			  </label>			  
+			  <a href="javascript:closefloathint()">&nbsp;</a> </div>
+			<div class="warp_1">
+			  <div class="warp_1_t">
+				<div class="warp_1_t_l"></div>
+				<div class="warp_1_t_r"></div>
+			  </div>
+			  <div class="warp_1_m">
+              	<table width="99%" border="0" cellspacing="0" cellpadding="0" style="height:125px; font-size:12px; padding-left:20px; color:#666666;">
+                          <tbody><tr><td align="right"><span class="fc_red">*</span>序 列 号：</td><td align="left"><input type="text" class="text1" name="deviceNum" id="deviceNum" maxlength="19"></td></tr>
+                          <tr><td align="right"><span class="fc_red">*</span>设备标识：</td><td align="left"><input type="text" class="text1" name="deviceRemark" id="deviceRemark" maxlength="20"></td></tr>
+                          <tr><td align="right">设备地址：</td><td align="left"><input type="text" class="text1" name="devicePosition" id="devicePosition"></td></tr><input type="hidden" name="wt_id">
+                </tbody></table>
+			  </div>
+			  <div class="warp_1_b">
+				<div class="warp_1_b_l"></div>
+				<div class="warp_1_b_r"></div>
+			  </div>
+			</div>
+			<div class="s_bottom">
+			  <input name="Per_sel_bu1" type="button" value="确定" class="button_21" onclick="add_device_callback()">
+			  <input name="Per_sel_bu2" type="button" value="取消" class="button_21" onclick="closefloathint()">
+			</div>
+		  </div>
+		</div>
+
+        <!-- 修改设备浮动窗 -->
+        <div id="edit_device" class="float_hint_1_w" style="display:none;">
+            <div class="float_hint1">
+                <div class="d_title">
+                    <label>
+                        修改设备
+                        <span id="edit_tip_msg" style="padding-left: 15px; display: none;"></span>
+                    </label>
+                    <a href="javascript:closefloathint()">&nbsp;</a> </div>
+                <div class="warp_1">
+                    <div class="warp_1_t">
+                        <div class="warp_1_t_l"></div>
+                        <div class="warp_1_t_r"></div>
+                    </div>
+                    <div class="warp_1_b">
+                        <div class="warp_1_b_l"></div>
+                        <div class="warp_1_b_r"></div>
+                    </div>
+                </div>
+                <div class="s_bottom">
+                    <input name="Per_sel_bu1" type="button" value="确定" class="button_21" onclick="edit_device_callback()">
+                    <input name="Per_sel_bu2" type="button" value="取消" class="button_21" onclick="closefloathint()">
+                </div>
+            </div>
+        </div>
+        
+        <!-- 添加与修改时段浮动窗 -->
+		<div id="save_worktime" class="float_hint_1_w" style="display:none;">
+		  <div class="float_hint1">
+			<div class="d_title">
+			  <label>
+				<span id="boxTitle"></span>
+				<span id="set_tip_msg" style="padding-left: 15px; display: none;"></span>
+			  </label>			  
+			  <a href="javascript:closefloathint()">&nbsp;</a> </div>
+			<div class="warp_1">
+			  <div class="warp_1_t">
+				<div class="warp_1_t_l"></div>
+				<div class="warp_1_t_r"></div>
+			  </div>
+			  <div class="warp_1_m">
+              	<form>
+                <input type="hidden" name="sysid" value="0">
+				<table width="99%" border="0" cellspacing="0" cellpadding="0" style="height:125px; font-size:12px; padding-left:20px; color:#666666;">
+				  <tbody><tr><td align="right">时段名称：</td><td align="left"><input type="text" class="text1" name="timeTitle"></td></tr>
+                  <tr><td align="right">上班时间：</td><td align="left"><select name="timeOn_one"></select>&nbsp;&nbsp;<select name="timeOn_two"></select></td></tr>
+                  <tr><td align="right">下班时间：</td><td align="left"><select name="timeOff_one"></select>&nbsp;&nbsp;<select name="timeOff_two"></select></td></tr>
+				</tbody></table>
+                </form>
+			  </div>
+			  <div class="warp_1_b">
+				<div class="warp_1_b_l"></div>
+				<div class="warp_1_b_r"></div>
+			  </div>
+			</div>
+			<div class="s_bottom">
+			  <input name="Per_sel_bu1" type="button" value="确定" class="button_21" onclick="save_worktime_callback()">
+			  <input name="Per_sel_bu2" type="button" value="取消" class="button_21" onclick="closefloathint()">
+			</div>
+		  </div>
+		</div>
+		
+		<div id="hint_message" class="float_hint_1_w" style="display:none; width:400px;"><div class="float_hint1">
+			<div class="d_title">
+				<label>提示</label>
+				<span id="message_close"></span>
+			</div>
+			
+			<div class="warp_1">
+				<div class="warp_1_t">
+					<div class="warp_1_t_l"></div>
+					<div class="warp_1_t_r"></div>
+				</div>
+				
+				<div class="warp_1_m">
+					<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tab_info">
+						<tbody><tr>
+							<td id="message_box">
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+				
+				<div class="warp_1_b">
+					<div class="warp_1_b_l"></div>
+					<div class="warp_1_b_r"></div>
+				</div>
+			</div>
+			
+			<div class="s_bottom" id="message_operation">
+				
+			</div>
+		</div></div>
+		
+		
+		<!-- 确认提示浮动窗 -->
+		<div id="confirm_dialog" class="float_hint_1_w" style="display:none;"><div class="float_hint1">
+			<div class="d_title">
+				<label>提示</label>
+				<a href="#" id="confirm_dlg_close">&nbsp;</a>
+			</div>
+			
+			<div class="warp_1">
+				<div class="warp_1_t">
+					<div class="warp_1_t_l"></div>
+					<div class="warp_1_t_r"></div>
+				</div>
+				
+				<div class="warp_1_m">
+					<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tab_info">
+						<tbody><tr>
+							<td id="confirm_msg_box">
+								
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+				
+				<div class="warp_1_b">
+					<div class="warp_1_b_l"></div>
+					<div class="warp_1_b_r"></div>
+				</div>
+			</div>
+			
+			<div class="s_bottom" id="confirm_operation">
+				
+			</div>
+		</div></div>
+		
+		<!-- 拒绝申请浮动框 -->
+		<div id="reject_dialog" class="float_hint_1_w" style="display: none">
+			<div class="float_hint1">
+				<div class="d_title">
+					<label>提示</label>
+					<a href="#" onclick="closefloathint()" id="confirm_dlg_close">&nbsp;</a>
+				</div>
+			
+				<div class="warp_1">
+					<div class="warp_1_t">
+						<div class="warp_1_t_l"></div>
+						<div class="warp_1_t_r"></div>
+					</div>
+					
+					<div class="warp_1_m">
+						<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tab_info">
+							<tbody><tr>
+								<td id="reject_msg_box">
+									<span class="info_title">拒绝理由:</span> 
+									<textarea class="textarea2" style="height: 70px; width:100%" id="reject_reason"> </textarea>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+					
+					<div class="warp_1_b">
+						<div class="warp_1_b_l"></div>
+						<div class="warp_1_b_r"></div>
+					</div>
+				</div>
+				
+				<div class="s_bottom" id="reject_operation">
+					<input name="Per_sel_bu2" type="button" value="确定" class="button_21" onclick="reject_callback() ">
+					<input name="Per_sel_bu2" type="button" value="取消" class="button_21" onclick="closefloathint()">
+				</div>
+			</div>
+		</div>
+		
+		<!-- 取消申请浮动框 -->
+		<div id="cancel_dialog" class="float_hint_1_w" style="display: none">
+			<div class="float_hint1">
+				<div class="d_title">
+					<label>提示</label>
+					<a href="#" onclick="closefloathint()" id="confirm_dlg_close">&nbsp;</a>
+				</div>
+			
+				<div class="warp_1">
+					<div class="warp_1_t">
+						<div class="warp_1_t_l"></div>
+						<div class="warp_1_t_r"></div>
+					</div>
+					
+					<div class="warp_1_m">
+						<table width="99%" border="0" cellspacing="0" cellpadding="0" class="tab_info">
+							<tbody><tr>
+								<td id="cancel_msg_box">
+									<span class="info_title">确定取消该申请 ？
+										<br>取消理由：
+									</span> 
+									<textarea class="textarea2" style="height: 70px;" id="cancel_reason"> </textarea>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+					
+					<div class="warp_1_b">
+						<div class="warp_1_b_l"></div>
+						<div class="warp_1_b_r"></div>
+					</div>
+				</div>
+				
+				<div class="s_bottom" id="cancel_operation">
+					<input name="Per_sel_bu2" type="button" value="确定" class="button_21" onclick="cancel_callback() ">
+					<input name="Per_sel_bu2" type="button" value="取消" class="button_21" onclick="closefloathint()">
+				</div>
+			</div>
+		</div>
+		
+		<div id="m_min-width"><!--控制最小宽度--></div>
+	</div>
+	<!-- 浮动窗外框 -->
+	
+	<!-- 浮动提示框 -->
+	<div id="edit_hint" style="display:none;">
+		<span id="edit_text"></span>
+	</div>	
+	
+	
+	<table cellspacing="0" cellpadding="0" id="maintab">
+		<tbody><tr>
+            <td id="m_top_n">
+                <div id="A_head_n">
+                    <div id="hostname_n">
+                            <div class="left"><img src="/static/images/de_Per_logo.jpg"></div>                            
+                            <h1>海南祺曜互动娱乐有限公司</h1>
+                            <span class="name">严颖焜</span>
+                             <span><a href="http://www.qycn.com/synlogin.php?tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" target="_blank" class="fc_white">群英首页</a></span>
+                        <span class="line_s">|</span>
+                            <span class="gr_app_box" style="display:<qyTag>displayApp<qyTag>" id="ln_apps"><a href="javascript:;" class="top_application">个人应用</a>
+                                <div class="pop_up_box">
+                                    <div class="pop_up_box_top"></div>
+                                    <div class="top_pop_content">
+                                        <ul>
+                                            <li>
+                                                <a href="http://domain.qycn.com/synlogin.php?tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" title="域名管理" target="_blank">域名管理</a>                                            </li><li>
+                                                <a href="http://dns.qycn.com/synlogin.php?tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" title="智能DNS" target="_blank">智能DNS</a>                                            </li><li>
+                                                <a href="http://host.qycn.com/synlogin.php?tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" title="虚拟主机" target="_blank">虚拟主机</a>                                            </li><li>
+                                                <a href="http://uc.qy.com.cn/synlogin.php?tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" title="CDN管理" target="_blank">CDN管理</a>                                            </li><li>
+                                                <a href="http://cloud.qycn.com/user/synlogin?tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" title="云主机" target="_blank">云主机</a>                                            </li><li>
+                                                <a href="http://idc.qy.com.cn/login.php?tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" title="IDC管理" target="_blank">IDC管理</a>                                            </li><li>
+                                                <a href="http://icp.qycn.com/synlogin.php?tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" title="网站备案" target="_blank">网站备案</a>                                            </li><li>
+                                                                                            </li>                                        </ul>
+                                    </div>
+                                </div>
+                            </span>                </div>
+                    <div id="mtright_n">
+                        <div id="mtr_funs_n">
+                            <a href="index.php" class="fc_white">主页</a>
+                            <span>|</span>
+                            <a href="http://www.qycn.com/cc_download.php" class="fc_white" target="_blank">下载CC</a>
+                            <span>|</span>
+                            <a href="javascript:;" class="fc_white" onclick="document.getElementById('if_content').contentWindow.location.reload();return false;">刷新</a>
+                            <span>|</span>
+                            <a id="ln_feedback" href="http://www.qycn.com/synlogin.php?url=http%3A%2F%2Fwww.qycn.com%2Ffeedback%2Ffeedback_add.php%3Fproduct_id%3D9&amp;tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" class="fc_white" target="_blank">问题反馈</a>
+                            <span>|</span>
+                            <a href="http://www.qycn.com/help/category_26.html" class="fc_white" target="_blank">帮助中心</a>
+                            <span>|</span>
+                            <a href="/Synlogin/Index/logout" class="fc_white" onclick="javascript: return confirm('确定退出?');">退出</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="nav_n">
+                    <ul class="navul_n">
+                        <li class="index01 frist_li"><span><a class="fc_white my_c_bg" href="/Synlogin/Index/outer?outer=http://uc.qycn.com/synlogin.php">我的企业</a></span></li>
+                                                        <li class="noborder"><span><a class="fc_white" href="?g=Synlogin&amp;a=outer&amp;outer=http%3A%2F%2Fqycc.qycn.com%2Fsynlogin.php%3Fcfgid%3D6">群英CC</a></span></li><li class="index"><span><a class="fc_white" href="index.php">云考勤</a></span></li>
+                                                    </ul>
+                </div>                <div id="m_min-width"><!--控制最小宽度--></div>
+            </td>
+		</tr>
+		<tr>
+			<td id="m_middle">
+				<div id="sidebar">
+					<iframe id="if_sidebar" name="if_sidebar" frameborder="0" src="/Default/Sidebar/index">100%?</iframe>
+				</div>
+
+				<div id="content">
+					<div id="bor_lt"></div>
+					<div id="content_sub">
+						<iframe id="if_content" name="if_content_t" frameborder="0" src="/logs" style="width: 100%;">100%?</iframe>
+					</div>
+				</div>			
+			</td>
+		</tr>
+	</tbody></table>
+	<input type="hidden" name="date_type" value="" id="date_type">
+<script language="javascript">
+frame   =   document.getElementById("if_content");
+if(typeof(frame.onreadystatechange) != 'undefined')	//IE
+{
+	frame.onreadystatechange   =   function()
+	{
+		if(this.readyState   ==   "complete")  
+		{
+			frame.style.width="101%";
+			frame.style.width="100%";
+		}
+		
+	}
+} else {
+	frame.onload=function(){
+
+	};
+}
+
+$(document).ready(function(){
+	frame.style.width="101%";
+	frame.style.width="100%";
+	$('.index').prev().attr('class', 'noborder');	
+
+    UserList.init("/static/Index/getUserList");
+
+    //生成小时和分钟的下拉列表
+	hourHtml = '';
+	minuteHtml = '';
+	for(i=0; i<24; i++){
+		hourHtml += '<option value="'+i+'">'+i+'</option>';
+	}
+	for(i=0; i<60; i++){
+		minuteHtml += '<option value="'+i+'">'+i+'</option>';
+	}
+	$(".hour_selector").append(hourHtml);
+	$(".minute_selector").append(minuteHtml);
+});
+
+window.onresize = function () {
+	if(typeof(document.getElementById("if_content").contentWindow.iframeresize) != 'undefined') document.getElementById("if_content").contentWindow.iframeresize();
+}
+
+function datepicker(type){
+	if(type){
+		$('#customize_show_1_time').datepicker();
+		$('#date_type').val(1);
+	}else{
+		$('#autosend_date').datepicker();
+		$('#date_type').val(0);
+	}
+}
+
+function picker_callback(){
+	if($('#date_type').val() == 1){
+		document.getElementById("if_content").contentWindow.customize_change();
+	}else{
+		autosend_change();
+	}
+}
+function add_leavetype_callback(){
+    document.getElementById("if_content").contentWindow.add_leavetype_callback();
+}
+
+
+function setPower_callback(){
+	document.getElementById("if_content").contentWindow.set_power();
+	closefloathint();
+}
+
+function edit_device_callback(){
+    document.getElementById("if_content").contentWindow.edit_device_callback();
+}
+
+function add_device_callback(){
+	document.getElementById("if_content").contentWindow.add_device_callback();
+}
+
+function save_worktime_callback(){
+	document.getElementById("if_content").contentWindow.save_worktime_callback();
+}
+
+function add_class_callback(){
+    document.getElementById("if_content").contentWindow.add_class_callback();
+}
+function reject_callback(){
+	document.getElementById("if_content").contentWindow.changeStatus(2);
+	closefloathint();
+}
+function cancel_callback(){
+	document.getElementById("if_content").contentWindow.changeStatus(5);
+	closefloathint();
+}
+</script>
+
+</body></html>

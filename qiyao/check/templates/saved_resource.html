@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0048)http://yun.kaoqin.com/personnel/staff/staffView/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>群英云考勤V1.14.1.22517</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<script src="./static/jquery-1.7.min.js" language="javascript" type="text/javascript"></script>
+<script src="./static/js/js.js" language="javascript" type="text/javascript"></script>
+<script src="./static/js/js.function.js" language="javascript" type="text/javascript"></script>
+<script src="./static/js/window_resize.js" language="javascript" type="text/javascript"></script>
+<script src="./static/js/Tree.js" language="javascript" type="text/javascript"></script>
+<script src="./static/js/ui.datepicker.js" language="javascript" type="text/javascript"></script>
+<!--<script src="/Synlogin/Index/synCheck" language="javascript" type="text/javascript"></script>-->
+<link href="./static/css/main.css" rel="stylesheet" type="text/css">
+<link href="./static/css/main_add.css" rel="stylesheet" type="text/css">
+<link href="./static/css/layout.css" rel="stylesheet" type="text/css">
+<link href="./static/css/font.css" rel="stylesheet" type="text/css">
+<link href="./static/css/attendance.css" rel="stylesheet" type="text/css">
+<link href="./static/css/jquery-ui.css" rel="stylesheet" type="text/css">
+<script>
+$(document).ready(function(){		
+	var s_cfgid = '441833';
+	var s_userid = '1578433';
+	if(typeof($('#s_cfgid', top.document).val()) != 'undefined' && typeof($('#s_userid', top.document).val()) != 'undefined' && (parseInt(s_cfgid) != parseInt($('#s_cfgid', top.document).val()) || parseInt(s_userid) != parseInt($('#s_userid', top.document).val()))){
+		showinfo_tips('令牌失效，请重新登录。');
+		top.document.getElementById("if_sidebar").contentWindow.disableLinks();
+		var sid = setTimeout("logout()",4000);
+	}
+});
+function logout(){
+	top.document.location.href = '/Synlogin/Index/logout';
+}
+</script>
+<script language="javascript" src="./behavior.php"></script>
+<script language="javascript" src="./behavior_stat.php"></script>
+<style type="text/css">
+    .bgc_02{background: none repeat scroll 0 0 #DDEEFE !important;}
+    .bgc_01{background: none repeat scroll 0 0 #F1F8FF !important;}
+    .sel_1114{ width:95px; text-align:center; color:#000; display:none;}
+    .per_list td span{ text-decoration:none;}
+</style></head>
+
+<body><table width="100%" border="0" cellspacing="0" cellpadding="0" class="per_list" id="detail_list">
+            <tbody><tr>
+              <th width="10%" scope="col">姓名</th>
+              <th width="10%" scope="col">CC号</th>
+              <th width="10%" scope="col">手机</th>
+              <th width="10%" scope="col">指纹数</th>
+			  <th width="10%" scope="col">人脸</th>
+              <th width="10%" scope="col">卡号</th>
+              <th width="10%" scope="col">打卡密码</th>
+              <th width="10%" scope="col">设备相片</th>
+              <th width="" scope="col">打卡设备</th>
+              <th width="8%" scope="col">操作</th>
+            </tr>
+            <tr>
+                  <td class="">唐武鑫</td>
+                  <td class="">1319221</td>
+                  <td class="">13631451646</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">0</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1074362">管理</a></td>
+                </tr><tr>
+                  <td class="">王琼</td>
+                  <td class="">1278177</td>
+                  <td class="">15989241064</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">6</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1044861">管理</a></td>
+                </tr><tr>
+                  <td class="">赵斌</td>
+                  <td class="">1278560</td>
+                  <td class="">18688887660</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">1</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045237">管理</a></td>
+                </tr><tr>
+                  <td class="">林宏伟</td>
+                  <td class="">1278561</td>
+                  <td class="">13668989820</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">2</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045238">管理</a></td>
+                </tr><tr>
+                  <td class="">梁超炎</td>
+                  <td class="">1278562</td>
+                  <td class="">13422006696</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">3</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045239">管理</a></td>
+                </tr><tr>
+                  <td class="">吴泽铖</td>
+                  <td class="">1278563</td>
+                  <td class="">18613058676</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">4</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045240">管理</a></td>
+                </tr><tr>
+                  <td class="">官雷</td>
+                  <td class="">1278564</td>
+                  <td class="">18680503663</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">5</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045241">管理</a></td>
+                </tr><tr>
+                  <td class="">陈智刚</td>
+                  <td class="">1278565</td>
+                  <td class="">13622828832</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">23</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045242">管理</a></td>
+                </tr><tr>
+                  <td class="">杨浩愉</td>
+                  <td class="">1278568</td>
+                  <td class="">18520411992</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">10</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045245">管理</a></td>
+                </tr><tr>
+                  <td class="">卢山</td>
+                  <td class="">1278569</td>
+                  <td class="">13610095232</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">11</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045246">管理</a></td>
+                </tr><tr>
+                  <td class="">吴志红</td>
+                  <td class="">1278570</td>
+                  <td class="">15989047409</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">12</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045247">管理</a></td>
+                </tr><tr>
+                  <td class="">郑翰斌</td>
+                  <td class="">1278571</td>
+                  <td class="">15999966486</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">13</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045248">管理</a></td>
+                </tr><tr>
+                  <td class="">郭九福</td>
+                  <td class="">1278573</td>
+                  <td class="">13060691824</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">15</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045250">管理</a></td>
+                </tr><tr>
+                  <td class="">张树斌</td>
+                  <td class="">1278576</td>
+                  <td class="">15989282042</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">18</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045253">管理</a></td>
+                </tr><tr>
+                  <td class="">马文勇</td>
+                  <td class="">1278577</td>
+                  <td class="">18520137738</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">19</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045254">管理</a></td>
+                </tr><tr>
+                  <td class="">陈裕玲</td>
+                  <td class="">1278578</td>
+                  <td class="">15920556291</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">20</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045255">管理</a></td>
+                </tr><tr>
+                  <td class="">许锦浩</td>
+                  <td class="">1278579</td>
+                  <td class="">13611486350</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">21</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045256">管理</a></td>
+                </tr><tr>
+                  <td class="">奚仲炜</td>
+                  <td class="">1278582</td>
+                  <td class="">13450258017</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">24</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045259">管理</a></td>
+                </tr><tr>
+                  <td class="">卢思霖</td>
+                  <td class="">1278583</td>
+                  <td class="">15915716501</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">25</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045260">管理</a></td>
+                </tr><tr>
+                  <td class="">邓堪泰</td>
+                  <td class="">1278584</td>
+                  <td class="">13827147042</td>
+                  <td class="">2 枚</td>
+				  <td class="">-</td>
+                  <td class="">26</td>
+                  <td class="">-</td>
+                  <td class="">
+                  -
+                                    </td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1045261">管理</a></td>
+                </tr> </tbody></table>
+<div id="d_page_1" class="page_1">
+    <form action="http://yun.kaoqin.com/personnel/staff/staffView/" method="post" onsubmit="location.href=document.getElementById(&#39;page_url&#39;).value+document.getElementById(&#39;pageno&#39;).value;return false;"><span>首页</span> <span>上一页</span> <a href="http://yun.kaoqin.com/personnel/staff/staffView/?p=2">下一页</a> <a href="http://yun.kaoqin.com/personnel/staff/staffView/?p=15">末页</a> <span>共281条, 每页20条, 共15页</span> <input name="pageno" id="pageno" size="2" type="text" class="text3" value="1"> <input name="" type="submit" class="button2" value="跳转"><input type="hidden" id="page_url" value="/personnel/staff/staffView/?p="></form></div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //鼠标经过
+        $('#detail_list tr').live('mouseover',function(){
+            $('#detail_list tr td').removeClass('bgc_01');
+            $(this).children('td').addClass('bgc_01');
+        });
+
+        //鼠标离开
+        $('#detail_list tr').live('mouseout',function(){
+            $('#detail_list tr td').removeClass('bgc_01');
+        });
+
+        $('.showpic').mouseover(function(){
+	        $(this).after('<img src="'+$(this).attr('url')+'" class="npic" style="width:100px; position:absolute; border: 3px solid #ccc">');
+	    }).mouseout(function(){
+	        $('.npic').remove();
+	    });
+    })
+</script></body></html>
