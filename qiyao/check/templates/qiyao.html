@@ -94,6 +94,12 @@ function logout(){
 </head>
 
 <body style="overflow-y:hidden;overflow-x:auto;">
+<!-- 	<div>
+		{%for department in departments %}
+		<p>{{ department.name }}</p>
+		{% endfor %}
+	</div> -->
+
 	<div id="sound" style="display:none;position:absolute;z-index:100;"></div>
 	<!-- 浮动窗透明底色 -->
 	<input type="hidden" id="s_cfgid" name="s_cfgid" value="441833">
@@ -417,8 +423,6 @@ function logout(){
                         <div id="mtr_funs_n">
                             <a href="index.php" class="fc_white">主页</a>
                             <span>|</span>
-                            <a href="http://www.qycn.com/cc_download.php" class="fc_white" target="_blank">下载CC</a>
-                            <span>|</span>
                             <a href="javascript:;" class="fc_white" onclick="document.getElementById('if_content').contentWindow.location.reload();return false;">刷新</a>
                             <span>|</span>
                             <a id="ln_feedback" href="http://www.qycn.com/synlogin.php?url=http%3A%2F%2Fwww.qycn.com%2Ffeedback%2Ffeedback_add.php%3Fproduct_id%3D9&amp;tokenkey=3ErNV%2FxyEITeGodSJ3T3WOLXOtIqV0VIdsYye%2F3DNsBIXEjaPS415OnJsB5%2FJBU31iDbxPpf%2BBX%2B10WY%2BRyvpjWGjwxSOOltElr1Nv4z2FCQO88SDGb2zQFr0DKlLPlu%2BcEIe5o3flyxTcKHSeTEmL4brzFoEocZ5aJFNjD9ZedO7KuAuYsMWazB1PY6TtpxMpPRCIWLVKjJP47sOZ8bSfkqnwCaTc4WzDUd%2FYuZ4I%2BNxkjoDY2t5HF1BsqcLRSiUaZHIQRnRHST3hYYlA" class="fc_white" target="_blank">问题反馈</a>
@@ -440,17 +444,18 @@ function logout(){
 		<tr>
 			<td id="m_middle">
 				<div id="sidebar">
-					<iframe id="if_sidebar" name="if_sidebar" frameborder="0" src="/Default/Sidebar/index">100%?</iframe>
+					<iframe id="if_sidebar" name="if_sidebar" frameborder="0" src="Default/Sidebar/index">100%?</iframe>
 				</div>
 
 				<div id="content">
 					<div id="bor_lt"></div>
 					<div id="content_sub">
-						<iframe id="if_content" name="if_content_t" frameborder="0" src="/logs" style="width: 100%;">100%?</iframe>
+						<iframe id="if_content" name="if_content_t" frameborder="0" src="Attendance/Record/logs" style="width: 100%;">100%?</iframe>
 					</div>
 				</div>			
 			</td>
 		</tr>
+
 	</tbody></table>
 	<input type="hidden" name="date_type" value="" id="date_type">
 <script language="javascript">
