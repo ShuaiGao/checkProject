@@ -1,9 +1,11 @@
 # -*- coding: UTF-8 -*-
+
 from django.shortcuts import render
 
 import datetime
 import md5
 import time
+from check.models import Person, Department
 
 def getURL():
 	now = datetime.datetime.now()
@@ -41,14 +43,34 @@ def home(request):
 	return render(request, 'check.html',data)
 
 def qiyao(request):
-	return render(request, 'qiyao.html')	
+	departments = Department.objects.all()
+	data = {}
+	for i in departments:
+		persons = Person.objects.filter(department = i.id)
+		data[i.id] = [i, persons]
+	person = Person.objects.all()
+	return render(request, 'qiyao.html', locals())	
 
 def logs(request):
-	return render(request, 'logs.html')		
+	departments = Department.objects.all()
+	data = {}
+	personnum = 0
+	for i in departments:
+		persons = Person.objects.filter(department = i.id)
+		personnum = personnum + len(persons)
+		data[i.id] = [i, persons]
+	return render(request, 'logs.html', locals())		
 
 def saved_resource(request):
+	print "="*10
+	print "="*10
+	print "="*10
 	return render(request, 'saved_resource.html')		
 
 def index(request):
 	return render(request, 'Default/Sidebar/index.html')		
+
+
+def Record_logs(request):
+	return render(request, 'Attendance/Record/logs.html')		
 

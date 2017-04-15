@@ -21,8 +21,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^home$',check_view.home, name = 'home' ),
     url(r'^qiyao$',check_view.qiyao, name = 'qiyao' ),
-    url(r'^logs$',check_view.logs, name = 'logs' ),
+    url(r'^Attendance/Record/logs$',check_view.logs, name = 'logs' ),
     url(r'^saved_resource$',check_view.saved_resource, name = 'saved_resource' ),
     url(r'^Default/Sidebar/index$',check_view.index, ),
+    url(r'^Attendance/Record/logs$',check_view.Record_logs, ),
+    
     
 ]
