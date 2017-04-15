@@ -1,0 +1,30 @@
+.add_box {
+	BORDER-TOP: #c7dcef 1px dashed; BORDER-RIGHT: #c7dcef 1px dashed; BORDER-BOTTOM: #c7dcef 1px dashed; COLOR: #666465; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 8px; CLEAR: both; BORDER-LEFT: #c7dcef 1px dashed; MARGIN-TOP: 7px; PADDING-RIGHT: 8px; BACKGROUND-COLOR: #f9fdff
+}
+.workarrange_list {
+	MARGIN-BOTTOM: 5px; COLOR: #656563
+}
+#camera_box {
+	HEIGHT: 240px; WIDTH: 381px; POSITION: absolute; LEFT: 275px; TOP: 159px; BACKGROUND-COLOR: #999999
+}
+.workarrange_list TH {
+	WIDTH: 65px; PADDING-BOTTOM: 8px; TEXT-ALIGN: right; PADDING-TOP: 8px
+}
+.attendance_index_br {
+	BACKGROUND-IMAGE: url(../images/attendance_index_br.jpg); BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: left top; BACKGROUND-COLOR: #ecf5fc
+}
+#attendance_index_text {
+	HEIGHT: 100px; WIDTH: 346px; POSITION: absolute; TEXT-ALIGN: center; MARGIN-LEFT: -173px; LEFT: 50%; MARGIN-TOP: -50px; TOP: 50%
+}
+.pb_list {
+	BORDER-TOP: #ecdba6 1px solid; BORDER-RIGHT: #ecdba6 1px solid; WIDTH: 200px; BACKGROUND: #fdeebf; BORDER-BOTTOM: #ecdba6 1px solid; POSITION: absolute; COLOR: #454545; LEFT: 10px; BORDER-LEFT: #ecdba6 1px solid; MARGIN-TOP: -1px; LINE-HEIGHT: 28px; TOP: 20px
+}
+.pb_list TABLE TD {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px
+}
+.pb_list TABLE TH {
+	PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px
+}
+.pb_list TABLE TH {
+	BORDER-BOTTOM: #ecdba6 1px solid; FONT-WEIGHT: bold; COLOR: #333
+}

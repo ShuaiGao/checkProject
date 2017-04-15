@@ -1,0 +1,30 @@
+.ui-timepicker-div .ui-widget-header {
+	MARGIN-BOTTOM: 8px
+}
+.ui-timepicker-div DL {
+	TEXT-ALIGN: left
+}
+.ui-timepicker-div DL DT {
+	FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 5px; CLEAR: left; PADDING-RIGHT: 0px
+}
+.ui-timepicker-div DL DD {
+	MARGIN: 0px 10px 10px 40%
+}
+.ui-timepicker-div TD {
+	FONT-SIZE: 90%
+}
+.ui-tpicker-grid-label {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: medium none; PADDING-RIGHT: 0px
+}
+.ui-timepicker-rtl {
+	DIRECTION: rtl
+}
+.ui-timepicker-rtl DL {
+	PADDING-BOTTOM: 0px; TEXT-ALIGN: right; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px
+}
+.ui-timepicker-rtl DL DT {
+	FLOAT: right; CLEAR: right
+}
+.ui-timepicker-rtl DL DD {
+	MARGIN: 0px 40% 10px 10px
+}

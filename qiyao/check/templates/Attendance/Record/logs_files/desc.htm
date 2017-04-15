@@ -1,0 +1,297 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0082)http://kq.qycn.com/index.php/Attendance/Record/showLogs/order/atten_time/sort/desc -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=8.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE>群英云考勤V1.14.1.22517</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=X-UA-Compatible content=IE=8>
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+<SCRIPT language=javascript src="desc_files/jquery-1.7.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="desc_files/js.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="desc_files/js.function.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="desc_files/window_resize.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="desc_files/Tree.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="desc_files/ui.datepicker.js" 
+type=text/javascript></SCRIPT>
+<!--<script src="/Synlogin/Index/synCheck" language="javascript" type="text/javascript"></script>--><LINK 
+href="desc_files/main.css" rel=stylesheet type=text/css><LINK 
+href="desc_files/main_add.css" rel=stylesheet type=text/css><LINK 
+href="desc_files/layout.css" rel=stylesheet type=text/css><LINK 
+href="desc_files/font.css" rel=stylesheet type=text/css><LINK 
+href="desc_files/attendance.css" rel=stylesheet type=text/css><LINK 
+href="desc_files/jquery-ui.css" rel=stylesheet type=text/css>
+<SCRIPT>
+$(document).ready(function(){		
+	var s_cfgid = '441833';
+	var s_userid = '1578433';
+	if(typeof($('#s_cfgid', top.document).val()) != 'undefined' && typeof($('#s_userid', top.document).val()) != 'undefined' && (parseInt(s_cfgid) != parseInt($('#s_cfgid', top.document).val()) || parseInt(s_userid) != parseInt($('#s_userid', top.document).val()))){
+		showinfo_tips('令牌失效，请重新登录。');
+		top.document.getElementById("if_sidebar").contentWindow.disableLinks();
+		var sid = setTimeout("logout()",4000);
+	}
+});
+function logout(){
+	top.document.location.href = '/Synlogin/Index/logout';
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="desc_files/behavior9TF0TTUZ.htm"></SCRIPT>
+
+<SCRIPT language=javascript src="desc_files/behavior_stat.htm"></SCRIPT>
+<LINK href="desc_files/style.css" rel=stylesheet type=text/css>
+<META name=GENERATOR content="MSHTML 11.00.9600.18618"></HEAD>
+<BODY>
+<TABLE width="100%" class=tablesorter id=detail_list border=0 cellSpacing=0 
+cellPadding=0>
+  <THEAD>
+  <TR>
+    <TH width="15%" class="header atten_date" onclick="orderby('atten_date')" 
+    scope=col>日　期</TH>
+    <TH width="15%" scope=col>考勤编号</TH>
+    <TH width="15%" class="header atten_uid" onclick="orderby('atten_uid')" 
+    scope=col>姓 名</TH>
+    <TH width="15%" scope=col>打卡方式</TH>
+    <TH width="10%" scope=col>现场照片</TH>
+    <TH width="15%" class="header atten_time" onclick="orderby('atten_time')" 
+    scope=col>打卡时间</TH>
+    <TH class="header atten_device" onclick="orderby('atten_device')" 
+      scope=col>打卡设备</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1278628</TD>
+    <TD>杨家威</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 15:25:31</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1278628</TD>
+    <TD>杨家威</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 15:09:40</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1572386</TD>
+    <TD>武英男</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 15:07:07</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1593871</TD>
+    <TD>陈如鹏</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 15:01:13</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1278628</TD>
+    <TD>杨家威</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:59:19</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1732027</TD>
+    <TD>董伟</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:52:35</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1278596</TD>
+    <TD>廖勇杰</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:48:24</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1383598</TD>
+    <TD>李易</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:47:45</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1601946</TD>
+    <TD>廖贤</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:47:09</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1541764</TD>
+    <TD>王恒帅</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:42:38</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1278573</TD>
+    <TD>郭九福</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:39:50</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1732027</TD>
+    <TD>董伟</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:38:17</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1697082</TD>
+    <TD>胡祖伟</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:33:25</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1371062</TD>
+    <TD>高帅</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:32:23</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1278594</TD>
+    <TD>陈伟杰</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:31:10</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1735073</TD>
+    <TD>刘纯杰</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:30:17</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1646756</TD>
+    <TD>罗杰</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:28:13</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1653068</TD>
+    <TD>李弥</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:22:57</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1541764</TD>
+    <TD>王恒帅</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:22:15</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD>2017-04-15 (周六)</TD>
+    <TD>1551930</TD>
+    <TD>李根</TD>
+    <TD>指纹</TD>
+    <TD>-</TD>
+    <TD>2017-04-15 14:18:49</TD>
+    <TD>考勤机1</TD></TR>
+  <TR>
+    <TD colSpan=7>
+      <DIV class=page_1 id=d_page_1>
+      <FORM 
+      onsubmit="location.href=document.getElementById('page_url').value+document.getElementById('pageno').value;return false;" 
+      action="" method=post><SPAN>首页</SPAN> <SPAN>上一页</SPAN> <A 
+      href="http://kq.qycn.com/index.php/Attendance/Record/showLogs/order/atten_time/sort/desc?p=2">下一页</A> 
+      <A 
+      href="http://kq.qycn.com/index.php/Attendance/Record/showLogs/order/atten_time/sort/desc?p=10">末页</A> 
+      <SPAN>共190条, 每页20条, 共10页</SPAN> <INPUT name=pageno class=text3 id=pageno 
+      type=text size=2 value=1> <INPUT class=button2 type=submit value=跳转><INPUT 
+      id=page_url type=hidden 
+      value=/index.php/Attendance/Record/showLogs/order/atten_time/sort/desc?p=></FORM></DIV></TD></TR></TBODY></TABLE>
+<SCRIPT src="desc_files/jquery.tablesorter.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+    var ordernow = 'atten_time';
+    var sortnow = 'desc';
+    $('.'+ordernow).addClass((sortnow=='desc'?'headerSortUp':'headerSortDown'));
+    
+    function orderby(order){
+    	if(order == ordernow){
+    		if(sortnow == 'desc'){
+    			sort = 'asc';
+    		}else{
+    			sort = 'desc';
+    		}
+    	}else{
+    		sort = 'asc';
+    	}
+    	var url = this.location.href;
+    	url = url.replace(/\?p\=\d*/i,'');
+    	if(url.indexOf('order/') == -1){
+    		url += '/order/'+order;
+    	}else{
+    		url = url.replace('order/'+ordernow,'order/'+order);
+    	}
+    	if(url.indexOf('sort/') == -1){
+    		url += '/sort/'+sort;
+    	}else{
+    		url = url.replace('sort/'+sortnow,'sort/'+sort);
+    	}
+    	//console.log(url);
+    	this.location.href = url;
+    }
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+    //用户照片
+    $('.showpic').mouseover(function(){
+        $(this).after('<img src="'+$(this).attr('url')+'" class="npic" style="width:100px; position:absolute; border: 3px solid #ccc">');
+    }).mouseout(function(){
+        $('.npic').remove();
+    });
+
+     //鼠标经过
+     $('#detail_list tr').live('mouseover',function(){
+     $('#detail_list tr td').removeClass('bgc_01');
+     $(this).children('td').addClass('bgc_01');
+     });
+
+     //鼠标离开
+     $('#detail_list tr').live('mouseout',function(){
+     $('#detail_list tr td').removeClass('bgc_01');
+     });
+</SCRIPT>
+</BODY></HTML>

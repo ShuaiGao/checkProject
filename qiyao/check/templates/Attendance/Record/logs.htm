@@ -1,0 +1,360 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0041)http://kq.qycn.com/Attendance/Record/logs -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=8.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE>群英云考勤V1.14.1.22517</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=X-UA-Compatible content=IE=8>
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+<SCRIPT language=javascript src="logs_files/jquery-1.7.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/js.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/js.function.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/window_resize.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/Tree.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/ui.datepicker.js" 
+type=text/javascript></SCRIPT>
+<!--<script src="/Synlogin/Index/synCheck" language="javascript" type="text/javascript"></script>--><LINK 
+href="logs_files/main.css" rel=stylesheet type=text/css><LINK 
+href="logs_files/main_add.css" rel=stylesheet type=text/css><LINK 
+href="logs_files/layout.css" rel=stylesheet type=text/css><LINK 
+href="logs_files/font.css" rel=stylesheet type=text/css><LINK 
+href="logs_files/attendance.css" rel=stylesheet type=text/css><LINK 
+href="logs_files/jquery-ui.css" rel=stylesheet type=text/css>
+<SCRIPT>
+$(document).ready(function(){		
+	var s_cfgid = '441833';
+	var s_userid = '1578433';
+	if(typeof($('#s_cfgid', top.document).val()) != 'undefined' && typeof($('#s_userid', top.document).val()) != 'undefined' && (parseInt(s_cfgid) != parseInt($('#s_cfgid', top.document).val()) || parseInt(s_userid) != parseInt($('#s_userid', top.document).val()))){
+		showinfo_tips('令牌失效，请重新登录。');
+		top.document.getElementById("if_sidebar").contentWindow.disableLinks();
+		var sid = setTimeout("logout()",4000);
+	}
+});
+function logout(){
+	top.document.location.href = '/Synlogin/Index/logout';
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/behaviorMQ8SH265.htm"></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/behavior_stat.htm"></SCRIPT>
+
+<META name=GENERATOR content="MSHTML 11.00.9600.18618"></HEAD>
+<BODY class=con><LINK href="logs_files/jquery-ui-timepicker-addon.css" 
+rel=stylesheet type=text/css>
+<DIV class=cls id=doc1>
+<DIV class=sub_title><LABEL class=index><SPAN>打卡记录</SPAN></LABEL> </DIV>
+<DIV class="count_search cls" style="PADDING-LEFT: 10px"><INPUT name=showall 
+id=type type=hidden value=1> 时间： <INPUT name=start_time class="text3 datepicker" 
+id=start style="WIDTH: 140px" type=text readOnly value="2017-04-15 00:00"> 至 
+<INPUT name=end_time class="text3 datepicker" id=end style="WIDTH: 140px" 
+type=text readOnly value="2017-04-15 23:59"> <SELECT class=text3 id=deivce> 
+  <OPTION value="" selected>全部设备</OPTION> <OPTION value=3394154900086>考勤机1 
+  (3394154900086)</OPTION></SELECT> <INPUT name=search class=button2 id=search type=button value="查 找"> <INPUT 
+id=is_search type=hidden> <INPUT class=button2 id=export type=button value=生成Excel> </DIV>
+<DIV>
+<TABLE class=tab_attendance style="WIDTH: 100%" border=0 cellSpacing=0 
+cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD width=266 id=per_list vAlign=top style="PADDING-TOP: 1px"><!--
+	部门树html
+--><LINK 
+      href="logs_files/zTreeStyle.css" rel=stylesheet type=text/css>
+      <STYLE>.big_mian_box {
+	FONT-SIZE: 12px; BORDER-TOP: #c7dcef 1px solid; BORDER-RIGHT: #c7dcef 1px solid; BORDER-BOTTOM: #c7dcef 1px solid; BORDER-LEFT: #c7dcef 1px solid
+}
+.main_box {
+	WIDTH: 265px; FLOAT: left
+}
+.main_box .sub_title2 {
+	PADDING-RIGHT: 0px; MARGIN-RIGHT: 0px
+}
+.main_box .jobs_mgr {
+	PADDING-RIGHT: 0px; MARGIN-RIGHT: 0px
+}
+.main_box .tree-title {
+	FONT-SIZE: 14px; BORDER-TOP: #c7dcef 1px solid; BORDER-RIGHT: #c7dcef 1px solid; BACKGROUND: #ddeefe; BORDER-BOTTOM: medium none; FONT-WEIGHT: bold; COLOR: #395b7e; TEXT-ALIGN: center; BORDER-LEFT: #c7dcef 1px solid; LINE-HEIGHT: 26px
+}
+.main_box .key_div {
+	BORDER-TOP: #c7dcef 1px solid; BORDER-RIGHT: #c7dcef 1px solid; WIDTH: 263px; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: #c7dcef 1px solid
+}
+.key_div .key {
+	BORDER-TOP: medium none; HEIGHT: 21px; BORDER-RIGHT: medium none; WIDTH: 225px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+.perS A.Per_sel_Search {
+	RIGHT: 4px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; TOP: 5px; PADDING-RIGHT: 0px
+}
+.main_box .zTreeBackground {
+	BORDER-TOP: #c7dcef 1px solid; BORDER-RIGHT: #c7dcef 1px solid; OVERFLOW-X: hidden; OVERFLOW-Y: auto; BORDER-BOTTOM: #c7dcef 1px solid; POSITION: relative; MIN-HEIGHT: 500px; BORDER-LEFT: #c7dcef 1px solid; MAX-HEIGHT: 700px; BACKGROUND-COLOR: #f1f8ff; _height: 500px
+}
+.main_box .zTreeBackground #tree {
+	MARGIN-BOTTOM: 65px
+}
+.zTreeBackground #searchuserList DIV.com_name {
+	FONT-WEIGHT: bold; COLOR: #3f7d96; PADDING-BOTTOM: 0px; PADDING-TOP: 6px; PADDING-LEFT: 5px; MIN-HEIGHT: 18px; LINE-HEIGHT: 14px; PADDING-RIGHT: 0px
+}
+#searchuserList UL LI {
+	OVERFLOW: hidden; CURSOR: pointer; HEIGHT: 20px; COLOR: #686868; PADDING-BOTTOM: 0px; PADDING-TOP: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; lien-height: 20px
+}
+#searchuserList UL LI IMG {
+	VERTICAL-ALIGN: middle; MARGIN: -3px 6px 0px 0px
+}
+.com_employee_list {
+	OVERFLOW: hidden; WIDTH: 918px; FLOAT: left; MARGIN-LEFT: 5px; min-hiegth: 450px
+}
+.com_employee_list #employee_iframe {
+	HEIGHT: 100%
+}
+.ztree LI {
+	PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.ztree LI SPAN.noline_close.button {
+	BACKGROUND: url(/Public/images/icoS.gif) no-repeat left -297px
+}
+.ztree LI SPAN.noline_open.button {
+	BACKGROUND: url(/Public/images/icoS.gif) no-repeat left -347px
+}
+.ztree LI SPAN.ico_close.button {
+	BACKGROUND-IMAGE: url(/Public/js/tree/css/zTreeStyle/img/diy/f.png); BACKGROUND-POSITION: 0px 50%
+}
+.ztree LI SPAN.ico_open.button {
+	BACKGROUND-IMAGE: url(/Public/js/tree/css/zTreeStyle/img/diy/f.png); BACKGROUND-POSITION: 0px 50%
+}
+.ztree LI SPAN.ico_docu.button {
+	BACKGROUND-IMAGE: url(/Public/js/tree/css/zTreeStyle/img/diy/f.png); BACKGROUND-POSITION: 0px 50%
+}
+.ztree LI SPAN.pIcon01_ico_open.button {
+	VERTICAL-ALIGN: top; BACKGROUND: url(/Public/js/tree/css/zTreeStyle/img/diy/1_close.png) no-repeat 0px 0px; MARGIN-RIGHT: 2px
+}
+.ztree LI SPAN.pIcon01_ico_close.button {
+	VERTICAL-ALIGN: top; BACKGROUND: url(/Public/js/tree/css/zTreeStyle/img/diy/1_close.png) no-repeat 0px 0px; MARGIN-RIGHT: 2px
+}
+.ztree LI IMG {
+	FLOAT: left; border-radius: 3px
+}
+.ztree LI .edit_node {
+	CURSOR: pointer; BACKGROUND: #f1f8ff; POSITION: relative; COLOR: #316799; MARGIN-LEFT: 10px
+}
+.ztree LI UL.edit_action {
+	BORDER-TOP: #98bcd0 1px solid; BORDER-RIGHT: #98bcd0 1px solid; BACKGROUND: #fff; RIGHT: -2px; BORDER-BOTTOM: #98bcd0 1px solid; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: #98bcd0 1px solid; Z-INDEX: 100; TOP: 14px; PADDING-RIGHT: 0px
+}
+.ztree LI UL.edit_action LI {
+	HEIGHT: 20px; WIDTH: 80px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px
+}
+.ztree LI UL.edit_action LI A {
+	HEIGHT: 20px; WIDTH: 80px; BACKGROUND: #fff; COLOR: #316799; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; DISPLAY: block; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px; TEXT-INDENT: 3px
+}
+.ztree LI UL.edit_action LI A:hover {
+	TEXT-DECORATION: none; HEIGHT: 20px; WIDTH: 80px; BACKGROUND: #c7dcef; COLOR: #316799; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; DISPLAY: block; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px; TEXT-INDENT: 3px
+}
+.ztree LI .cl {
+	HEIGHT: 0px; WIDTH: 0px; CLEAR: both
+}
+.ztree LI A {
+	PADDING-RIGHT: 30px
+}
+.ztree LI A#tree_1_a {
+	PADDING-RIGHT: 10px
+}
+.treebuttom {
+	BORDER-TOP: #c7dcef 1px solid; HEIGHT: 30px; BORDER-RIGHT: #c7dcef 1px solid; BORDER-BOTTOM: #c7dcef 1px solid; TEXT-ALIGN: right; BORDER-LEFT: #c7dcef 1px solid; LINE-HEIGHT: 30px; PADDING-RIGHT: 25px; BACKGROUND-COLOR: #f1f8ff
+}
+.treebuttoma IMG {
+	HEIGHT: 16px; BORDER-RIGHT: #ccc 1px solid; WIDTH: 16px; MARGIN-TOP: 6px; PADDING-RIGHT: 5px
+}
+.treebuttomalast IMG {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+.ztree LI A.curSelectedNode .curSelectedNode_bg {
+	DISPLAY: inline-block
+}
+.ztree IMG.ico_docu {
+	HEIGHT: 18px; WIDTH: 18px; MARGIN-RIGHT: 5px
+}
+</STYLE>
+
+      <DIV class=main_box>
+      <DIV class="key_div perS"><INPUT class="key empty" id=key type=text 
+      value=输入关键字查找员工> <A class=Per_sel_Search href="javascript:"></A></DIV>
+      <DIV class=zTreeBackground>
+      <UL class=ztree id=tree></UL></DIV>
+      <DIV class=treebuttom><A title=刷新 class="treebuttoma treebuttomalast" 
+      style="FONT-SIZE: 12px" onclick=treereload() href="javascript:;">[刷新]</A> 
+      </DIV></DIV></TD>
+    <TD class=swicth><A title=收起/展开部门列表 id=perlist_swicth 
+      href="javascript:"></A></TD>
+    <TD vAlign=top style="PADDING-LEFT: 8px"><IFRAME name=employee_iframe 
+      width="100%" height=585 id=employee_iframe src="logs_files/desc.htm" 
+      frameBorder=0 allowTransparency 
+      onload="iFrameHeight('employee_iframe');">100%?</IFRAME>
+      <DIV style="CLEAR: both"></DIV>
+      <SCRIPT language=javascript type=text/javascript>
+				function iFrameHeight(id) {
+			        var ifm= document.getElementById(id);
+			        var subWeb = document.frames ? document.frames[id].document : ifm.contentDocument;
+					if(ifm != null && subWeb != null) {
+			            ifm.height = subWeb.body.clientHeight > 600 ?subWeb.body.clientHeight:600;
+			        }
+			    }
+
+                //鼠标经过
+                $('#detail_list tr').live('mouseover',function(){
+                    $('#detail_list tr td').removeClass('bgc_01');
+                    $(this).children('td').addClass('bgc_01');
+                });
+
+                //鼠标离开
+                $('#detail_list tr').live('mouseout',function(){
+                    $('#detail_list tr td').removeClass('bgc_01');
+                });
+            </SCRIPT>
+    </TD></TR></TBODY></TABLE></DIV>
+<SCRIPT language=javascript src="logs_files/jquery.ztree.core-3.5.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/jquery.ztree.excheck-3.5.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/jquery.cookie.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+    var dept_edit = 1;
+    var varadd = 1;
+    var varedit = 1;
+    var vardel = 1;
+    var znodes = {"id":1,"did":-1,"pid":-1,"name":"\u6d77\u5357\u797a\u66dc\u4e92\u52a8\u5a31\u4e50\u6709\u9650\u516c\u53f8","drag":false,"children":[{"did":"130719","pid":"0","name":"\u65a9\u4ed92","isParent":true,"top":"9","brief":null,"num":"19","havechilren":false,"showsub":[]},{"did":"131825","pid":"0","name":"\u5b9a\u6d77","isParent":true,"top":"8","brief":null,"num":"23","havechilren":false,"showsub":[]},{"did":"131892","pid":"0","name":"\u7f8e\u672f\u516c\u5171\u90e8","isParent":true,"top":"7","brief":null,"num":"83","havechilren":false,"showsub":[]},{"did":"132017","pid":"0","name":"\u516c\u5171\u652f\u6301\u90e8","isParent":true,"top":"6","brief":null,"num":"14","havechilren":false,"showsub":[]},{"did":"132018","pid":"0","name":"\u624b\u6e381","isParent":true,"top":"5","brief":null,"num":"23","havechilren":false,"showsub":[]},{"did":"132030","pid":"0","name":"\u624b\u6e382","isParent":true,"top":"4","brief":null,"num":"99","havechilren":false,"showsub":[]},{"did":"132142","pid":"0","name":"\u7ba1\u7406\u5c42","isParent":true,"top":"3","brief":null,"num":"2","havechilren":false,"showsub":[]},{"did":"144368","pid":"0","name":"\u7efc\u5408\u90e8","isParent":true,"top":"2","brief":null,"num":"12","havechilren":false,"showsub":[]},{"did":"151291","pid":"0","name":"\u624b\u6e383","isParent":true,"top":"1","brief":null,"num":"19","havechilren":false,"showsub":[]},{"did":"176827","pid":"0","name":"\u795e\u4ed9\u52ab\u624b\u6e38","isParent":true,"top":"0","brief":null,"num":"4","havechilren":false,"showsub":[]},{"did":-2,"pid":-2,"name":"\u672a\u5212\u5206\u90e8\u95e8","drag":true,"isParent":true,"num":"3","top":-100}],"open":true,"childOuter":false,"iconSkin":"pIcon01","num":301,"showsub":[{"id":"130719","name":"\u65a9\u4ed92"},{"id":"131825","name":"\u5b9a\u6d77"},{"id":"131892","name":"\u7f8e\u672f\u516c\u5171\u90e8"},{"id":"132017","name":"\u516c\u5171\u652f\u6301\u90e8"},{"id":"132018","name":"\u624b\u6e381"},{"id":"132030","name":"\u624b\u6e382"},{"id":"132142","name":"\u7ba1\u7406\u5c42"},{"id":"144368","name":"\u7efc\u5408\u90e8"},{"id":"151291","name":"\u624b\u6e383"},{"id":"176827","name":"\u795e\u4ed9\u52ab\u624b\u6e38"}],"havechilren":true,"type":1};
+</SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/department_tree.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/jquery-ui.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="logs_files/jquery-ui-timepicker-addon.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+$(document).ready(function(){
+      $(".datepicker").datetimepicker({ // Default regional settings
+		closeText:'关闭', // Display text for close link
+		prevText: '&#x3c;上月', // Display text for previous month link
+		nextText: '下月&#x3e;', // Display text for next month link
+		monthNames: ["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"], // Names of months for drop-down and formatting
+		monthNamesShort: ["一","二","三","四","五","六","七","八","九","十","十一","十二"], // For formatting
+		dayNames: ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"], // For formatting
+		dayNamesShort: ["周日","周一","周二","周三","周四","周五","周六"], // For formatting
+		dayNamesMin:["日","一","二","三","四","五","六"], // Column headings for days starting at Sunday
+		dateFormat: 'yy-mm-dd', // See format options on parseDate
+		firstDay: 0, // The first day of the week, Sun = 0, Mon = 1, ...
+		changeMonth: true,
+		changeYear: true,
+		minDate: new Date(2013,1,1),
+		maxDate: new Date()
+	});
+
+   $("input[name=search]").click(function(){
+        var date = new Date();
+        var start_time = (new Date($('#start').val().replace(/-/g, '/'))).getTime();
+        var end_time = (new Date($('#end').val().replace(/-/g, '/'))).getTime();
+        var str = current_date();
+        var type = $('#type').attr('name');
+        var value = $('#type').val();
+        var deivce = $('#deivce').val();
+        var start =$('#start').val();
+        var end = $('#end').val();
+        if(end_time < start_time){
+            showinfo_tips('结束时间应比开始时间晚');
+            return false;
+        }
+    
+        var url = '/index.php/Attendance/Record/showLogs/'+type+'/'+value+'/'+'start_time'+'/'+start+'/end_time/'+end+'/deivce/'+deivce;
+        $('#employee_iframe').attr('src',url);
+        $('#is_search').val('/start_time/'+start+'/end_time/'+end+'/deivce/'+deivce);
+
+    });
+
+    function show_dao(time){
+        var obj = $('#edit_text', top.document);
+        obj.removeAttr('class');
+        obj.addClass('edit_1');
+        $('#export').attr('disabled',true);
+        obj.text('正在导出，请耐心等待');
+        $('#edit_hint', top.document).show();
+        setTimeout(function(){ $('#edit_hint', top.document).hide(); },time);
+        setTimeout(function(){ $('#export').attr('disabled',false); },time);
+    }
+    
+    function checkstatus(){
+   		$.ajax({
+        	type:'get',
+        	url:'/index.php/Attendance/Record/exportstatus/',
+        	dataType:'json',
+        	success:function(data){
+        		if(data.status == 1){
+        			if(data.data == 1){
+						$('#export').val('生成中...').attr('disabled',true);
+						window.setTimeout(function(){checkstatus();},2000);
+        			}else{
+        				$('#export').val('生成Excel').attr('disabled',false);
+        				if(data.data != 0){
+        					$('#xlslink').remove();
+        					$('#export').after('<a id="xlslink" href="export/'+data.data+'" target="_blank" style="margin-left:10px;color:#f00;">点击下载打卡记录['+data.data+']</a>');
+        				}
+        			}
+        		}else{
+        			$('#export').val('生成中...').attr('disabled',true);
+        			window.setTimeout(function(){checkstatus();},2000);
+        		}
+        	}
+        });
+   }
+
+   //导出数据
+   $('#export').click(function(){
+       var type = $('#type').attr('name');
+       var value = $('#type').val();
+       var start =$('#start').val();
+       var end = $('#end').val();
+	   var deivce = $('#deivce').val();
+       var start_time = (new Date($('#start').val().replace(/-/g, '/'))).getTime();
+       var end_time = (new Date($('#end').val().replace(/-/g, '/'))).getTime();
+
+       var url = '/index.php/Attendance/Record/showLogs/export/1/'+type+'/'+value+'/'+'start_time'+'/'+start+'/end_time/'+end+'/deivce/'+deivce;
+       $('#export').val('生成中...').attr('disabled',true);
+       $.ajax({
+        	type:'get',
+        	url:url,
+        	timeout:2000,
+        	dataType:'json',
+        	success:function(data){
+        		if(data.status == 1){
+					$('#export').val('生成中...').attr('disabled',true);
+					window.setTimeout(function(){checkstatus();},2000);
+        		}else if(data.status == 0){
+        			alert(data.info);
+        			$('#export').val('生成Excel').attr('disabled',false);
+        		}else{
+        			$('#export').val('生成中...').attr('disabled',true);
+					window.setTimeout(function(){checkstatus();},2000);
+        		}
+        	},
+        	error:function(){window.setTimeout(function(){checkstatus();},2000);}
+        });
+   });
+
+   checkstatus();});
+</SCRIPT>
+</DIV></BODY></HTML>
