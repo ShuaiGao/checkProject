@@ -18,17 +18,18 @@ class Department(models.Model):
 	name = models.CharField(max_length=30)
 
 	def __unicode__(self):
-		return self.name.encode("utf-8")
+		return self.name#.encode("utf-8")
 
 class Person(models.Model):
 	id = models.IntegerField(primary_key = True)
 	department 	= models.ForeignKey(Department, default= 0)
 	name 		= models.CharField(max_length=30)
+	sex 		= models.BooleanField(default= 0)# 0：男  1：女
 	email 		= models.EmailField(max_length=100, default=None)
 	password 	= models.CharField(max_length=32, default= default_passworld)
 
 	def __unicode__(self):
-		return self.name.encode("utf-8")
+		return self.name#.encode("utf-8")
 
 # 所有打卡记录
 class Check(models.Model):

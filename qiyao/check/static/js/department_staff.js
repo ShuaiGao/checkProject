@@ -907,7 +907,7 @@
 
 
             parentnode = treeNode.tId;//记录父结点
-            //ajax增加部门节点
+            //ajax增加部门节点 
             $.ajax({
                 url:'/index.php/Default/ajax/addDepartment/dept/'+encodeURIComponent(ddname)+'/pid/'+treeNode.did+'/top/'+sort,
                 timeout:20000,
