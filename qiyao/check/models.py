@@ -27,6 +27,7 @@ class Person(models.Model):
 	sex 		= models.BooleanField(default= 0)# 0：男  1：女
 	email 		= models.EmailField(max_length=100, default=None)
 	password 	= models.CharField(max_length=32, default= default_passworld)
+	phone 		= models.CharField(max_length=11)
 
 	def __unicode__(self):
 		return self.name#.encode("utf-8")
