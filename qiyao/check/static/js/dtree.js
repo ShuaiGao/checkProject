@@ -84,33 +84,33 @@ function dTree(objName) {
 
 	this.icon = {
 
-		root				: 'static/images/1_close.png',
+		root				: '/static/images/1_close.png',
 
-		folder			: 'static/images/f.png',
+		folder			: '/static/images/f.png',
 
-		folderOpen	: 'static/images/f.png',
+		folderOpen	: '/static/images/f.png',
 
-		node				: 'static/images/sex2_1.gif',
+		node				: '/static/images/sex2_1.gif',
 
-		empty				: 'static/images/treeimg/empty.gif',
+		empty				: '/static/images/treeimg/empty.gif',
 
-		line				: 'static/images/treeimg/line.gif',
+		line				: '/static/images/treeimg/line.gif',
 
-		join				: 'static/images/treeimg/join.gif',
+		join				: '/static/images/treeimg/join.gif',
 
-		joinBottom	: 'static/images/treeimg/joinbottom.gif',
+		joinBottom	: '/static/images/treeimg/joinbottom.gif',
 
-		plus				: 'static/images/treeimg/plus.gif',
+		plus				: '/static/images/treeimg/plus.gif',
 
-		plusBottom	: 'static/images/treeimg/plusbottom.gif',
+		plusBottom	: '/static/images/treeimg/plusbottom.gif',
 
-		minus				: 'static/images/treeimg/minus.gif',
+		minus				: '/static/images/treeimg/minus.gif',
 
-		minusBottom	: 'static/images/treeimg/minusbottom.gif',
+		minusBottom	: '/static/images/treeimg/minusbottom.gif',
 
-		nlPlus			: 'static/images/treeimg/nolines_plus.gif',
+		nlPlus			: '/static/images/treeimg/nolines_plus.gif',
 
-		nlMinus			: 'static/images/treeimg/nolines_minus.gif'
+		nlMinus			: '/static/images/treeimg/nolines_minus.gif'
 
 	};
 
