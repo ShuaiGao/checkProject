@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0045)http://kq.qycn.com/personnel/staff/staffView/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=8.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE>群英云考勤V1.14.1.22517</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=X-UA-Compatible content=IE=8>
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+<SCRIPT language=javascript src="/static/js/jquery-1.7.min.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/js.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/js.function.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/window_resize.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/Tree.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/ui.datepicker.js" 
+type=text/javascript></SCRIPT>
+<!--<script src="/Synlogin/Index/synCheck" language="javascript" type="text/javascript"></script>--><LINK 
+href="/static/css/main.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/main_add.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/layout.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/font.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/attendance.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/jquery-ui.css" rel=stylesheet type=text/css>
+<SCRIPT>
+$(document).ready(function(){		
+	var s_cfgid = '441833';
+	var s_userid = '1578433';
+	if(typeof($('#s_cfgid', top.document).val()) != 'undefined' && typeof($('#s_userid', top.document).val()) != 'undefined' && (parseInt(s_cfgid) != parseInt($('#s_cfgid', top.document).val()) || parseInt(s_userid) != parseInt($('#s_userid', top.document).val()))){
+		showinfo_tips('令牌失效，请重新登录。');
+		top.document.getElementById("if_sidebar").contentWindow.disableLinks();
+		var sid = setTimeout("logout()",4000);
+	}
+});
+function logout(){
+	top.document.location.href = '/Synlogin/Index/logout';
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="staffView_files/behavior.htm"></SCRIPT>
+
+<SCRIPT language=javascript src="staffView_files/behavior_stat.htm"></SCRIPT>
+
+<STYLE type=text/css>.bgc_02 {
+	BACKGROUND: #ddeefe 0px 0px
+}
+.bgc_01 {
+	BACKGROUND: #f1f8ff 0px 0px
+}
+.sel_1114 {
+	WIDTH: 95px; COLOR: #000; TEXT-ALIGN: center; DISPLAY: none
+}
+.per_list TD SPAN {
+	TEXT-DECORATION: none
+}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 11.00.9600.18639"></HEAD>
+<BODY>
+<TABLE width="100%" class=per_list id=detail_list border=0 cellSpacing=0 
+cellPadding=0>
+  <TBODY>
+  <TR>
+    <TH width="10%" scope=col>姓名</TH>
+    <TH width="10%" scope=col>CC号</TH>
+    <TH width="10%" scope=col>手机</TH>
+    <TH width="10%" scope=col>指纹数</TH>
+    <TH width="10%" scope=col>人脸</TH>
+    <TH width="10%" scope=col>卡号</TH>
+    <TH width="10%" scope=col>打卡密码</TH>
+    <TH width="10%" scope=col>设备相片</TH>
+    <TH scope=col>打卡设备</TH>
+    <TH width="8%" scope=col>操作</TH></TR>
+  <TR>
+    <TD>唐武鑫</TD>
+    <TD>1319221</TD>
+    <TD>13631451646</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>0</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1074362" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>王琼</TD>
+    <TD>1278177</TD>
+    <TD>15989241064</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>6</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1044861" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>赵斌</TD>
+    <TD>1278560</TD>
+    <TD>18688887660</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>1</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045237" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>林宏伟</TD>
+    <TD>1278561</TD>
+    <TD>13668989820</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>2</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045238" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>梁超炎</TD>
+    <TD>1278562</TD>
+    <TD>13422006696</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>3</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045239" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>吴泽铖</TD>
+    <TD>1278563</TD>
+    <TD>18613058676</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>4</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045240" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>官雷</TD>
+    <TD>1278564</TD>
+    <TD>18680503663</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>5</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045241" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>陈智刚</TD>
+    <TD>1278565</TD>
+    <TD>13622828832</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>23</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045242" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>杨浩愉</TD>
+    <TD>1278568</TD>
+    <TD>18520411992</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>10</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045245" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>卢山</TD>
+    <TD>1278569</TD>
+    <TD>13610095232</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>11</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045246" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>吴志红</TD>
+    <TD>1278570</TD>
+    <TD>15989047409</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>12</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045247" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>郑翰斌</TD>
+    <TD>1278571</TD>
+    <TD>15999966486</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>13</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045248" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>郭九福</TD>
+    <TD>1278573</TD>
+    <TD>13060691824</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>15</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045250" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>张树斌</TD>
+    <TD>1278576</TD>
+    <TD>15989282042</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>18</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045253" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>马文勇</TD>
+    <TD>1278577</TD>
+    <TD>18520137738</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>19</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045254" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>陈裕玲</TD>
+    <TD>1278578</TD>
+    <TD>15920556291</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>20</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045255" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>许锦浩</TD>
+    <TD>1278579</TD>
+    <TD>13611486350</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>21</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045256" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>奚仲炜</TD>
+    <TD>1278582</TD>
+    <TD>13450258017</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>24</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045259" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>卢思霖</TD>
+    <TD>1278583</TD>
+    <TD>15915716501</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>25</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045260" 
+      target=_parent>管理</A></TD></TR>
+  <TR>
+    <TD>邓堪泰</TD>
+    <TD>1278584</TD>
+    <TD>13827147042</TD>
+    <TD>2 枚</TD>
+    <TD>-</TD>
+    <TD>26</TD>
+    <TD>-</TD>
+    <TD>- </TD>
+    <TD>考勤机1</TD>
+    <TD><A href="http://kq.qycn.com/personnel/staff/employeeInfo/eid/1045261" 
+      target=_parent>管理</A></TD></TR></TBODY></TABLE>
+<DIV class=page_1 id=d_page_1>
+<FORM 
+onsubmit="location.href=document.getElementById('page_url').value+document.getElementById('pageno').value;return false;" 
+action="" method=post><SPAN>首页</SPAN> <SPAN>上一页</SPAN> <A 
+href="http://127.0.0.1:8000/qiyao/Personnel/Staff/staffView?page={{page|add:1}}">下一页</A> <A 
+href="http://127.0.0.1:8000/qiyao/Personnel/Staff/staffView?page=16">末页</A> <SPAN>共304条, 
+每页20条, 共16页</SPAN> <INPUT name=pageno class=text3 id=pageno type=text size=2 
+value=1> <INPUT class=button2 type=submit value=跳转><INPUT id=page_url 
+type=hidden value=/personnel/staff/staffView/?p=></FORM></DIV>
+<SCRIPT type=text/javascript>
+    $(document).ready(function(){
+        //鼠标经过
+        $('#detail_list tr').live('mouseover',function(){
+            $('#detail_list tr td').removeClass('bgc_01');
+            $(this).children('td').addClass('bgc_01');
+        });
+
+        //鼠标离开
+        $('#detail_list tr').live('mouseout',function(){
+            $('#detail_list tr td').removeClass('bgc_01');
+        });
+
+        $('.showpic').mouseover(function(){
+	        $(this).after('<img src="'+$(this).attr('url')+'" class="npic" style="width:100px; position:absolute; border: 3px solid #ccc">');
+	    }).mouseout(function(){
+	        $('.npic').remove();
+	    });
+    })
+</SCRIPT>
+</BODY></HTML>
