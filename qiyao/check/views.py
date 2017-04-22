@@ -1,12 +1,13 @@
 # -*- coding: UTF-8 -*-
 
 from django.shortcuts import render
+from django.core.urlresolvers import reverse
 
 import datetime
 import md5
 import time
 from check.models import Person, Department
-
+import math
 def getURL():
 	now = datetime.datetime.now()
 	nowtime = int(time.time())
@@ -59,13 +60,14 @@ def logs(request):
 		persons = Person.objects.filter(department = i.id)
 		personnum = personnum + len(persons)
 		data[i.id] = [i, persons]
-	return render(request, 'logs.html', locals())		
+	return render(request, 'Attendance/Record/logs.html', locals())		
 
 def saved_resource(request):
-	print "="*10
-	print "="*10
-	print "="*10
-	return render(request, 'saved_resource.html')		
+	persons = Person.objects.all()
+	every_page_num = 20
+	page_num = int(math.ceil(len(persons)/(every_page_num *1.0)))
+	reverse("page")
+	return render(request, 'Attendance/Record/saved_resource.html', locals())		
 
 def index(request):
 	return render(request, 'Default/Sidebar/index.html')		
@@ -74,3 +76,14 @@ def index(request):
 def Record_logs(request):
 	return render(request, 'Attendance/Record/logs.html')		
 
+def staff_index(request):
+	return render(request, 'Personnel/Staff/index.html')		
+
+def staff_view(request, page = 2):
+	print "page == ", page
+	persons = Person.objects.all()
+	every_page_num = 20
+	page_num = int(math.ceil(len(persons)/(every_page_num *1.0))) 
+	return render(request, 'Personnel/Staff/staffView.html')		
+def redirect_to_page(request):
+	return HeepResponseRedirect(reverse('page', args(2,)))
