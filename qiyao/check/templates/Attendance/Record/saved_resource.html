@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0048)http://yun.kaoqin.com/personnel/staff/staffView/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>群英云考勤V1.14.1.22517</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<script src="/static/js/jquery-1.7.min.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/js.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/js.function.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/window_resize.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/Tree.js" language="javascript" type="text/javascript"></script>
+<script src="/static/js/ui.datepicker.js" language="javascript" type="text/javascript"></script>
+<!--<script src="/Synlogin/Index/synCheck" language="javascript" type="text/javascript"></script>-->
+<link href="/static/css/main.css" rel="stylesheet" type="text/css">
+<link href="/static/css/main_add.css" rel="stylesheet" type="text/css">
+<link href="/static/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/static/css/font.css" rel="stylesheet" type="text/css">
+<link href="/static/css/attendance.css" rel="stylesheet" type="text/css">
+<link href="/static/css/jquery-ui.css" rel="stylesheet" type="text/css">
+<script>
+$(document).ready(function(){		
+	var s_cfgid = '441833';
+	var s_userid = '1578433';
+	if(typeof($('#s_cfgid', top.document).val()) != 'undefined' && typeof($('#s_userid', top.document).val()) != 'undefined' && (parseInt(s_cfgid) != parseInt($('#s_cfgid', top.document).val()) || parseInt(s_userid) != parseInt($('#s_userid', top.document).val()))){
+		showinfo_tips('令牌失效，请重新登录。');
+		top.document.getElementById("if_sidebar").contentWindow.disableLinks();
+		var sid = setTimeout("logout()",4000);
+	}
+});
+function logout(){
+	top.document.location.href = '/Synlogin/Index/logout';
+}
+</script>
+<script language="javascript" src="./behavior.php"></script>
+<script language="javascript" src="./behavior_stat.php"></script>
+<style type="text/css">
+    .bgc_02{background: none repeat scroll 0 0 #DDEEFE !important;}
+    .bgc_01{background: none repeat scroll 0 0 #F1F8FF !important;}
+    .sel_1114{ width:95px; text-align:center; color:#000; display:none;}
+    .per_list td span{ text-decoration:none;}
+</style></head>
+
+<body><table width="100%" border="0" cellspacing="0" cellpadding="0" class="per_list" id="detail_list">
+            <tbody><tr>
+              <th width="10%" scope="col">姓名</th>
+              <th width="10%" scope="col">性别</th>
+              <th width="10%" scope="col">CC号</th>
+              <th width="12%" scope="col">手机</th>
+              <th width="10%" scope="col">卡号</th>
+              <th width="" scope="col">打卡设备</th>
+              <th width="8%" scope="col">操作</th>
+            </tr>
+            {% for person in persons|slice:":20" %}
+                <tr>
+                  <td class="">{{person.name}}</td>
+                  {% if person.sex == 0 %}
+                  <td class="">男</td>
+                  {% else %}
+                  <td class="">女</td>
+                  {% endif %}
+                  <td class="">{{person.id}}</td>
+                  <td class="">{{person.phone}}</td>
+                  <td class="">{{person.id}}</td>
+                  <td class="">考勤机1</td>
+                  <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1074362">管理</a></td>
+                </tr>
+            {%endfor%} 
+              </tbody></table>
+<div id="d_page_1" class="page_1">
+    <form action="http://127.0.0.1:8000/qiyao/Personnel/Staff/staffView" method="post" onsubmit="location.href=document.getElementById(&#39;page_url&#39;).value+document.getElementById(&#39;pageno&#39;).value;return false;"><span>首页</span> <span>上一页</span> <a href="{% url 'page', 2 %}">下一页</a> <a href="http://127.0.0.1:8000/qiyao/Personnel/Staff/staffView/?page={{page_num}}">末页</a> <span>共{{persons|length}}条, 每页{{every_page_num}}条, 共{{page_num}}页</span> <input name="pageno" id="pageno" size="2" type="text" class="text3" value="1"> <input name="" type="submit" class="button2" value="跳转"><input type="hidden" id="page_url" value="/qiyao/Personnel/Staff/staffView?page="></form></div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //鼠标经过
+        $('#detail_list tr').live('mouseover',function(){
+            $('#detail_list tr td').removeClass('bgc_01');
+            $(this).children('td').addClass('bgc_01');
+        });
+
+        //鼠标离开
+        $('#detail_list tr').live('mouseout',function(){
+            $('#detail_list tr td').removeClass('bgc_01');
+        });
+
+        $('.showpic').mouseover(function(){
+	        $(this).after('<img src="'+$(this).attr('url')+'" class="npic" style="width:100px; position:absolute; border: 3px solid #ccc">');
+	    }).mouseout(function(){
+	        $('.npic').remove();
+	    });
+    })
+</script></body></html>
