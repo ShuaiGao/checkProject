@@ -1,0 +1,13 @@
+@charset "utf-8";
+.add_box { border: 1px dashed #C7DCEF; padding-right: 8px; padding-left: 8px; color: #666465; clear: both; background-color: #F9FDFF; margin-top: 7px; padding-top: 5px; padding-bottom: 5px; }
+.workarrange_list { color: #656563; margin-bottom: 5px; }
+#camera_box { position: absolute; top: 159px; left: 275px; width: 381px; height: 240px; background-color: #999999; }
+
+.workarrange_list  th   { text-align: right; width: 65px; padding-top: 8px; padding-bottom: 8px; }
+.attendance_index_br { background-color: #ecf5fc; background-image: url(../images/attendance_index_br.jpg); background-repeat: repeat-x; background-position: left top; }
+#attendance_index_text { text-align: center; width: 346px; height: 100px; margin-top: -50px; margin-left: -173px; left: 50%; top: 50%; position: absolute; }
+
+.pb_list{ background: #FDEEBF;border: 1px solid #ECDBA6; line-height:28px; width:200px; margin-top:-1px; color:#454545; position:absolute; top:20px; left:10px}
+.pb_list table td,.pb_list table th{ padding:2px 9px}
+.pb_list table th{ border-bottom:1px solid #ECDBA6; font-weight:bold; color:#333}
+

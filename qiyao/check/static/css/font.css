@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{ color:#686868;text-decoration:none}
+a:hover{ color:#F60;text-decoration:none;}
+
+.fs_12 { font-size:12px;}
+.fs_14 { font-size:14px;}
+.fs_16 { font-size:16px;}
+.fs_18 { font-size:18px;}
+
+.ft_B { font-weight:bold; }
+.ft_BU { font-weight:bold; text-decoration:underline;}
+.font_1 { color:#C9C9C9; font-size:10px; line-height:14px; font-family:Arial, Helvetica, sans-serif}
+.font_2 { color:#3F88C3; font-weight:bold; line-height:40px;}
+
+
+
+.fc_black { color:#000}
+a.fc_black:hover{ color:#F60; text-decoration:none;}
+
+.fc_white { color:#fff}
+a.fc_white:hover{ color:#F60; text-decoration:none;}
+
+.fc_red { color:#FF0000}
+a.fc_red:hover{ color:#F60; text-decoration:none;}
+
+.fc_green { color:#61A208}
+a.fc_green:hover{ color:#F60; text-decoration:none;}
+
+.fc_Yellow { color:#FDF001}
+a.fc_Yellow:hover{ color:#F60; text-decoration:none;}
+
+.fc_Orange { color:#E36102}
+a.fc_Orange:hover{ color:#F60; text-decoration:none;}
+
+.fc_Orange_u { color:#E36102; text-decoration:underline;}
+a.fc_Orange_u:hover{ color:#F60; text-decoration:underline;}
+
+.fc_Orange_14_b { color:#E36102; font-weight: bold; font-size: 14px; }
+a.fc_Orange_14_b:hover{ color:#F60; text-decoration:none;}
+
+
+.fc_1 { color:#587293;}
+a.fc_1:hover{ color:#F60; text-decoration:none;}
+
+.fc_1_2 { color:#587293; font-weight:bold}
+a.fc_1_2:hover{ color:#F60; font-weight:bold; text-decoration:none;}
+
+.fc_1_3 { color:#587293; font-weight:bold; text-decoration:underline}
+a.fc_1_3:hover{ color:#F60; }
+
+.fc_2 { color:#666;}
+a.fc_2:hover{ color:#F60; text-decoration:none;}
+
+.fc_3 { color:#9A9A9A;}
+a.fc_3:hover{ color:#F60; text-decoration:none;}
+
+.fc_4 { color:#336799;}
+a.fc_4:hover{ color:#F60; text-decoration:none;}
+
+.fc_4_2 { color:#336799; font-weight:bold}
+a.fc_4_2:hover{ color:#F60; text-decoration:none;}
+
+.fc_5 { color:#567393; text-decoration:underline}
+a.fc_5:hover{ color:#F60; text-decoration:underline;}
+
+.fc_6 { color:#CC0104;}
+a.fc_6:hover{ color:#F60; text-decoration:none;}
+
+.fc_7 { color:#064767;}
+a.fc_7:hover{ color:#F60; text-decoration:none;}
+
+.fc_8 { color:#587293; font-weight:bold; text-decoration:underline}
+a.fc_8:hover{ color:#F60; }
+
+.fc_9 { color:#D2D2D2;}
+a.fc_9:hover{ color:#F60; }
+
+.fc_10 { color:#787878;}
+a.fc_10:hover{ color:#F60; }
+
+.fc_16{ color:#0565AF; text-decoration:underline}
+a.fc_16:hover{ color:#F00;text-decoration:underline;}
+
+
+.user_name { color:#686868;}
+a.user_name:hover{ color:#5CA204; text-decoration:underline;}
+
+
+

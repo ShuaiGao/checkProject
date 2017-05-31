@@ -1,0 +1,580 @@
+@charset "utf-8";
+/* CSS Document */
+a {blr:expression_r(this.onFocus=this.blur())}
+area {blr:expression_r(this.onFocus=this.blur())}
+#doc { width:950px; margin:0px auto; }
+
+#head { height:103px; }
+	#top { height:72px;}
+	#top_logo { float:left; margin-top:10px}
+	#top_other { float:right; text-align:right; color: #666; padding:15px 0px 0 0; position:relative}
+	/*#nav_w { background:url(../images/nav_bg.gif) repeat-x left top; height:31px;}*/
+	#nav_w { background:url("../images/menu_bg.gif"/*tpa=http://www.qycn.com/templates/images/menu_bg.gif*//*tpa=http://www.qycn.com/templates/images/menu_bg.gif*/) no-repeat; height:31px;}
+	#nav_w li.first{}
+	.nav li a.t_6 span { display:inline-block; cursor:pointer; height:21px; padding:6px 20px 2px 12px ;*padding:7px 20px 1px 12px; margin:0 0 0 9px;}
+	#nav_w li.fourth { margin-left: 146px;padding-right: 0px; }
+		.nav li a.t_3 span { display:inline-block; cursor:pointer; height:21px; padding:6px 28px 2px 20px ; *padding:7px 28px 1px 20px;margin:0 0 0 9px;}
+			.nav li a.t_3 .qycn-wrapper{ width:440px;}
+				.nav li a.t_3 .qycn-wrapper .menu-text{ width:270px; margin-left:10px; line-height:24px}
+					.nav li a.t_3 .qycn-wrapper .menu-text p{ text-indent:24px; font-weight:normal; margin-top:5px}
+		.nav li a.t_4 span { display:inline-block; cursor:pointer; height:21px; padding:6px 28px 2px 20px ; *padding:7px 28px 1px 20px;margin:0 0 0 9px;}
+		.nav li a.t_4 dl{ width:278px}
+		.nav li a.t_4 dl dd{ width:220px}
+		.nav li a.t_5 span { display:inline-block; cursor:pointer; height:21px; padding:6px 12px 2px 12px ;*padding:7px 12px 1px 12px; margin:0 0 0 2px; font-size:12px; font-weight:normal;}
+		.nav li a.t_5 #toolmenu { width:250px; overflow-x: hidden; padding:15px 0 5px 0;} 
+		.nav li a.t_5 #toolmenu li { float:left;  border-left:1px solid #B3B3B3; padding:0 15px; margin-left:-1px; margin-bottom:10px; font-weight:normal; display:inline } 
+
+	
+#top_search { margin:12px 0 0; float:right; *float:none; width:250px; border:solid 1px #D6D6D6; background:#FFF; height:20px; padding:3px 5px 0 0; }
+#top_search .key_text{ width:220px; border:solid 0px #FFF;}
+	
+#flash_view { margin-top:5px;}
+
+
+#location { background:#F1F1F1; height:28px; line-height:32px; overflow:hidden; text-indent:24px; color:#636363; border:solid 1px #E9E9E9; border-top:none}
+
+#Contents,#tab_Contents { border:solid 1px #E5E5E5; margin-top:2px; background:url("../images/bg_4.gif"/*tpa=http://www.qycn.com/templates/images/bg_4.gif*//*tpa=http://www.qycn.com/templates/images/bg_4.gif*/) repeat-x left top; vertical-align:top}
+#tab_Contents td.td_null { height:28px;}
+#tab_Contents td.td_left { vertical-align:top; padding:0px 26px 30px;}
+#tab_Contents td.td_left2 { vertical-align:top; width:200px; padding:10px;  border:solid 1px #FFF; border-right:solid 1px #EFEFEF;}
+#tab_Contents td.td_right { vertical-align:top; width:230px;  padding:0px 10px 0px;border-left:solid 1px #EFEFEF;}
+#tab_Contents td.td_right2 { vertical-align:top; padding:20px 20px 40px; border:solid 1px #FFF; border-left:none;}
+#tab_Contents td.td_right3 { vertical-align:top; padding:6px; border:solid 1px #FFF; border-left:none;}
+#tab_Contents td.td_right4 { vertical-align:top; background:#FFF}
+
+#tab_Contents tr.tr_null td { height:0px; font-size:0px; line-height:0px; padding:0px; border:none;}
+
+
+.si_ad { text-align:center; margin:10px 0 0 0;}
+#si_doanload { display:block; margin:0px auto 10px; width:193px; height:18px; padding:47px 0 0 0; text-align:left; text-indent:35px; color:#FFF; background:url("../images/download.gif"/*tpa=http://www.qycn.com/templates/images/download.gif*//*tpa=http://www.qycn.com/templates/images/download.gif*/) no-repeat left top;}
+
+
+#news_romm {  padding:0 15px 15px 0; text-indent:2em;}
+#news_romm #news_romm_title { float:left; margin:5px 20px 0 15px; }
+
+
+
+#news_info { margin-top:15px;}
+	#news_attribute { text-align:center; color:#999; margin:25px 0 35px;}
+	#news_contents { line-height:23px; color:#333; font-size:14px;}
+		#news_contents img { max-width:650px; _width:expression(this.width > 650 ? 650 : true);}
+	#news_author { color:#333; margin:25px 0;}
+	#news_neighborhood { line-height:24px; margin:5px 0 0;font-size:14px;}
+		#news_neighborhood a { color:#666;}
+		#news_neighborhood a:hover { color:#c81205;}
+
+
+#comm_Describe { height:190px; padding:0 20px 0 15px; margin-bottom:25px;}
+	#comm_Describe #cc_pic { float:left; margin:5px 30px 0 0;}
+	#comm_Describe span { color:#00427C; display:inline-block; font-size:14px; line-height:28px; font-weight:bold;  padding:0px 25px 0 0px; }
+	#comm_Describe p { color:#666; line-height:24px; text-indent:2em; margin:10px 0 0 ;}
+	
+
+#menu_view {}
+	#menu_view ul { padding-left:1px;}
+		#menu_view ul li { float:left; height:18px; padding:6px 6px 0px; background:#F6F6F6; font-weight:bold; color:#333; cursor:pointer; border:solid 1px #E2E2E2; border-bottom:none; margin:0 -1px 0 0;}
+		#menu_view ul li.index { height:19px; background:#FEFEFE; color:#A50706; margin-bottom:-1px; _position:relative;}
+	#menu_view .con_view { display:none; padding:15px 0 0 ; color:#666; line-height:24px; text-indent:2em; border-top:solid 1px #E2E2E2;}
+	#menu_view .con_view_show { display:block;}
+
+#special_menu .box_1{ background:none}
+
+#JJFN_list .box_1 { margin-top:5px;}
+	#JJFN_list .box_1 p { text-indent:2em}
+	#JJFN_list .box_1 .title_01 { margin-bottom:5px;}
+	
+#d_search { padding:15px 10px; border:1px solid #D5D3D4; margin-bottom:10px; background:#F4F4F4; line-height:24px; color:#333; font-family:Tahoma}
+	#d_search table { }
+	#d_search th { font-weight:bold; font-size:14px; color:#043786; text-align:right;}
+	#d_search td { height:29px;}
+	#d_search td#objS * { vertical-align:middle; }
+	#d_search td#objS #submit { margin-left:25px;}
+
+
+#car_title { border:solid 1px #DDD; height:39px; background:url("../images/bg_9.gif"/*tpa=http://www.qycn.com/templates/images/bg_9.gif*//*tpa=http://www.qycn.com/templates/images/bg_9.gif*/) repeat-x #FBFBFB left bottom; overflow:hidden}
+	#car_title .pay_pic { float:left;}
+	#car_title .Process { float:left; margin:10px 0 0 30px;}
+		#car_title .Process img { margin-right:15px;}
+
+#process_explain { line-height:26px; padding:15px 0 0 58px;}
+#process_explain2 { min-height:110px; _height:110px; padding-left:115px; margin-top:20px; border:solid 1px #DEDEDE; background:url("../images/img_2.gif"/*tpa=http://www.qycn.com/templates/images/img_2.gif*//*tpa=http://www.qycn.com/templates/images/img_2.gif*/) no-repeat 28px 21px;}
+	#process_explain2 .explain { margin:10px 0 0 0; line-height:22px;}
+
+
+#help_big_img { max-width:650px; _width: expression(this.width > 650 ? 650 : true);}
+
+.Per_sel { border:solid 1px #973214; background:#FFF; width:440px; position:absolute; top:150px; left:50%; margin-left:-220px; z-index:105; display:none;}
+	.Per_sel .Per_sel_top { height:25px; background:#F5AE92; border:solid 1px #FFF; border-bottom: solid 1px #E05D31;} 
+		.Per_sel .Per_sel_top .Per_sel_title { float:left; color:#663A21; font-weight:bold; text-indent:20px; margin:7px 0 0 10px;_margin-left:5px; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -500px;}
+		.Per_sel .Per_sel_top a.close { float:right; width:10px; height:10px; margin:7px 10px 0 0; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -400px;} 
+		.Per_sel .Per_sel_top a.close:hover{ background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -450px;} 
+	
+	.Per_sel .Per_sel_middle { height:354px; padding:8px 10px; overflow:hidden}
+		.Per_sel .Per_sel_middle table {}
+			.Per_sel .Per_sel_middle td { height:28px; color:#5A7193; vertical-align:top;}
+				.Per_sel .Per_sel_middle .td_str { color:#5A7193; vertical-align:middle;}
+				.Per_sel .Per_sel_middle .td_left { width:190px;}
+				.Per_sel .Per_sel_middle .td_center { width:24px; text-align:center; vertical-align:middle;}
+				.Per_sel .Per_sel_middle .td_right { width:205px;}
+		
+		.Per_sel .Per_sel_middle .key { border:solid 1px #CFCFCF; height:16px; width:180px; padding:4px 5px 0px; color:#D5D5D5; background:url("../images/bg_8.gif"/*tpa=http://www.qycn.com/templates/images/bg_8.gif*//*tpa=http://www.qycn.com/templates/images/bg_8.gif*/) repeat-x left top;}
+		.Per_sel .Per_sel_middle a.Per_sel_Search { float:right; width:13px; height:13px; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -550px; margin:-17px 4px 0 0; *margin:-18px 3px 0 0; position:relative}
+		.Per_sel .Per_sel_middle a#add_Per_sel { display:inline-block; width:14px; height:16px; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -650px;}
+		.Per_sel .Per_sel_middle a#addall { float:right; padding:6px 17px 0 0; margin-right:5px; color:#636363; text-decoration:underline; background:url("../images/d_right.gif"/*tpa=http://www.qycn.com/templates/images/d_right.gif*//*tpa=http://www.qycn.com/templates/images/d_right.gif*/) no-repeat right 6px;}
+		.Per_sel .Per_sel_middle a#removeall { float:left; padding:6px 0 0 17px; margin-left:5px; color:#636363; text-decoration:underline; background:url("../images/d_left.gif"/*tpa=http://www.qycn.com/templates/images/d_left.gif*//*tpa=http://www.qycn.com/templates/images/d_left.gif*/) no-repeat left 6px;}
+		
+		.Per_sel .Per_sel_middle .Per_sel_Section { width:193px;}
+		
+		
+		.Per_sel .Per_sel_middle .Per_sel_list1 { border:solid 1px #CDCDCD; height:278px; padding:3px 0 0px; overflow:auto; overflow-x:hidden; }
+	
+		.Per_sel .Per_sel_middle .Per_sel_list2 { border:solid 1px #CDCDCD; height:305px; padding:3px 0 0px; overflow:auto; overflow-x:hidden;}
+	
+		.Per_sel .Per_sel_middle .Per_sel_ul {}
+			.Per_sel .Per_sel_middle .Per_sel_ul li{ height:22px; cursor:pointer; *margin-bottom:-2px;  padding-left:10px; overflow:hidden;}
+			.Per_sel .Per_sel_middle .Per_sel_ul li.bg{ background:#EAF9FF;}
+			.Per_sel .Per_sel_middle .Per_sel_ul label{ float:left; color:#646464; text-indent:25px; padding:5px 0 0 0; cursor:pointer;}
+			
+			.Per_sel .Per_sel_middle .Per_sel_ul label.sex_0{ background:url("../images/sex_0.gif"/*tpa=http://www.qycn.com/templates/images/sex_0.gif*//*tpa=http://www.qycn.com/templates/images/sex_0.gif*/) no-repeat left 2px}
+			.Per_sel .Per_sel_middle .Per_sel_ul label.sex_1{ background:url("../images/sex_1.gif"/*tpa=http://www.qycn.com/templates/images/sex_1.gif*//*tpa=http://www.qycn.com/templates/images/sex_1.gif*/) no-repeat left 2px}
+			
+			.Per_sel .Per_sel_middle .Per_sel_ul span{ float:right; width:14px; height:15px; margin:3px 5px 0 0; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -600px;}
+			
+	.Per_sel .Per_sel_bottom { height:23px; padding:2px 5px 0; background:#F5AE92; border:solid 1px #FFF; border-top: solid 1px #E05D31; text-align:right;} 
+	
+
+.FriendLinkS { border:solid 1px #E0E0E0;}
+	.FriendLinkS dl {height:30px;  background:url("../images/bg_19.gif"/*tpa=http://www.qycn.com/templates/images/bg_19.gif*//*tpa=http://www.qycn.com/templates/images/bg_19.gif*/) repeat-x left top;}
+		.FriendLinkS dt,.FriendLinkS dd { height:29px; float:left; overflow:hidden; border-right:solid 1px #E0E0E0; padding:0px 18px; line-height:31px}
+		.FriendLinkS dt { background:#F5F5F5; font-weight:bold; color:#343434;}
+		.FriendLinkS dd { cursor:pointer; color:#464445;}
+		.FriendLinkS dd.index { height:30px; background:#FFF; color:#B70002;}
+	.FriendLink_list { padding:10px 15px; color:#727071; line-height:22px; word-spacing:5px;}
+		.FriendLink_list a { color:#727071;}
+		.FriendLink_list a:hover{ color:#C00;}
+
+
+#foot {/* height:112px;*/ padding:10px 0 0 0; margin:8px 0 10px; line-height:23px; text-align:center; color:#808080; background:url("../images/bg_25.gif"/*tpa=http://www.qycn.com/templates/images/bg_25.gif*//*tpa=http://www.qycn.com/templates/images/bg_25.gif*/) repeat-x #FEFEFE left bottom; border:solid 1px #E9E9E9;}
+	#foot #foot_imgs { margin:10px 0 0px;}
+		#foot #foot_imgs img{ margin:0 13px;}
+	#foot img.tel { margin:0 10px 0 60px;_margin:5px 10px 5px 60px;}
+	
+	
+#register_con { padding:18px 0 25px 0;}	
+	
+#register_left{ float:left; width:61px;  margin-left:26px; display:inline}
+	.register_l_bg_01,.register_l_bg_02,.register_l_bg_03,.register_l_bg_04,.register_l_bg_05 { height:236px; background:url("../images/register_l_bg.gif"/*tpa=http://www.qycn.com/templates/images/register_l_bg.gif*//*tpa=http://www.qycn.com/templates/images/register_l_bg.gif*/) no-repeat;}
+	.register_l_bg_01{ background-position:0 top;}
+	.register_l_bg_02{ background-position:-100px top;}
+	.register_l_bg_03{ background-position: -200px top;}
+	.register_l_bg_04{ background-position: -301px top;}
+	.register_l_bg_05{ background-position: -401px top;}
+	
+	
+#register_left_2{ float:left; width:81px;  margin-left:26px; display:inline}
+	.register_2_bg_01,.register_2_bg_02,.register_2_bg_03,.register_2_bg_04,.register_2_bg_05,.register_2_bg_06 { height:395px; background:url("../images/register_l_bg_2.gif"/*tpa=http://www.qycn.com/templates/images/register_l_bg_2.gif*//*tpa=http://www.qycn.com/templates/images/register_l_bg_2.gif*/) no-repeat;}
+	.register_2_bg_01{ background-position:0 top;}
+	.register_2_bg_02{ background-position:-100px top;}
+	.register_2_bg_03{ background-position:-200px top;}
+	.register_2_bg_04{ background-position:-300px top;}
+	.register_2_bg_05{ background-position:-400px top;}
+	.register_2_bg_06{ background-position:-500px top;}
+	
+	
+#register_right{ float:left; margin:0 20px 0 30px; display:inline}
+
+#register_right .foot_tishi{background:#f9f9f9; line-height:25px; padding:5px 0 10px 20px; border:1px solid #e2e2e2;}
+#register_right_2{ float:left; margin:0 20px 0 60px; width:730px}
+
+
+#reset_email { display:none; width:400px;}
+	#reset_email table { color:#666; line-height:34px; margin:10px 0px;}
+		#reset_email table th { width:130px; font-size:14px; font-weight:normal; text-align:right;}
+		#reset_email table td { }
+		#reset_email table td.td_hint { background:url("../images/img_17.gif"/*tpa=http://www.qycn.com/templates/images/img_17.gif*//*tpa=http://www.qycn.com/templates/images/img_17.gif*/) no-repeat left 8px; padding-left:20px;}
+	
+#type_sel_w { position:relative}
+	#type_sel { position:absolute; display:none; right:-43px; top:-19px; width:930px; background:#FFF;}
+		#type_sel .d_title_22 { margin:0px;}
+	#type_sel_list { border:solid 1px #ABA9AA; border-bottom:solid 4px #AE0002;}
+		#type_sel_list table {}
+			#type_sel_list table th { width:200px; color:#C42333; font-size:14px; font-weight:bold; text-align:left; padding:0 10px 0 15px; vertical-align:middle;}
+			#type_sel_list table td { color:#000; height:22px;*+height:20px; padding-top:2px; vertical-align:middle; padding-left:5px;}
+			#type_sel_list table td.over,#type_sel_list table .tr_bg td.over { background:#E04F4C; color:#FFF; cursor:pointer}
+			#type_sel_list table td.over,#type_sel_list table .tr_bg td.hover_reg{ width:215px; overflow:hidden}
+			
+			#type_sel_list table .tr_bg th,#type_sel_list table .tr_bg td { background:#F6F6F6;}
+
+#company_search {padding:5px 0px 10px; color:#454545; font-size:14px; }
+
+#App_join_company { padding:10px 40px 10px 75px; line-height:24px; font-size:13px; color:#666; background:url("../images/img_19.gif"/*tpa=http://www.qycn.com/templates/images/img_19.gif*//*tpa=http://www.qycn.com/templates/images/img_19.gif*/) no-repeat 12px 13px;}
+	
+#find_pwd { height:310px; padding:60px 200px 0 233px; background:url("../images/find_pwd_bg.gif"/*tpa=http://www.qycn.com/templates/images/find_pwd_bg.gif*//*tpa=http://www.qycn.com/templates/images/find_pwd_bg.gif*/) no-repeat center 45px;}
+
+#job_info { margin:20px 0 50px; line-height:20px; padding-left:3em;}
+	#job_info h2{ font-size:12px; line-height:40px; margin-left:-2em}
+	#job_info h3{ font-size:12px; line-height:30px; margin-left:-2em}
+
+#area_search_S_1,
+#area_search_S_2,
+#area_search_S_3 { padding:10px 20px;}
+
+#area_recommends { width:103%; margin-top:10px; overflow:hidden; margin-right:-50px;}
+	#area_recommends ul { float:left; width:217px; height:134px; padding:1px; background:url("../images/bg_36.gif"/*tpa=http://www.qycn.com/templates/images/bg_36.gif*//*tpa=http://www.qycn.com/templates/images/bg_36.gif*/); margin-right:14px; color:#686868;}
+		#area_recommends ul .area_r_img { float:left; width:75px; height:65px; padding-top:15px; margin:0px 5px; _margin:0px 5px 0 2px; text-align:center;}
+		#area_recommends ul .area_r_name {  margin:7px 10px 0 0; line-height:30px; font-weight:bold}
+		#area_recommends ul .area_r_in { margin-right:10px; line-height:18px;}
+		#area_recommends ul .area_r_ot { clear:both; width:100%; text-align:center; padding-top:3px;}
+			#area_recommends ul .area_r_ot strong { color:#D03232; font-family:Verdana; font-size:16px;}
+			#area_recommends ul .area_r_ot .button_12 { margin-bottom:7px;}
+
+#area_help .box_12{ margin-top:20px;}
+
+#area_info { color:#4D4D4D; line-height:24px;}
+	#area_info_sub1 { margin:20px 0px 10px;}
+		#area_info_sub1 p { text-indent:2em}
+	#area_info_sub2 { padding-left:2em; margin:10px 0;}
+
+
+.area_info_list { width:300px; padding:0 15px }
+	.area_info_list li.area_info_name { }
+		.area_info_list li.area_info_name img { }
+		.area_info_list li.area_info_name label { float:right; color:#AA1109;}
+			.area_info_list li.area_info_name label em { font-style:normal; font-weight:bold; font-size:16px;}
+	.area_info_list li.area_info_str { line-height:20px; margin:10px 0px;}
+	.area_info_list li.area_info_ot { padding-bottom:5px;}
+		.area_info_list li.area_info_ot img{ vertical-align:middle; margin-right:10px;}
+
+#area_searches { margin:0px 8px 10px;}
+	#area_searches_list { margin:0px 10px;}	
+
+#areadata_help { padding:10px; line-height:25px;}
+
+#box_domn_w,#box_up_w {width:312px; height:121px; padding:6px; background:url("../images/bg_38.gif"/*tpa=http://www.qycn.com/templates/images/bg_38.gif*//*tpa=http://www.qycn.com/templates/images/bg_38.gif*/)}
+#box_domn_w { float:left}
+#box_up_w { float:right}
+
+#box_domn,#box_up { height:100px; padding:21px 20px 0 140px; background:#F60; line-height:22px; color:#494949; font-weight:bold}
+#box_domn { background:url("../images/img_43.gif"/*tpa=http://www.qycn.com/templates/images/img_43.gif*//*tpa=http://www.qycn.com/templates/images/img_43.gif*/) no-repeat 14px 23px;}
+#box_up { background:url("../images/img_44.gif"/*tpa=http://www.qycn.com/templates/images/img_44.gif*//*tpa=http://www.qycn.com/templates/images/img_44.gif*/) no-repeat 14px 15px;}
+
+	
+#company_card { display:none; position:absolute; z-index:100; width:324px;}
+	#company_card .w_3_main{ padding:7px 0;}
+	#company_card table { width:310px; margin:0px auto; line-height:18px;}	
+		#company_card table th,#company_card table td { padding:3px 0px; vertical-align:top}
+		#company_card table th { width:50px; color:#970D02; text-align:right}
+		#company_card table td { color:#2E2E2E;}
+		#company_card table td.company_img { vertical-align:top}
+			#company_card table td.company_img img { width:53px; height:53px; border:solid 1px #E3E3E3;}
+
+.ul_area_search_ytpe { margin-top:15px}
+	.ul_area_search_ytpe li{ float:left; height:22px; padding-top:3px; width:14.2%; color:#575F6C; font-size:13px; font-family:Arial, Helvetica, sans-serif;}
+
+.ul_divide_equally {}
+	.ul_divide_equally li{ float:left; width:290px; line-height:24px; padding-left:30px;background:url("../images/bg_18.gif"/*tpa=http://www.qycn.com/templates/images/bg_18.gif*//*tpa=http://www.qycn.com/templates/images/bg_18.gif*/) no-repeat 13px 8px; margin:10px 0px;}
+		.ul_divide_equally li h4{ font-size:14px;}
+	.ul_divide_equally li.li_line{ clear:both; height:1px; line-height:1px; font-size:0px; padding:0px; margin:0px; width:100%; background:url("../images/line3.gif"/*tpa=http://www.qycn.com/templates/images/line3.gif*//*tpa=http://www.qycn.com/templates/images/line3.gif*/) repeat-x left bottom}
+
+.ul_use_process { height:56px; margin-top:10px; background:url("../images/use_process.gif"/*tpa=http://www.qycn.com/templates/images/use_process.gif*//*tpa=http://www.qycn.com/templates/images/use_process.gif*/) no-repeat left top;}
+	.ul_use_process li{ float:left; width:160px; margin:13px 0px 0 65px;  line-height:16px; color:#605F64;}
+	.ul_use_process li b{ color:#121212;}
+	.ul_use_process li.li_first{ _margin-left:32px;}
+
+.ul_use_process_2 { background-position:left bottom}
+
+#find_pwd_tab {}
+	#find_pwd_tab th { text-align:right; font-size:14px; color:#636363; font-weight:normal}
+	#find_pwd_tab td { text-align:left}
+	#find_pwd_tab td .text_4 { height:21px}
+
+#user_type { margin:15px 20px 5px; color:#454545; padding-left:20px; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -1000px; line-height:18px;}
+
+
+a.showbigpic { color:#C20303; white-space:nowrap;}
+	a.showbigpic img { vertical-align:middle}
+	a.showbigpic div{ display:none; background:#FFF;}
+a.showbigpic:hover { position:relative; z-index:100;}
+	a.showbigpic:hover div{ position:absolute; z-index:101; display:block; top:15px; left:0px;}
+	
+
+.ar_r_t { background:url("../images/avatar_bg.gif"/*tpa=http://www.qycn.com/templates/images/avatar_bg.gif*//*tpa=http://www.qycn.com/templates/images/avatar_bg.gif*/) #FFF no-repeat right top; }
+  .ar_l_t { padding: 5px 0 0; background:url("../images/avatar_bg.gif"/*tpa=http://www.qycn.com/templates/images/avatar_bg.gif*//*tpa=http://www.qycn.com/templates/images/avatar_bg.gif*/) no-repeat left top; }
+    .ar_r_b { background:url("../images/avatar_bg.gif"/*tpa=http://www.qycn.com/templates/images/avatar_bg.gif*//*tpa=http://www.qycn.com/templates/images/avatar_bg.gif*/) no-repeat right bottom; }
+      .ar_l_b { padding: 0 5px 5px 5px; background:url("../images/avatar_bg.gif"/*tpa=http://www.qycn.com/templates/images/avatar_bg.gif*//*tpa=http://www.qycn.com/templates/images/avatar_bg.gif*/) no-repeat left bottom; }
+	
+	
+.dl_case { float:left; width:145px; border:solid 1px #E7E7E7; margin:10px 12px; _margin:10px 15px 10px 7px;}
+	.dl_case dt { width:145px; height:62px; border:none; overflow:hidden}
+		.dl_case dt img{ width:145px; height:62px;}
+	.dl_case dd { width:100%; text-align:center; font-weight:bold; border-top:solid 1px #E7E7E7;}
+	.dl_case dd a { display:block; line-height:16px; padding:3px 0px 1px; border:solid 1px #FFF; background:url("../images/bg_22.gif"/*tpa=http://www.qycn.com/templates/images/bg_22.gif*//*tpa=http://www.qycn.com/templates/images/bg_22.gif*/) repeat-x #FFF left top;}
+
+.dl_fast { float:left; padding:10px 0 10px 22px; width:315px;}
+	.dl_fast dt { float:left; margin-right:12px;}
+	.dl_fast dd { line-height:16px; color:#989898;} 
+		.dl_fast dd a.a_link { font-size:14px; line-height:30px; font-weight:bold; color:#075681; text-decoration:underline;} 
+		.dl_fast dd a.a_link:hover {} 
+	
+	
+/*     主页独占样式开始     */
+
+#index_Contents { margin:5px 0 8px;}
+#index_Con_right { float:right; height:438px; width:244px; background:#F5F3F4; border:solid 1px #E0E0E0; border-top:solid 2px #E5080F; overflow:hidden;}
+	#index_Con_right .line_3 { margin:0px;}
+
+
+#index_Con_left_1,#index_Con_left_2 { float:left;}
+
+#index_Con_left_1 { width:694px;}
+	#index_Con_left_1_1 { float:left; width:287px; height:220px;}
+	#index_Con_left_1_2 { float:right; width:390px; height:220px;}
+		#index_Con_left_1_2_1 { padding:15px 10px 0px 158px; line-height:20px; color:#5C5E5D; height:165px; background:url("../images/CC_pic2.gif"/*tpa=http://www.qycn.com/templates/images/CC_pic2.gif*//*tpa=http://www.qycn.com/templates/images/CC_pic2.gif*/) no-repeat 13px 15px;}
+			#index_Con_left_1_2_1 p{ margin:10px 0px;}
+
+	
+#index_Con_left_2 { width:692px; margin-top:7px; border:solid 1px #E0E0E0; background:#F5F5F5;}
+
+#index_Con_right_1 { height:209px; overflow:hidden}
+#index_Con_right_2 { height:221px;}
+
+.index_text_1 { height:19px; width:100px; padding:3px 5px 0; font-family:Arial, Helvetica, sans-serif; color:#4E4E4E; font-weight:bold; border:solid 1px #E0E0E0;}
+
+.index_box_1 { border:solid 1px #FFF; padding:8px 0px; background:url("../images/bg_12.gif"/*tpa=http://www.qycn.com/templates/images/bg_12.gif*//*tpa=http://www.qycn.com/templates/images/bg_12.gif*/) repeat-x left top}
+.index_box_2 { border:solid 1px #E5E5E5;}
+.index_box_3 { border:solid 1px #FFF; background:url("../images/bg_11.gif"/*tpa=http://www.qycn.com/templates/images/bg_11.gif*//*tpa=http://www.qycn.com/templates/images/bg_11.gif*/) repeat-x left top}
+.index_box_4 { border:solid 1px #FFF; padding:5px 2px;}
+
+.index_title_1 { height:20px; border-bottom:solid 1px #E0E0E0; padding:0px 10px;}
+	.index_title_1 label { float:left; font-weight:bold; line-height:17px; color:#333; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -648px; padding-left:10px;}
+	.index_title_1 a.more { float:right; width:17px; height:17px; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -600px;}
+	.index_title_1 a.more:hover { background-position: left -700px;}
+
+.index_title_2 { height:26px; border-bottom:solid 1px #E0E0E0; padding:2px 10px 2px 12px;}
+	.index_title_2 label { float:left; line-height:27px; font-size:13px; color:#343434; font-weight:bold;background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -643px; padding-left:10px;}
+	.index_title_2 a.more { float:right; width:17px; height:17px; margin-top:5px; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -600px;}
+	.index_title_2 a.more:hover { background-position: left -700px;}
+
+.index_title_3 { height:30px; border-bottom:solid 1px #E0E0E0;}
+	.index_title_3 label { float:left; line-height:27px; font-size:13px; color:#333; font-weight:bold;}
+	.index_title_3 a.more { float:right; width:17px; height:17px; margin:6px 5px 0 0; background:url("../images/icoS.gif"/*tpa=http://www.qycn.com/templates/images/icoS.gif*//*tpa=http://www.qycn.com/templates/images/icoS.gif*/) no-repeat left -600px;}
+	.index_title_3 a.more:hover { background-position: left -700px;}
+
+
+.index_tab_1 { color:#545253; margin-top:15px; margin:0px auto;}
+	.index_tab_1 th { font-weight:normal;  height:35px; line-height:25px; text-align:left;} 
+	.index_tab_1 td.bg { background:url("../images/bg_15.gif"/*tpa=http://www.qycn.com/templates/images/bg_15.gif*//*tpa=http://www.qycn.com/templates/images/bg_15.gif*/) no-repeat right center;}
+	.index_tab_1 tr.tr_pro td { padding-top:20px;}
+	
+	.index_tab_1 .icon_1,.index_tab_1 .icon_2,.index_tab_1 .icon_3{ padding:70px 0 0 0; width:75px; text-align:center; color:#06559A; display:inline-block; height:15px;}
+	.index_tab_1 center{ padding-top:10px; color:#808080;}
+	.index_tab_1 .icon_1{ background:url("../images/login_icon_1.gif"/*tpa=http://www.qycn.com/templates/images/login_icon_1.gif*//*tpa=http://www.qycn.com/templates/images/login_icon_1.gif*/) no-repeat center 0px;}
+	.index_tab_1 .icon_2{ background:url("../images/login_icon_2.gif"/*tpa=http://www.qycn.com/templates/images/login_icon_2.gif*//*tpa=http://www.qycn.com/templates/images/login_icon_2.gif*/) no-repeat center 0px;}
+	.index_tab_1 .icon_3{ background:url("../images/login_icon_3.gif"/*tpa=http://www.qycn.com/templates/images/login_icon_3.gif*//*tpa=http://www.qycn.com/templates/images/login_icon_3.gif*/) no-repeat center 0px;}
+
+
+.index_tab_2 { margin:9px 0 0 ;}
+	.index_tab_2 td { width:33%; padding:13px 0 0 85px; border-right:solid 1px #E0E0E0; vertical-align:top;}
+	.index_tab_2 td h3 { color:#666; font-size:13px; line-height:19px;}
+	.index_tab_2 td p { min-height:85px; _height:85px; line-height:23px; margin-top:12px; color:#666;}
+	
+	.index_tab_2 td.td_1 { padding-left:70px; background:url("../images/pics/pic2_1.jpg"/*tpa=http://www.qycn.com/templates/images/pics/pic2_1.jpg*//*tpa=http://www.qycn.com/templates/images/pics/pic2_1.jpg*/) no-repeat 10px 12px;}
+	.index_tab_2 td.td_2 { background:url("../images/pics/pic2_2.jpg"/*tpa=http://www.qycn.com/templates/images/pics/pic2_2.jpg*//*tpa=http://www.qycn.com/templates/images/pics/pic2_2.jpg*/) no-repeat 20px 12px;}
+	.index_tab_2 td.td_3 { padding-left:80px; background:url("../images/pics/pic2_3.jpg"/*tpa=http://www.qycn.com/templates/images/pics/pic2_3.jpg*//*tpa=http://www.qycn.com/templates/images/pics/pic2_3.jpg*/) no-repeat 20px 12px; border:none;}
+	
+.index_ul_1 { margin:15px 8px 0;}
+	.index_ul_1 li{ color:#333; margin-top:10px; line-height:14px;}
+	
+	
+.index_dl_1 {  margin:3px 0 0 15px; color:#666; line-height:26px; padding-left:50px;}
+	.index_dl_1 dt { font-weight:bold;}
+	.index_dl_1 dd { }
+	
+.index_dl_1_1 { background:url("../images/num_21.gif"/*tpa=http://www.qycn.com/templates/images/num_21.gif*//*tpa=http://www.qycn.com/templates/images/num_21.gif*/) no-repeat left bottom;}
+.index_dl_1_2 { background:url("../images/num_22.gif"/*tpa=http://www.qycn.com/templates/images/num_22.gif*//*tpa=http://www.qycn.com/templates/images/num_22.gif*/) no-repeat left bottom}
+.index_dl_1_3 { background:url("../images/num_23.gif"/*tpa=http://www.qycn.com/templates/images/num_23.gif*//*tpa=http://www.qycn.com/templates/images/num_23.gif*/) no-repeat left bottom}
+
+
+.tab_pay_items { border:solid 1px #D6D6D6;}
+	.tab_pay_items th,.tab_pay_items td { text-align:left;}
+	.tab_pay_items th.t_checkbox,.tab_pay_items td.t_checkbox { text-align:center; width:40px;}
+	.tab_pay_items th{ height:34px; color:#656565; background:#EFEFEF; border-top:solid 1px #FFF;}
+	.tab_pay_items th.first { border-left:solid 1px #FFF;}
+	.tab_pay_items th.last { border-right:solid 1px #FFF;}
+	.tab_pay_items td{ padding:15px 0px; line-height:20px;}
+	.tab_pay_items td.td_line { height:1px; padding:0px 13px;}
+	.tab_pay_items td.td_img { text-align:center; width:130px;}
+		.tab_pay_items td.td_img img{ width:90px;}
+	.tab_pay_items td.td_count_price { padding:15px;}
+
+
+.pay_ZH { font-size:14px; padding:0px 30px;}
+	.pay_ZH .d_hint { background:url("../images/icon_05.gif"/*tpa=http://www.qycn.com/templates/images/icon_05.gif*//*tpa=http://www.qycn.com/templates/images/icon_05.gif*/) no-repeat #FFF4C2 5px 7px; border:solid 1px #FFCC33; font-size:13px; line-height:24px; padding:3px 10px 3px 25px; margin:10px 0 10px 25px;}
+
+
+.pay_bank {}
+	.pay_bank ul { width:430px; margin:0px auto}
+	.pay_bank ul li{ float:left; margin:10px 15px 10px 0;}
+	.pay_bank ul li img{ vertical-align:middle;}
+	
+
+#Negotiate { width:750px; color:#696969; margin:45px auto; line-height:21px;}
+	#Negotiate div{ text-indent:2em}
+	#Negotiate h4{ font-size:12px; color:#696969; margin:20px 0px; }
+	#Negotiate p{ margin-left:2em}
+
+a#IntegrityInfoView { color:#0B6BBC; display:inline-block; text-decoration:underline; line-height:18px; font-weight:bold; background:url("../images/img_27_2.gif"/*tpa=http://www.qycn.com/templates/images/img_27_2.gif*//*tpa=http://www.qycn.com/templates/images/img_27_2.gif*/) no-repeat left top; padding-left:28px;}
+a#IntegrityInfoView:hover { color:#F60; }
+a#IntegrityInfoView.index { background:url("../images/img_27.gif"/*tpa=http://www.qycn.com/templates/images/img_27.gif*//*tpa=http://www.qycn.com/templates/images/img_27.gif*/) no-repeat left top;}
+
+
+#beian_download { float:right; width:200px; height:145px; line-height:20px; padding:10px 0 0 14px; margin:20px 10px 25px 25px; background:url("../images/bg_41.gif"/*tpa=http://www.qycn.com/templates/images/bg_41.gif*//*tpa=http://www.qycn.com/templates/images/bg_41.gif*/) no-repeat left top}
+	#beian_download h4{ font-size:14px; font-weight:bold; margin-bottom:10px;}
+	#beian_download a{ display:inline-block; overflow:hidden; text-indent:-999px; width:130px; height:44px; margin:15px 0 0 40px; background:url("../images/bu_bg22.gif"/*tpa=http://www.qycn.com/templates/images/bu_bg22.gif*//*tpa=http://www.qycn.com/templates/images/bu_bg22.gif*/) no-repeat left top}
+
+img.img_beian_ry { width:168px; height:227px; border:solid 1px #DFDFDF; margin-bottom:10px;}
+
+#area_turn { color:#4F4C4C; line-height:28px; 145px; padding:25px 0px 30px 145px; background:url("../images/img_49.gif"/*tpa=http://www.qycn.com/templates/images/img_49.gif*//*tpa=http://www.qycn.com/templates/images/img_49.gif*/) no-repeat 15px center}
+	#area_turn a img{ margin-top:20px;}
+	
+#area_turn_from { margin:18px 0; padding:10px 15px; height:50px; border:solid 1px #DDC392; background:url("../images/bg_43.gif"/*tpa=http://www.qycn.com/templates/images/bg_43.gif*//*tpa=http://www.qycn.com/templates/images/bg_43.gif*/) no-repeat left top;}
+#areaturn_info {}
+	#areaturn_info .areaturn_info_item{ float:left; width:205px; margin-left:25px}
+	#areaturn_info .areaturn_info_item li{ border:solid 1px #DFE0DB; border-top:none; padding:0px 15px; line-height:27px;}
+	#areaturn_info .first { margin-left:0px;}
+
+.article { border-right:solid 1px #FFF; background:url("../images/bg_16.gif"/*tpa=http://www.qycn.com/templates/images/bg_16.gif*//*tpa=http://www.qycn.com/templates/images/bg_16.gif*/) repeat-x #FFF left top;}
+	.article_main { float:left; width:568px; min-height:550px; _height:550px; border-right:solid 1px #B6B6B6; background:#FFF;}
+		.article_main h3 { color:#696564; font-size:12px; font-weight:normal; overflow:hidden; line-height:28px; padding-left:20px; border-bottom:solid 1px #BFBEBF; height:26px; background:url("../images/bg_27.gif"/*tpa=http://www.qycn.com/templates/images/bg_27.gif*//*tpa=http://www.qycn.com/templates/images/bg_27.gif*/) repeat-x left top; margin-bottom:0px;}
+	
+	.article_lise { margin:0px; padding:15px 20px;}
+		
+	.article_types { float:left; width:156px; border-top:solid 1px #FFF; _margin-left:-1px;}
+		.article_types dl { _margin-left:1px;}
+			.article_types dl dd{ width:144px; height:33px; line-height:35px; overflow:hidden; padding-left:10px; margin-bottom:5px;}
+				.article_types dl dd a { color:#656565; font-size:14px; cursor:pointer;}
+				.article_types dl dd a:hover { color:#C00; }
+			.article_types dl dd.chengsed{ width:143px; background:url("../images/bg_17.gif"/*tpa=http://www.qycn.com/templates/images/bg_17.gif*//*tpa=http://www.qycn.com/templates/images/bg_17.gif*/) no-repeat right top; margin-left:-1px; padding-left:11px;}
+				.article_types dl dd.chengsed a { color:#C00; font-weight:bold}
+	
+	.article_info { border-bottom:solid 1px #EFEFEF; margin:2px; margin-top:15px; padding:0 20px 0 10px;}
+		.article_info dl {}
+			.article_info dl dt { padding:13px 20px 13px 30px; background:url("../images/icon_16.gif"/*tpa=http://www.qycn.com/templates/images/icon_16.gif*//*tpa=http://www.qycn.com/templates/images/icon_16.gif*/) no-repeat left 16px}
+				.article_info dl dt h2{ color:#105191; font-weight:bold; font-size:14px; line-height:22px; }
+			.article_info dl dd { color:#525252; font-size:14px; min-height:200px; _height:200px; line-height:24px; border-bottom:dashed 1px #CFCFCF; padding:0 0 10px 30px; background:url("../images/sex_0_2.gif"/*tpa=http://www.qycn.com/templates/images/sex_0_2.gif*//*tpa=http://www.qycn.com/templates/images/sex_0_2.gif*/) no-repeat left 3px;}
+				.article_info dl dd img { max-width:500px; _width: expression(this.width > 500 ? 500 : true);}
+	
+	.article_message { padding-left:10px; line-height:40px;}
+		.article_message a { font-weight:normal; vertical-align:middle; _margin:10px 0;}
+		
+	.article_related { margin:10px 25px;}
+		.article_related dl { color:#656565;}
+			.article_related dl dt { margin-bottom:10px;}
+			.article_related dl dd { margin-left:13px; line-height:20px;}
+
+#product_info {border:solid 1px #D6D6D6; border-top:none; padding:20px;}
+#product_info_contents{ color:#666; line-height:150%; margin-top:15px;}
+
+#float_bg { position:absolute; top:0px; left:0px; bottom:0px; z-index:100; background:#EEE; width:100%; height:1250px; filter:alpha(opacity=50);opacity: 0.5;}
+
+#float_bg_center { position:absolute; top:0px; left:0px; z-index:101; bottom:0px; background:#000; width:100%; height:1140px; *height:740px; filter:alpha(opacity=60);opacity: 0.6; _padding:0 20px; _left:-20px}
+
+#float_pay_1 { position:relative; z-index:101; width:580px; height:300px; position:absolute; top:500px; left:50%; margin-left:-290px; padding:20px 40px; background:#fffdf4; border:solid 3px #f7c913; line-height:24px; color:#666}
+	#float_pay_1 span { font-size:16px; font-weight:bold; color:#df5909;}
+	#float_pay_1 p { padding-left:1.5em;}
+
+#cc_info { background-image: url("../images/bg_4.jpg"/*tpa=http://www.qycn.com/templates/images/bg_4.jpg*//*tpa=http://www.qycn.com/templates/images/bg_4.jpg*/); background-repeat: no-repeat; padding-top: 10px; padding-right: 210px; padding-bottom: 18px; padding-left: 25px; height: 200px; line-height: 23px; color: #6C6969; position: relative; }
+#cc_info #dl_cc { height: 33px; width: 127px; display: block; position: absolute; right: 43px; bottom: 23px; text-indent: -9999em; overflow: hidden; }
+
+#fl_banner { margin: 4px 0px 0px 0px;}
+#cloud_tbody { width:auto; height:290px; border: #e5e5e5 solid 1px;}
+#cloud_news { margin:20px 0px 0px 30px;}
+#cloud-news_ul {line-height:24px; color:#7c7c7c;}
+#cloud_news_title { float:right; width:110px; margin-top:4px;}
+#cloud_jieshao_t1 { color:#5c5d5e; line-height:22px; width:205px; margin:25px 30px 0px 240px; }
+#cloud_jieshao { height:230px; background:url("http://cloud.qy.com.cn/) no-repeat}
+
+/*首页图片轮播样式*/
+img { border:none; }
+#ibanner { position:relative; width:950px; height:276px; overflow:hidden;}
+#ibanner_pic a { position:absolute; top:0; display:block; width:950px; height:276px; overflow:hidden; }
+#ibanner_btn { position:absolute; z-index:9999; right:5px; bottom:5px; font-weight:700; font-family:Arial; }
+#ibanner_btn span { display:block; float:left; margin-left:4px; padding:0 4px; background:#000; cursor:pointer; }
+#ibanner_btn .normal { height:14px; border:1px solid #999; color:#999; font-size:11px; line-height:14px; }
+#ibanner_btn .current { height:14px; border:1px solid #FF5300; color:#FF5300; font-size:11px; line-height:14px; }
+
+
+#ibanner2 { position:relative; width:950px; height:276px; overflow:hidden; /*padding-bottom:10px;*/}
+#ibanner_pic2 a { position:absolute; top:0; display:block; width:950px; height:276px; overflow:hidden; }
+#ibanner_btn2 { position:absolute; z-index:9999; right:10px; bottom:20px; }
+/*#ibanner_btn2 { position:absolute; z-index:9999; right:455px; bottom:2px; font-weight:700; font-family:Arial; }*/
+#ibanner_btn2 span { display:block; float:left; margin-left:5px; padding:0 4px;cursor:pointer;   }
+#ibanner_btn2 .normal { height:10px; background-image: url("../images/c_c_imgs/dian1.png"/*tpa=http://www.qycn.com/templates/images/c_c_imgs/dian1.png*/)!important; background-repeat: no-repeat; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/templates/images/c_c_imgs/dian1.png'); _ background-image: none; }
+#ibanner_btn2 .current { height:10px;background-image: url("../images/c_c_imgs/dian2.png"/*tpa=http://www.qycn.com/templates/images/c_c_imgs/dian2.png*//*tpa=http://www.qycn.com/templates/images/c_c_imgs/dian2.png*/)!important; background-repeat: no-repeat; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/templates/images/c_c_imgs/dian2.png'); _ background-image: none;    }
+
+
+
+#ibanner3 { position:relative; width:950px; height:340px; overflow:hidden; }
+#ibanner_pic3 a { position:absolute; top:0; display:block; width:950px; height:340px; overflow:hidden; }
+#ibanner_btn3 { position:absolute; z-index:9999; right:455px; bottom:10px; }
+/*#ibanner_btn2 { position:absolute; z-index:9999; right:455px; bottom:2px; font-weight:700; font-family:Arial; }*/
+#ibanner_btn3 span { display:block; float:left; margin-left:5px; padding:0 4px;cursor:pointer;   }
+#ibanner_btn3 .normal { height:10px; background-image: url("../images/c_c_imgs/dian1.png"/*tpa=http://www.qycn.com/templates/images/c_c_imgs/dian1.png*//*tpa=http://www.qycn.com/templates/images/c_c_imgs/dian1.png*/)!important; background-repeat: no-repeat; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/templates/images/c_c_imgs/dian1.png'); _background-image: none; }
+#ibanner_btn3 .current { height:10px;background-image: url("../images/c_c_imgs/dian2.png"/*tpa=http://www.qycn.com/templates/images/c_c_imgs/dian2.png*//*tpa=http://www.qycn.com/templates/images/c_c_imgs/dian2.png*/)!important; background-repeat: no-repeat; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/templates/images/c_c_imgs/dian2.png'); _background-image: none;    }
+
+
+/*网站体检注册页配图*/
+.test_bg_01 { background-image: url("../images/test_img.jpg"/*tpa=http://www.qycn.com/templates/images/test_img.jpg*//*tpa=http://www.qycn.com/templates/images/test_img.jpg*/); background-repeat: no-repeat; height: 337px; width: 176px; }
+
+
+
+/*用户中心样式更改*/
+.dl_fast_1 { float:left; padding:20px 0 10px 22px; width:555px; }
+	.dl_fast_1 dt { float:left; margin-right:12px;}
+	.dl_fast_1 dd { line-height:22px; color:#989898;} 
+		.dl_fast_1 dd a.a_link { font-size:14px; line-height:18px; font-weight:bold; color:#075681; text-decoration:underline;} 
+		.dl_fast_1 dd a.a_link:hover {} 
+		
+		
+.dl_fast_2 { float:left; padding:10px 0 10px 22px; width:315px; height:70px}
+	.dl_fast_2 dt { float:left; margin-right:12px;}
+	.dl_fast_2 dd { line-height:22px; color:#989898; } 
+		.dl_fast_2 dd span.no_make_use   {color:#ff6600;} 
+		.dl_fast_2 dd a.a_link { font-size:14px; line-height:18px; font-weight:bold; color:#075681; text-decoration:underline;} 
+		.dl_fast_2 dd a.a_link:hover {} 
+		
+		
+		
+		/*dns操作说明图片隐藏跟显示*/
+		a.showbigpic_ss { color:#C20303; white-space:nowrap;}
+	a.showbigpic_ss img { vertical-align:middle}
+	a.showbigpic_ss div{ display:none; background:#FFF; _padding-bottom:5px}
+a.showbigpic_ss:hover { position:relative; z-index:100;}
+	a.showbigpic_ss:hover div{ position:absolute; z-index:101; display:block; top:15px; left:0px;}
+	
+	
+/*订单，增值服务列表，产品管理新增搜索样式*/
+	#d_search_new{width:665px; height:45px; padding:10px; margin-bottom:5px; background:url("../images/bg_0921.gif"/*tpa=http://www.qycn.com/templates/images/bg_0921.gif*//*tpa=http://www.qycn.com/templates/images/bg_0921.gif*/) no-repeat left top;} 
+#d_search_new select{ color:#999; width:80px;height: 22px;} 
+#d_search_new table { margin-left:10px; } 
+#d_search_new th { font-weight:bold; font-size:14px; color:#043786; text-align:right;} 
+#d_search_new td { height:36px;} 
+#d_search_new td#objS * { vertical-align:middle; } 
+#d_search_new td#objS #submit { margin-left:25px;} 
+#d_search_new .text_1 { border: 1px solid #ccc; color: #999;height: 18px; padding: 2px 5px 0;}
+			
+	
+/*页脚全局导航*/
+.qy_footer_menu { width:948px; border:1px solid #e2e2e2; background:#f6f6f6; margin-top:10px}
+.qy_footer_menu ul li { float:left; border-right:1px solid #e2e2e2; width:170px; height:240px; list-style:none; font-size:12px; line-height:24px; color:#4b4b4b; padding:15px 0px 10px 30px;}
+.qy_footer_menu ul li h3 { font-family:"Microsoft Yahei", "Arial Black", Arial; font-size:14px; color:#484848; line-height:30px;}
+.qy_footer_menu ul li dl { padding:3px 0;}
+.qy_footer_menu ul li dl dt { float:left; width:75px; }
+.qy_footer_menu ul li dl dd { float:left; width:150px;}
+.qy_footer_menu ul li.secend{ width:255px}
+	.qy_footer_menu ul li.secend dl dd{ width:170px}
+	.qy_footer_menu ul li.secend dl dd a{ width:85px}
+.qy_footer_menu ul li dl dt h5 { font-weight:bold; font-size:12px;}
+.qy_footer_menu ul li dl dd a { float:left; text-decoration:none; display:block; width:75px; _position:relative;}
+.qy_footer_menu h3{ text-indent:-10000px; display:block; height:10px; line-height:10px; overflow:hidden}
+

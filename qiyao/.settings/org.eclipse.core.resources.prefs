@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//celery_task/__init__.py=utf-8
+encoding//celery_task/dosql.py=UTF-8
+encoding//celery_task/emaildata.py=utf-8
+encoding//celery_task/init_data.py=utf-8
+encoding//celery_task/obtain_data_task.py=utf-8
+encoding//celery_task/urldata.py=utf-8
+encoding//check/models.py=UTF-8
+encoding//check/views.py=UTF-8

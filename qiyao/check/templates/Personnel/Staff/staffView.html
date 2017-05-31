@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=8.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE>群英云考勤V1.14.1.22517</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=X-UA-Compatible content=IE=8>
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+<SCRIPT language=javascript src="/static/js/jquery-1.7.min.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/js.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/js.function.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/window_resize.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/Tree.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/ui.datepicker.js" 
+type=text/javascript></SCRIPT>
+<!--<script src="/Synlogin/Index/synCheck" language="javascript" type="text/javascript"></script>--><LINK 
+href="/static/css/main.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/main_add.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/layout.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/font.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/attendance.css" rel=stylesheet type=text/css><LINK 
+href="/static/css/jquery-ui.css" rel=stylesheet type=text/css>
+<SCRIPT>
+$(document).ready(function(){		
+	var s_cfgid = '441833';
+	var s_userid = '1578433';
+	if(typeof($('#s_cfgid', top.document).val()) != 'undefined' && typeof($('#s_userid', top.document).val()) != 'undefined' && (parseInt(s_cfgid) != parseInt($('#s_cfgid', top.document).val()) || parseInt(s_userid) != parseInt($('#s_userid', top.document).val()))){
+		showinfo_tips('令牌失效，请重新登录。');
+		top.document.getElementById("if_sidebar").contentWindow.disableLinks();
+		var sid = setTimeout("logout()",4000);
+	}
+});
+function logout(){
+	top.document.location.href = '/Synlogin/Index/logout';
+}
+</SCRIPT>
+
+<SCRIPT language=javascript src="staffView_files/behavior.htm"></SCRIPT>
+
+<SCRIPT language=javascript src="staffView_files/behavior_stat.htm"></SCRIPT>
+
+<STYLE type=text/css>.bgc_02 {
+	BACKGROUND: #ddeefe 0px 0px
+}
+.bgc_01 {
+	BACKGROUND: #f1f8ff 0px 0px
+}
+.sel_1114 {
+	WIDTH: 95px; COLOR: #000; TEXT-ALIGN: center; DISPLAY: none
+}
+.per_list TD SPAN {
+	TEXT-DECORATION: none
+}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 11.00.9600.18639"></HEAD>
+<BODY>
+<TABLE width="100%" class=per_list id="detail_list" border=0 cellSpacing=0 cellPadding=0>
+    <tbody>  
+        <tr>
+            <th width="10%" scope="col">姓名</th>
+            <th width="10%" scope="col">性别</th>
+            <th width="12%" scope="col">手机</th>
+            <th width="10%" scope="col">卡号</th>
+            <th width="" scope="col">打卡设备</th>
+            <th width="8%" scope="col">操作</th>
+        </tr>
+        {% for person in persons|slice:":20" %}
+            <tr>
+                <td class="">{{person.name}}</td>
+                <td class="">{{ person.get_sex_display }}</td>
+                <td class="">{{person.phone}}</td>
+                <td class="">{{person.id}}</td>
+                <td class="">考勤机1</td>
+                <td class=""><a target="_parent" href="http://yun.kaoqin.com/personnel/staff/employeeInfo/eid/1074362">管理</a></td>
+            </tr>
+        {%endfor%}
+</tbody></TABLE>
+<DIV class=page_1 id=d_page_1>
+<FORM 
+onsubmit="location.href=document.getElementById('page_url').value+document.getElementById('pageno').value;return false;" 
+action="" method=post> 
+{% if page == 1 %}
+	<SPAN>首页</SPAN>
+    <SPAN>上一页</SPAN> 
+{% else %}
+	<A href="http://127.0.0.1:8000/qiyao/Personnel/Staff/staffView/page/1">首页</A>
+    <A href="http://127.0.0.1:8000/qiyao/Personnel/Staff/staffView/page/{{page|add:-1}}">上一页</A>
+{% endif %}
+
+<A href="http://127.0.0.1:8000/qiyao/Personnel/Staff/staffView/page/{{page|add:1}}">下一页</A> 
+<A href="http://127.0.0.1:8000/qiyao/Personnel/Staff/staffView/page/{{page_num}}">末页</A> <SPAN>共{{personnum}}条, 
+每页20条, 共{{page_num}}页</SPAN> <INPUT name=pageno class=text3 id="pageno" type=text size=2 
+value=1> <INPUT class=button2 type=submit value=跳转><INPUT id="page_url" 
+type=hidden value="/qiyao/Personnel/Staff/staffView/page/"></FORM></DIV>
+<SCRIPT type=text/javascript>
+    $(document).ready(function(){
+        //鼠标经过
+        $('#detail_list tr').live('mouseover',function(){
+            $('#detail_list tr td').removeClass('bgc_01');
+            $(this).children('td').addClass('bgc_01');
+        });
+
+        //鼠标离开
+        $('#detail_list tr').live('mouseout',function(){
+            $('#detail_list tr td').removeClass('bgc_01');
+        });
+
+        $('.showpic').mouseover(function(){
+	        $(this).after('<img src="'+$(this).attr('url')+'" class="npic" style="width:100px; position:absolute; border: 3px solid #ccc">');
+	    }).mouseout(function(){
+	        $('.npic').remove();
+	    });
+    })
+</SCRIPT>
+</BODY></HTML>

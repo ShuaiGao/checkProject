@@ -1,0 +1,347 @@
+http://kq.qycn.com/index.php/Api/Api/getEmployee?account=125865c1aedf7f1f6292a0d678a4e659&page=1&requesttime=1493883650&sign=8f18277cfdaac36011901a78c8b29a81
+page =  1
+totalpage =  7
+total =  312
+attendata = 
+account =  1319221  realname =  唐武鑫  deptid =  131892  departname =  美术公共部
+account =  1278177  realname =  王琼  deptid =  144368  departname =  综合部
+account =  1278560  realname =  赵斌  deptid =  132142  departname =  管理层
+account =  1278561  realname =  林宏伟  deptid =  130719  departname =  斩仙2
+account =  1278562  realname =  梁超炎  deptid =  130719  departname =  斩仙2
+account =  1278563  realname =  吴泽铖  deptid =  130719  departname =  斩仙2
+account =  1278564  realname =  官雷  deptid =  130719  departname =  斩仙2
+account =  1278565  realname =  陈智刚  deptid =  130719  departname =  斩仙2
+account =  1278568  realname =  杨浩愉  deptid =  131825  departname =  定海
+account =  1278569  realname =  卢山  deptid =  132018  departname =  手游1
+account =  1278570  realname =  吴志红  deptid =  131825  departname =  定海
+account =  1278571  realname =  郑翰斌  deptid =  130719  departname =  斩仙2
+account =  1278573  realname =  郭九福  deptid =  132018  departname =  手游1
+account =  1278576  realname =  张树斌  deptid =  130719  departname =  斩仙2
+account =  1278577  realname =  马文勇  deptid =  132018  departname =  手游1
+account =  1278578  realname =  陈裕玲  deptid =  131825  departname =  定海
+account =  1278579  realname =  许锦浩  deptid =  131825  departname =  定海
+account =  1278582  realname =  奚仲炜  deptid =  131892  departname =  美术公共部
+account =  1278583  realname =  卢思霖  deptid =  144368  departname =  综合部
+account =  1278584  realname =  邓堪泰  deptid =  131892  departname =  美术公共部
+account =  1278585  realname =  吴淑乾  deptid =  130719  departname =  斩仙2
+account =  1278586  realname =  黄雯亮  deptid =  131892  departname =  美术公共部
+account =  1278587  realname =  陈志强  deptid =  131892  departname =  美术公共部
+account =  1278588  realname =  蓝倩婷  deptid =  131892  departname =  美术公共部
+account =  1278591  realname =  邹源  deptid =  131892  departname =  美术公共部
+account =  1278593  realname =  何致华  deptid =  131892  departname =  美术公共部
+account =  1278594  realname =  陈伟杰  deptid =  131825  departname =  定海
+account =  1278595  realname =  陈志焕  deptid =  131892  departname =  美术公共部
+account =  1278596  realname =  廖勇杰  deptid =  131825  departname =  定海
+account =  1278597  realname =  石洋  deptid =  131892  departname =  美术公共部
+account =  1278598  realname =  刘昊  deptid =  130719  departname =  斩仙2
+account =  1278599  realname =  曾海明  deptid =  132018  departname =  手游1
+account =  1278600  realname =  方俊泓  deptid =  131825  departname =  定海
+account =  1278601  realname =  冯亚南  deptid =  131892  departname =  美术公共部
+account =  1278602  realname =  陈惠  deptid =  131892  departname =  美术公共部
+account =  1278603  realname =  荆慧锋  deptid =  131892  departname =  美术公共部
+account =  1278604  realname =  王磊  deptid =  131892  departname =  美术公共部
+account =  1278605  realname =  王怀电  deptid =  131892  departname =  美术公共部
+account =  1278606  realname =  熊利荣  deptid =  131892  departname =  美术公共部
+account =  1278607  realname =  曹意忠  deptid =  131892  departname =  美术公共部
+account =  1278608  realname =  王家辉  deptid =  131892  departname =  美术公共部
+account =  1278609  realname =  范秋富  deptid =  131892  departname =  美术公共部
+account =  1278611  realname =  余计钢  deptid =  131892  departname =  美术公共部
+account =  1278612  realname =  梁平  deptid =  131892  departname =  美术公共部
+account =  1278613  realname =  王蓝溪  deptid =  131892  departname =  美术公共部
+account =  1278614  realname =  阮灿华  deptid =  131892  departname =  美术公共部
+account =  1278616  realname =  邓光耀  deptid =  131892  departname =  美术公共部
+account =  1278618  realname =  陈幸坤  deptid =  131825  departname =  定海
+account =  1278619  realname =  刘洋  deptid =  132030  departname =  手游2
+account =  1278620  realname =  郭召  deptid =  131825  departname =  定海
+http://kq.qycn.com/index.php/Api/Api/getEmployee?account=125865c1aedf7f1f6292a0d678a4e659&page=2&requesttime=1493883651&sign=f411de39cac67fb18bd8b3cf7473ffae
+page =  2
+totalpage =  7
+total =  312
+attendata = 
+account =  1278621  realname =  付丁杰  deptid =  131825  departname =  定海
+account =  1278622  realname =  郭兵  deptid =  131892  departname =  美术公共部
+account =  1278623  realname =  程庆军  deptid =  130719  departname =  斩仙2
+account =  1278624  realname =  牟泽  deptid =  132018  departname =  手游1
+account =  1278626  realname =  唐嘉琪  deptid =  131892  departname =  美术公共部
+account =  1278627  realname =  陈小青  deptid =  130719  departname =  斩仙2
+account =  1278628  realname =  杨家威  deptid =  132017  departname =  公共支持部
+account =  1278629  realname =  张婧雯  deptid =  130719  departname =  斩仙2
+account =  1278631  realname =  关潮盛  deptid =  132018  departname =  手游1
+account =  1278632  realname =  朱霖  deptid =  132142  departname =  管理层
+account =  1278633  realname =  王子文  deptid =  132018  departname =  手游1
+account =  1278634  realname =  徐前用  deptid =  132018  departname =  手游1
+account =  1278635  realname =  王重  deptid =  132030  departname =  手游2
+account =  1278636  realname =  肖龙飞  deptid =  130719  departname =  斩仙2
+account =  1278637  realname =  佘磊  deptid =  132030  departname =  手游2
+account =  1278638  realname =  赖世远  deptid =  132018  departname =  手游1
+account =  1297917  realname =  吴娴  deptid =  131892  departname =  美术公共部
+account =  1297918  realname =  赵国巍  deptid =  132030  departname =  手游2
+account =  1297919  realname =  林青松  deptid =  131892  departname =  美术公共部
+account =  1323614  realname =  熊壮  deptid =  131892  departname =  美术公共部
+account =  1323619  realname =  梁兴华  deptid =  132018  departname =  手游1
+account =  1323624  realname =  黄佳  deptid =  132018  departname =  手游1
+account =  1331681  realname =  刘鹏  deptid =  132017  departname =  公共支持部
+account =  1333179  realname =  涂建强  deptid =  131892  departname =  美术公共部
+account =  1338404  realname =  邱春宾  deptid =  131892  departname =  美术公共部
+account =  1343671  realname =  谢植昌  deptid =  131825  departname =  定海
+account =  1360185  realname =  蓝德发  deptid =  131892  departname =  美术公共部
+account =  1360188  realname =  刘纯华  deptid =  131892  departname =  美术公共部
+account =  1360192  realname =  皮桂琼  deptid =  131892  departname =  美术公共部
+account =  1362203  realname =  赵颖  deptid =  144368  departname =  综合部
+account =  1365535  realname =  邹睿智  deptid =  132018  departname =  手游1
+account =  1368237  realname =  连瑜琳  deptid =  132017  departname =  公共支持部
+account =  1368837  realname =  刘鹏2  deptid =  132017  departname =  公共支持部
+account =  1370912  realname =  程鑫  deptid =  132017  departname =  公共支持部
+account =  1371061  realname =  范学年  deptid =  131825  departname =  定海
+account =  1371062  realname =  高帅  deptid =  132018  departname =  手游1
+account =  1371064  realname =  江为  deptid =  131892  departname =  美术公共部
+account =  1383594  realname =  陆鹏  deptid =  132017  departname =  公共支持部
+account =  1383598  realname =  李易  deptid =  132018  departname =  手游1
+account =  1383600  realname =  张仰彭  deptid =  131892  departname =  美术公共部
+account =  1383601  realname =  冯嘉俊  deptid =  130719  departname =  斩仙2
+account =  1383602  realname =  刘子超  deptid =  132018  departname =  手游1
+account =  1391052  realname =  王泽录  deptid =  130719  departname =  斩仙2
+account =  1391053  realname =  彭伟雄  deptid =  131825  departname =  定海
+account =  1397884  realname =  陈跃铭  deptid =  131892  departname =  美术公共部
+account =  1398313  realname =  文慧萍  deptid =  144368  departname =  综合部
+account =  1402619  realname =  黄子增  deptid =  151291  departname =  手游3
+account =  1406764  realname =  姜志伟  deptid =  151291  departname =  手游3
+account =  1407362  realname =  姚志勇  deptid =  131892  departname =  美术公共部
+account =  1412364  realname =  何健恒  deptid =  131892  departname =  美术公共部
+http://kq.qycn.com/index.php/Api/Api/getEmployee?account=125865c1aedf7f1f6292a0d678a4e659&page=3&requesttime=1493883652&sign=26611f8f24d61d04267c42304490305e
+page =  3
+totalpage =  7
+total =  312
+attendata = 
+account =  1412387  realname =  邱淳彪  deptid =  131892  departname =  美术公共部
+account =  1416168  realname =  张紫嫣  deptid =  131892  departname =  美术公共部
+account =  1416205  realname =  肖龙军  deptid =  131892  departname =  美术公共部
+account =  1416332  realname =  吴志宏  deptid =  151291  departname =  手游3
+account =  1419650  realname =  李明岳  deptid =  132030  departname =  手游2
+account =  1469074  realname =  任建宇  deptid =  151291  departname =  手游3
+account =  1476009  realname =  周贲  deptid =  132030  departname =  手游2
+account =  1475237  realname =  金鑫鑫  deptid =  0  departname =  None
+account =  1475236  realname =  陈皓  deptid =  0  departname =  None
+account =  1474882  realname =  李文峰  deptid =  131825  departname =  定海
+account =  1470016  realname =  朱建军  deptid =  132018  departname =  手游1
+account =  1470015  realname =  张嘉文  deptid =  151291  departname =  手游3
+account =  1465278  realname =  霍浩研  deptid =  151291  departname =  手游3
+account =  1461229  realname =  张兆家  deptid =  131892  departname =  美术公共部
+account =  1481566  realname =  钟智轩  deptid =  131892  departname =  美术公共部
+account =  1484153  realname =  吴楚妍  deptid =  144368  departname =  综合部
+account =  1485871  realname =  何亚标  deptid =  151291  departname =  手游3
+account =  1493864  realname =  张一弛  deptid =  131892  departname =  美术公共部
+account =  1493880  realname =  王振  deptid =  132017  departname =  公共支持部
+account =  1493895  realname =  叶坚文  deptid =  130719  departname =  斩仙2
+account =  1494046  realname =  陈超  deptid =  131892  departname =  美术公共部
+account =  1496856  realname =  邹爱华  deptid =  131892  departname =  美术公共部
+account =  1502335  realname =  刘凡泽  deptid =  131892  departname =  美术公共部
+account =  1502339  realname =  何俊杰  deptid =  132030  departname =  手游2
+account =  1509273  realname =  陶明杰  deptid =  130719  departname =  斩仙2
+account =  1510820  realname =  许勇  deptid =  132030  departname =  手游2
+account =  1510822  realname =  漆铮  deptid =  131892  departname =  美术公共部
+account =  1510827  realname =  孙穗川  deptid =  151291  departname =  手游3
+account =  1515097  realname =  陈丽平  deptid =  144368  departname =  综合部
+account =  1515120  realname =  王楚晓  deptid =  130719  departname =  斩仙2
+account =  1524050  realname =  赵成国  deptid =  131892  departname =  美术公共部
+account =  1536213  realname =  张宇政  deptid =  131892  departname =  美术公共部
+account =  1541739  realname =  田超超  deptid =  132030  departname =  手游2
+account =  1541742  realname =  毛秋云  deptid =  132030  departname =  手游2
+account =  1541755  realname =  朱巧灵  deptid =  131892  departname =  美术公共部
+account =  1541763  realname =  董优  deptid =  151291  departname =  手游3
+account =  1541764  realname =  王恒帅  deptid =  131825  departname =  定海
+account =  1541766  realname =  郑敏  deptid =  144368  departname =  综合部
+account =  1541767  realname =  江广浩  deptid =  132017  departname =  公共支持部
+account =  1543380  realname =  周乐  deptid =  132017  departname =  公共支持部
+account =  1549468  realname =  江辰冰  deptid =  131825  departname =  定海
+account =  1551021  realname =  林峰  deptid =  132030  departname =  手游2
+account =  1551441  realname =  谭林佳  deptid =  0  departname =  None
+account =  1551930  realname =  李根  deptid =  151291  departname =  手游3
+account =  1553064  realname =  邱纯江  deptid =  131892  departname =  美术公共部
+account =  1563581  realname =  黄春越  deptid =  131825  departname =  定海
+account =  1568437  realname =  杨运  deptid =  132030  departname =  手游2
+account =  1570743  realname =  林思洋  deptid =  132030  departname =  手游2
+account =  1570745  realname =  李夏  deptid =  131892  departname =  美术公共部
+account =  1572385  realname =  肖智明  deptid =  131892  departname =  美术公共部
+http://kq.qycn.com/index.php/Api/Api/getEmployee?account=125865c1aedf7f1f6292a0d678a4e659&page=4&requesttime=1493883652&sign=16961bd808c84c66cddc8c3e7f8f85ea
+page =  4
+totalpage =  7
+total =  312
+attendata = 
+account =  1572386  realname =  武英男  deptid =  131825  departname =  定海
+account =  1572387  realname =  党文良  deptid =  132030  departname =  手游2
+account =  1577718  realname =  凌滨  deptid =  132018  departname =  手游1
+account =  1577719  realname =  韦旭华  deptid =  132030  departname =  手游2
+account =  1578748  realname =  胡泽邦  deptid =  132030  departname =  手游2
+account =  1578749  realname =  郑金丰  deptid =  132030  departname =  手游2
+account =  1624818  realname =  吴东成  deptid =  132030  departname =  手游2
+account =  1582348  realname =  林洁昭  deptid =  151291  departname =  手游3
+account =  1582351  realname =  黄杰明  deptid =  132030  departname =  手游2
+account =  1585740  realname =  陈治宇  deptid =  131892  departname =  美术公共部
+account =  1585755  realname =  曹麒文  deptid =  151291  departname =  手游3
+account =  1587465  realname =  梁龙威  deptid =  131892  departname =  美术公共部
+account =  1588024  realname =  钟翠芬  deptid =  132030  departname =  手游2
+account =  1591918  realname =  邱树栋  deptid =  132030  departname =  手游2
+account =  1591928  realname =  罗阳  deptid =  132030  departname =  手游2
+account =  1591936  realname =  柏雪松  deptid =  131892  departname =  美术公共部
+account =  1591940  realname =  杜江  deptid =  132017  departname =  公共支持部
+account =  1593871  realname =  陈如鹏  deptid =  132030  departname =  手游2
+account =  1594861  realname =  钟小康  deptid =  132030  departname =  手游2
+account =  1596450  realname =  张哲斌  deptid =  132030  departname =  手游2
+account =  1596454  realname =  秦国霖  deptid =  132030  departname =  手游2
+account =  1596458  realname =  黎全柱  deptid =  132030  departname =  手游2
+account =  1598254  realname =  胡小文  deptid =  132030  departname =  手游2
+account =  1598256  realname =  叶自龙  deptid =  132030  departname =  手游2
+account =  1598257  realname =  罗广庆  deptid =  132030  departname =  手游2
+account =  1598818  realname =  张亮  deptid =  151291  departname =  手游3
+account =  1598820  realname =  万鑫  deptid =  132030  departname =  手游2
+account =  1601946  realname =  廖贤  deptid =  132030  departname =  手游2
+account =  1611639  realname =  严颖焜  deptid =  144368  departname =  综合部
+account =  1611640  realname =  梁文静  deptid =  131892  departname =  美术公共部
+account =  1611641  realname =  曾罗克  deptid =  132030  departname =  手游2
+account =  1614480  realname =  吴嘉琪  deptid =  151291  departname =  手游3
+account =  1614481  realname =  杨恩亮  deptid =  132030  departname =  手游2
+account =  1614551  realname =  廖锐敏  deptid =  131892  departname =  美术公共部
+account =  1618056  realname =  李强  deptid =  132030  departname =  手游2
+account =  1618058  realname =  黄致远  deptid =  132030  departname =  手游2
+account =  1618060  realname =  刘彪  deptid =  132030  departname =  手游2
+account =  1619140  realname =  周浩斐  deptid =  132030  departname =  手游2
+account =  1619142  realname =  李志安  deptid =  132030  departname =  手游2
+account =  1619684  realname =  陈景致  deptid =  132030  departname =  手游2
+account =  1620782  realname =  杨铁琦  deptid =  131892  departname =  美术公共部
+account =  1620784  realname =  张猛  deptid =  132030  departname =  手游2
+account =  1621806  realname =  郑斌戈  deptid =  132030  departname =  手游2
+account =  1621807  realname =  彭鑫城  deptid =  132030  departname =  手游2
+account =  1622476  realname =  曾春强  deptid =  132030  departname =  手游2
+account =  1622477  realname =  朱志勇  deptid =  132030  departname =  手游2
+account =  1623119  realname =  陈传友  deptid =  132030  departname =  手游2
+account =  1623121  realname =  戴逢改  deptid =  132030  departname =  手游2
+account =  1623123  realname =  王俊雄  deptid =  132030  departname =  手游2
+account =  1624816  realname =  黄新锋  deptid =  151291  departname =  手游3
+http://kq.qycn.com/index.php/Api/Api/getEmployee?account=125865c1aedf7f1f6292a0d678a4e659&page=5&requesttime=1493883653&sign=7a835275ce75e2a7d6db91c9a1d5b30a
+page =  5
+totalpage =  7
+total =  312
+attendata = 
+account =  1624817  realname =  陈健欣  deptid =  132030  departname =  手游2
+account =  1626840  realname =  黄奕萍  deptid =  144368  departname =  综合部
+account =  1628973  realname =  叶亚明  deptid =  132030  departname =  手游2
+account =  1628990  realname =  涂伟巍  deptid =  131892  departname =  美术公共部
+account =  1630698  realname =  王淼  deptid =  132018  departname =  手游1
+account =  1630703  realname =  潘胜  deptid =  131892  departname =  美术公共部
+account =  1630720  realname =  朱博文  deptid =  132017  departname =  公共支持部
+account =  1632475  realname =  邓清浩  deptid =  132030  departname =  手游2
+account =  1632477  realname =  李玉龙  deptid =  132030  departname =  手游2
+account =  1635713  realname =  周梓健  deptid =  131825  departname =  定海
+account =  1640322  realname =  谢安生  deptid =  132030  departname =  手游2
+account =  1642535  realname =  陈怡  deptid =  131892  departname =  美术公共部
+account =  1644229  realname =  张耀  deptid =  132030  departname =  手游2
+account =  1646756  realname =  罗杰  deptid =  131825  departname =  定海
+account =  1652130  realname =  宁鸿  deptid =  132018  departname =  手游1
+account =  1652140  realname =  郭凯  deptid =  131892  departname =  美术公共部
+account =  1652179  realname =  黎麒  deptid =  132030  departname =  手游2
+account =  1652187  realname =  陈健  deptid =  132030  departname =  手游2
+account =  1653067  realname =  肖亮  deptid =  132030  departname =  手游2
+account =  1653068  realname =  李弥  deptid =  132030  departname =  手游2
+account =  1653069  realname =  吴锦涛  deptid =  132030  departname =  手游2
+account =  1654852  realname =  董永强  deptid =  131892  departname =  美术公共部
+account =  1656399  realname =  林坤源  deptid =  132017  departname =  公共支持部
+account =  1660363  realname =  梁剑辉  deptid =  131825  departname =  定海
+account =  1660371  realname =  郑智祥  deptid =  131892  departname =  美术公共部
+account =  1660377  realname =  徐石  deptid =  131892  departname =  美术公共部
+account =  1662572  realname =  杨世炜  deptid =  131892  departname =  美术公共部
+account =  1673935  realname =  张楠  deptid =  131892  departname =  美术公共部
+account =  1673944  realname =  陈育聪  deptid =  131892  departname =  美术公共部
+account =  1673956  realname =  刘湘君  deptid =  132030  departname =  手游2
+account =  1673961  realname =  李华国  deptid =  131892  departname =  美术公共部
+account =  1673964  realname =  张晓  deptid =  131892  departname =  美术公共部
+account =  1697081  realname =  黄鸿翔  deptid =  132030  departname =  手游2
+account =  1697082  realname =  胡祖伟  deptid =  132030  departname =  手游2
+account =  1698095  realname =  董明福  deptid =  132030  departname =  手游2
+account =  1698365  realname =  黄挺  deptid =  132030  departname =  手游2
+account =  1699806  realname =  胡学进  deptid =  131892  departname =  美术公共部
+account =  1699815  realname =  张远复  deptid =  144368  departname =  综合部
+account =  1703823  realname =  袁华辉  deptid =  151291  departname =  手游3
+account =  1703834  realname =  伍文豪  deptid =  131892  departname =  美术公共部
+account =  1703858  realname =  龙施霖  deptid =  130719  departname =  斩仙2
+account =  1703866  realname =  莫树荣  deptid =  132018  departname =  手游1
+account =  1706235  realname =  杨泓  deptid =  131892  departname =  美术公共部
+account =  1706276  realname =  何求  deptid =  132030  departname =  手游2
+account =  1707617  realname =  许建明  deptid =  132018  departname =  手游1
+account =  1709520  realname =  刘开宏  deptid =  132030  departname =  手游2
+account =  1710630  realname =  陈裕杰  deptid =  131892  departname =  美术公共部
+account =  1711667  realname =  马凡  deptid =  131892  departname =  美术公共部
+account =  1717266  realname =  张鑫  deptid =  132030  departname =  手游2
+account =  1717269  realname =  李子晞  deptid =  132030  departname =  手游2
+http://kq.qycn.com/index.php/Api/Api/getEmployee?account=125865c1aedf7f1f6292a0d678a4e659&page=6&requesttime=1493883653&sign=56f1546a51e5a4ef3e4bdf8043bf81f2
+page =  6
+totalpage =  7
+total =  312
+attendata = 
+account =  1717272  realname =  林家贤  deptid =  132030  departname =  手游2
+account =  1717274  realname =  戴辰  deptid =  132030  departname =  手游2
+account =  1717277  realname =  何嘉茵  deptid =  132030  departname =  手游2
+account =  1720399  realname =  冼键生  deptid =  132030  departname =  手游2
+account =  1723829  realname =  陈火明  deptid =  132017  departname =  公共支持部
+account =  1723848  realname =  覃日宏  deptid =  132018  departname =  手游1
+account =  1723850  realname =  林伯笙  deptid =  132030  departname =  手游2
+account =  1723852  realname =  李治  deptid =  131825  departname =  定海
+account =  1725725  realname =  黄祥龙  deptid =  176827  departname =  神仙劫手游
+account =  1725727  realname =  陈均能  deptid =  176827  departname =  神仙劫手游
+account =  1729144  realname =  袁智斌  deptid =  132030  departname =  手游2
+account =  1729145  realname =  王日朋  deptid =  132030  departname =  手游2
+account =  1730544  realname =  黄志伟  deptid =  132030  departname =  手游2
+account =  1731893  realname =  查成  deptid =  151291  departname =  手游3
+account =  1731895  realname =  符芳芳  deptid =  132030  departname =  手游2
+account =  1731897  realname =  代俊松  deptid =  132018  departname =  手游1
+account =  1731899  realname =  陈海鹏  deptid =  176827  departname =  神仙劫手游
+account =  1731900  realname =  汪鹏辉  deptid =  132030  departname =  手游2
+account =  1731902  realname =  陈锦萍  deptid =  144368  departname =  综合部
+account =  1732027  realname =  董伟  deptid =  132030  departname =  手游2
+account =  1732033  realname =  吴伟民  deptid =  131892  departname =  美术公共部
+account =  1735073  realname =  刘纯杰  deptid =  132030  departname =  手游2
+account =  1737214  realname =  钟剑东  deptid =  132030  departname =  手游2
+account =  1737930  realname =  欧国斌  deptid =  131892  departname =  美术公共部
+account =  1740997  realname =  岑皓军  deptid =  132030  departname =  手游2
+account =  1741016  realname =  张涛  deptid =  132030  departname =  手游2
+account =  1741021  realname =  郑永生  deptid =  131892  departname =  美术公共部
+account =  1741058  realname =  吴俊毅  deptid =  132030  departname =  手游2
+account =  1741086  realname =  王冠博  deptid =  132030  departname =  手游2
+account =  1741099  realname =  洪祖辉  deptid =  132030  departname =  手游2
+account =  1741103  realname =  陈狄铿  deptid =  132030  departname =  手游2
+account =  1743622  realname =  黄居明  deptid =  132017  departname =  公共支持部
+account =  1744161  realname =  李楚炯  deptid =  132030  departname =  手游2
+account =  1744164  realname =  卢启杰  deptid =  131825  departname =  定海
+account =  1744165  realname =  叶菁菁  deptid =  144368  departname =  综合部
+account =  1744167  realname =  王建军  deptid =  132030  departname =  手游2
+account =  1744174  realname =  程宇  deptid =  132030  departname =  手游2
+account =  1744345  realname =  雷涛  deptid =  176827  departname =  神仙劫手游
+account =  1744348  realname =  余耀龙  deptid =  132030  departname =  手游2
+account =  1744482  realname =  王棣振  deptid =  132030  departname =  手游2
+account =  1745364  realname =  关兆良  deptid =  132030  departname =  手游2
+account =  1745385  realname =  庞志强  deptid =  132030  departname =  手游2
+account =  1746737  realname =  吴小东  deptid =  131892  departname =  美术公共部
+account =  1746813  realname =  谢智安  deptid =  132030  departname =  手游2
+account =  1747604  realname =  刘俊康  deptid =  132030  departname =  手游2
+account =  1749194  realname =  陈卓斌  deptid =  132030  departname =  手游2
+account =  1749195  realname =  罗俊华  deptid =  151291  departname =  手游3
+account =  1750297  realname =  付鑫  deptid =  151291  departname =  手游3
+account =  1751206  realname =  曾孝鹏  deptid =  132030  departname =  手游2
+account =  1751207  realname =  陈俊岚  deptid =  131892  departname =  美术公共部
+http://kq.qycn.com/index.php/Api/Api/getEmployee?account=125865c1aedf7f1f6292a0d678a4e659&page=7&requesttime=1493883654&sign=e468c2ec1bed81bbb3fb734f779474b9
+page =  7
+totalpage =  7
+total =  312
+attendata = 
+account =  1751208  realname =  彭嘉伦  deptid =  132030  departname =  手游2
+account =  1754231  realname =  周毓贤  deptid =  132030  departname =  手游2
+account =  1754437  realname =  陈烁佳  deptid =  131892  departname =  美术公共部
+account =  1755248  realname =  孙雨  deptid =  132017  departname =  公共支持部
+account =  1756321  realname =  李鹏鹏  deptid =  132018  departname =  手游1
+account =  1757474  realname =  胡国文  deptid =  132030  departname =  手游2
+account =  1757477  realname =  冯喆  deptid =  132030  departname =  手游2
+account =  1757480  realname =  仇凯悦  deptid =  132030  departname =  手游2
+account =  1757492  realname =  戚楚蕾  deptid =  144368  departname =  综合部
+account =  1760265  realname =  温伟平  deptid =  132030  departname =  手游2
+account =  1767913  realname =  何元广  deptid =  132030  departname =  手游2
+account =  1767920  realname =  彭天柱  deptid =  131892  departname =  美术公共部

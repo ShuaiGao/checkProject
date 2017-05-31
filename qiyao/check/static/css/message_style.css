@@ -1,0 +1,115 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*短信群发系统样式*/
+#meg_remove_draft,
+#meg_remove_con,
+#meg_add_type,
+#meg_set_type { width:250px; margin-top:250px;}
+
+
+#meg_remove_draft .float_hint1,
+#meg_remove_con .float_hint1,
+#meg_add_type .float_hint1,,
+#meg_set_type .float_hint1 { min-height:50px;**height:50px;}
+
+#meg_remove_draft .warp_1_m,
+#meg_remove_con .warp_1_m,
+#meg_add_type .warp_1_m,,
+#meg_set_type .warp_1_m { padding:10px 10px 5px; text-align:left}
+
+#meg_add_card { width:470px; margin-top:180px;}
+#meg_add_card .warp_1_m { padding-top:10px;}
+
+#meg_help {width:800px; margin-top:100px;}
+	#meg_help .float_hint1 { padding:2px 0 0 0;}
+	#meg_help .d_title label { background:none; padding-left:5px;}
+	#meg_help .help_con { height:460px;height:480px\9; padding:10px; background:#F7FAFF; border-top:solid 1px #79AFDB;}
+	
+	#meg_help .help_tab { height:460px; font-size:12px;}
+		#meg_help .help_tab .text1 { border-color:#CCCDCF;}
+		#meg_help .help_tab td{ vertical-align:top}
+		#meg_help .help_tab .help_list_v { width:190px;}
+			#meg_help .help_tab .help_list{ margin-top:5px; height:430px; border:solid 1px #CCCDCF; background:#FFF; overflow-y:auto}			
+			
+		#meg_help .help_tab .swicth { width:20px; vertical-align:middle; text-align:center}
+			#meg_help .help_tab .swicth a{ display:inline-block; width:12px; height:16px; background:url(../images/bg-Series2.gif) no-repeat 2px -45px;} 
+			#meg_help .help_tab .swicth a.close{ display:inline-block; width:12px; height:16px; background:url(../images/bg-Series2.gif) no-repeat 3px 5px;} 
+		#meg_help .help_tab .help_info_v { height:433px;height:460px\9; padding:15px 20px 10px; color:#696969;  border:solid 1px #CCCDCF; background:#FFF; overflow-y:auto}
+			#meg_help .help_tab .help_info_v .help_title { padding-left:27px; color:#447DAA; font-weight:bold; font-size:14px; line-height:33px; background:url(../images/message/img_4.gif) no-repeat 0px center;}
+			#meg_help .help_tab .help_info_v .help_info { line-height:24px;}
+			#meg_help .help_tab .help_info_v .help_ask { height:27px;height:38px\9; margin:20px 0 10px; padding-top:9px; overflow:hidden; border:solid 1px #E5E5E7; border-width:1px 0;}
+				#meg_help .help_tab .help_info_v .help_ask input{ margin-top:-4px;}
+ 
+.ul_list_1{ margin-top:5px;}
+	.ul_list_1 li{ background:url(../images/message/img_3.gif) no-repeat 6px center; padding-left:23px;}
+		.ul_list_1 li a{ color:#40658F; line-height:20px;}
+		.ul_list_1 li a:hover{ color:#40658F;}
+
+#message_index { width:780px;}
+#message_index_welcome { color:#656261; line-height:24px; margin-top:5px;}
+
+
+.meg_menu_1 { display:inline-block; width:110px; height:30px; text-align:left; padding:18px 0 0 64px; color:#34659D; background:url(../images/message/bu_series_1.gif) no-repeat left top}
+	.meg_menu_1 strong{ font-weight:bold; text-decoration:underline}
+.meg_menu_1:hvoer { color:#F60}
+
+a#meg_m1_1 { background-position:left top;}
+a#meg_m1_2 { background-position:left -50px;}
+a#meg_m1_3 { background-position:left -100px;}
+a#meg_m1_4 { background-position:left -150px;}
+
+.meg_menu_2 { display:inline-block; width:57px; height:19px; text-align:left; padding:9px 0 0 30px; color:#033E68; background:url(../images/message/bu_series_2.gif) no-repeat left top}
+.meg_menu_2:hvoer { color:#F60}
+
+a#meg_m2_1 { background-position:left top;}
+a#meg_m2_2 { background-position:left -30px;}
+a#meg_m2_3 { background-position:left -60px;}
+
+.meg_warp_1 { width:385px;}
+	.meg_warp_1 .meg_warp_1_t{ border:solid 1px #CCD0D2; height:32px; background:url(../images/message/bg-repeated1.gif) repeat-x left top}
+		.meg_warp_1 .meg_warp_1_t label{ padding-left:15px; display:inline-block; margin:10px 0 0 10px; font-weight:bold; color:#353432; background:url(../images/message/img_1.gif) no-repeat left 1px;}
+	.meg_warp_1 .meg_warp_1_c{ border:solid 1px #CCD0D2; border-top:none; padding:10px 14px; height:85px; line-height:22px;}
+	
+
+.mag_box_1 { border:solid 1px #C2D8EF; margin:15px 0px; padding:5px 13px; color:#838383; line-height:24px;}
+.meg_box_2 { margin:30px 0 0 15px; width:520px;}
+
+
+#num_list { display:none; position:absolute; top:150px; left:284px; padding:4px 7px; border:solid 1px #B1D0E5; background:#FFF;}
+	#num_list .text1 { width:110px;}
+	#num_list #num_s_list { margin-top:5px; width:137px; height:170px; border:solid 1px #CCC; padding:0px 5px; overflow:auto; overflow-x:hidden}
+		#num_list #num_s_list li{ color:#696969; line-height:21px;}
+			#num_list #num_s_list li a{ float:right; width:10px; height:10px; margin-top:7px; background:url(../images/img19.gif) no-repeat center center}
+	#num_list #num_buS { text-align:center; margin:7px 0px 5px;}
+	
+#receive_list { display:none}
+
+#meg_info_tab td{ line-height:24px; padding:5px 0px;}
+
+.meg_tab_1 { line-height:24px;}
+	.meg_tab_1 th{ vertical-align:top; color:#4E4E4E; text-align:right}
+	.meg_tab_1 td{ vertical-align:top; color:#989898;}
+
+#new_meg { position:relative; border:solid 1px #696969;}
+.progress { position:absolute; display:none; top:50%; left:50%; width:356px; height:43px; padding-top:9px;  margin:-23px 0 0 -178px; background:url(../images/message/bg-only1.gif) no-repeat left top;}
+	.progress .progress_view { border:solid 1px #A5B9C4; width:323px; height:16px; margin:0px auto}
+		.progress .progress_view_sub { border:solid 1px #FFF; height:14px; position:relative; background:url(../images/message/bg_repeated2.gif)}
+			.progress .progress_view_sub .progress_img { position:absolute; height:14px; top:0px; left:0px; background:url(../images/message/bg_repeated3.gif)}
+			.progress .progress_view_sub .progress_num { position:absolute; padding-top:1px; width:100%; top:0px; left:0px; text-align:center; color:#333;}
+	.progress .progress_str { text-align:center; color:#076CB4; margin-top:7px;}
+	
+	
+#meg_common_view { margin-right:20px;}
+
+.list_view_1 { float:left; width:200px; border:solid 1px #4078A7; background:#F4F8FB;}
+	.list_view_title { height:21px; padding:6px 0 0 15px; font-size:14px; font-weight:bold; color:#FFF; background:url(../images/bg-Repeated1.gif) repeat-x left top}
+	.list_view_con { height:320px; overflow-y:auto; margin:5px; border:solid 1px #CCCECD; background:#FFF;}
+		.list_view_con ul{ margin:5px;}
+			.list_view_con ul li{}
+				.list_view_con ul li a{ font-weight:bold; color:#9A9A9A; line-height:20px;}
+				.list_view_con ul li a:hover{ color:#F60;}
+
+
+.meg_ul_list_1 { border:solid 1px #C6DDEF; padding:10px 0;}
+	.meg_ul_list_1 li{ float:left; width:150px; color:#747474; padding:10px 0; padding-left:20px;}

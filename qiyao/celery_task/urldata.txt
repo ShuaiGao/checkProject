@@ -1,0 +1,6 @@
+http://kq.qycn.com/index.php/Api/Api/getEmployee?account=125865c1aedf7f1f6292a0d678a4e659&page=1&requesttime=1494389568&sign=b9548475040feeb09c9b268f4fe45289
+page =  1
+totalpage =  7
+total =  317
+attendata = 
+account =  1319221  realname = 

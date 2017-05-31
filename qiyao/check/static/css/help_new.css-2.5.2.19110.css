@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* 群英 - 新帮助中心 - 2011-05-23 */
+
+/*自助服务 */
+#help_tbody { width:948px; border:1px solid #e9e9e9; margin-top:6px; }
+.help_sid { float:left; width:213px; margin:10px 0px 0px 10px; _*margin-left:5px; border:1px solid #e9e9e9;  }
+.help_sid_self { height:30px; background:#f7f7f7; line-height:30px; border-bottom:1px solid #eeeeee; text-indent:15px; font-weight:bold; }
+.help_sid_self_t1 { background:url("../images/help/help_icon_s00.gif"/*tpa=http://www.qycn.com/templates/images/help/help_icon_s00.gif*/) no-repeat left -32px; margin-left:10px; }
+.help_sid_self_t2{background:url("../images/help/help_icon_s00.gif"/*tpa=http://www.qycn.com/templates/images/help/help_icon_s00.gif*/) no-repeat left -70px; margin-left:10px; }
+.help_sid_self_c { margin-left:15px; margin-top:12px; height:68px;} 
+.help_sid_self_c li { margin:0 8px 5px 0; float:left;}
+
+/*帮助分类*/
+.libiao_menu { margin-bottom:15px;} 
+.libiao_menu dl { margin-top:5px;border-bottom:1px solid #eeeeee } 
+.libiao_menu dl dt { font-size:12px; line-height:24px;  background:url("../images/help/help_icon_s00.gif"/*tpa=http://www.qycn.com/templates/images/help/help_icon_s00.gif*/) no-repeat left -192px; display:block;  margin-left:25px ; text-indent:18px} 
+.libiao_menu dl dt span{ color:#F00; cursor:auto}
+.libiao_menu dl dt a { color: #666; } 
+.libiao_menu dl dt a:hover { color:#cc0000}
+
+/*资料下载*/
+.help_sid_self_d{ background:url("../images/help/help_online_service_bg0.gif"/*tpa=http://www.qycn.com/templates/images/help/help_online_service_bg0.gif*/) no-repeat; height:100px; margin:7px 0 7px 7px ;}
+.help_sid_self_d ul{ margin-left:15px}
+.help_sid_self_d ul li { margin:40px 8px 5px 1px; float:left; width:85px }
+.help_sid_self_more{ color:#586f81; background:url("../images/help/help_icon_s00.gif"/*tpa=http://www.qycn.com/templates/images/help/help_icon_s00.gif*/) no-repeat ; background-position:left 0; _background-position:left 4px; height:15px; margin-left:55px; width:auto }
+
+/*中间主内容*/
+.help_tmain { float:right; width:700px; border:0px solid #f1f1f1; margin:10px 12px 12px 0; _*margin-right:5px;}
+.help_ban01{ width:700px; height:120px}
+
+/*中间搜索框*/
+.help_search1 { height:38px; margin-top:12px; background:url("../images/help/help_search_bg0.gif"/*tpa=http://www.qycn.com/templates/images/help/help_search_bg0.gif*/) no-repeat; padding-top:12px }
+.help_search1_tit { color:#CCCCCC; margin-left:140px; float:left; }
+.help_search1_tit .search_001{width:360px; height:25px; _height:19px; *height:19px; color:#CCC ;border:1px solid #CCC; _padding-top:6px; *padding-top:6px;}
+.t321 { width:70px; height:26px; background:url("../images/help/search_b.gif"/*tpa=http://www.qycn.com/templates/images/help/search_b.gif*/) no-repeat; border:0px; margin-right:5px; }
+.t322{  border:1px solid  #CCC;  height:26px; line-height:26px; padding-top:2px; color:#000; margin-left:1px; _*margin-top:3px; *margin-top:3px ;}
+
+.help_tbox1 { margin-top:12px;}
+.help_tbox1_top { height:32px; line-height:30px; background:url("../images/help/help_tbox02_topbg.gif"/*tpa=http://www.qycn.com/templates/images/help/help_tbox02_topbg.gif*/) no-repeat; }
+.help_tbox1_top_tit { margin-left:25px; _margin-left:15px; color:#333; font-size:14px; font-family:"微软雅黑"; float:left}
+.help_tox1_top_lc li { float:left; height:30px; margin-left:1px; _margin:0px}
+.help_tbox1_1 { height:250px; margin-top:-1px; border: solid 1px #e9e9e9; border-top:none; }
+.help_tbox1_middle{ width:698px; height:127px; background:url("../images/help/help_tbox01_ban01.gif"/*tpa=http://www.qycn.com/templates/images/help/help_tbox01_ban01.gif*/) no-repeat; border-left: solid 1px #e9e9e9; border-right: solid 1px #e9e9e9;}
+   .help_tbox1_middle .help_tbox1_middle_tit{ width:500px; height:30px; padding:25px 0px 0 15px; }
+	.help_tbox1_middle .help_tbox1_middle_tit h2{font-size:22px}
+       .help_tbox1_middle .help_tbox1_middle_tit1{ color:#666;  padding:58px 0px 0 15px; }
+	      .help_tbox1_middle .help_tbox1_middle_tit1 span{ line-height:20px}
+
+	.dl_list524 { padding:10px 10px 0px 65px; float:left; width:140px; height:65px; margin-right:10px;} 
+		.dl_list524 dt { float:left; width:50px; margin-left:-52px;_margin-left:-26px; text-align:left; padding-top:5px;} 
+		.dl_list524 dd { line-height:18px; color:#999999;} 
+			.dl_list524 dd a { color:#656565; text-decoration:underline; font-weight:bold; line-height:24px;} 
+			.dl_list524 dd a:hover { color:#990000;}
+
+.help_tbox2 { margin-top:12px; }
+.help_tbox2_top { height:32px; line-height:30px; background:url("../images/help/help_tbox02_topbg.gif"/*tpa=http://www.qycn.com/templates/images/help/help_tbox02_topbg.gif*/) no-repeat; }
+.help_tbox2_top .help_list_sel { float:right; margin-right:15px; _margin-right:7px; margin-top:5px; _margin-top:10px; *margin-top:1px; _padding-top:5px }
+.help_tbox2_2 { border:1px solid #e9e9e9; margin-top:-1px; height:200px }
+.help_tbox2_3 {border:1px solid #e9e9e9; margin-top:-1px; }
+.help_tbox2 { margin-top:12px;} 
+.help_tbox2_top { height:32px; line-height:30px; background:url("../images/help/help_tbox02_topbg.gif"/*tpa=http://www.qycn.com/templates/images/help/help_tbox02_topbg.gif*/) no-repeat; } 
+.help_tbox2_2 { border:1px solid #e9e9e9; margin-top:-1px; } 
+
+.help_tbox2_21 { float:left; margin:12px 20px 10px 30px; _margin:12px 20px 10px 20px; } 
+.help_tbox2_21_tit { font-weight:bold; line-height:24px; border-bottom:1px dashed #CCC; color:#666} 
+
+.help_tbox2_21_t0 { margin-top:10px;}
+.help_tbox2_21_t0 li{ background:url("../images/help/li_ico02.gif"/*tpa=http://www.qycn.com/templates/images/help/li_ico02.gif*/) no-repeat; text-indent:8px; line-height:24px; }
+
+/*nvqing*/
+.help_list2 { margin:8px 15px 20px 25px;} 
+.help_list2 ul { background:url("../images/help/list_bg0.gif"/*tpa=http://www.qycn.com/templates/images/help/list_bg0.gif*/);} 
+.help_list2 li { line-height:32px; background:url("../images/help/icon_help2.gif"/*tpa=http://www.qycn.com/templates/images/help/icon_help2.gif*/) no-repeat left 8px; text-indent:25px; color:#9a9a9a;} 
+.help_list2 li a { color:#545454; text-decoration:none;} 
+.help_list2 li a:hover { color:#cc0000; text-decoration:underline;}
+.help_list2 li span a { color:#336699;}
+
+.help_list3 { margin:8px 15px 20px 25px;}
+.help_list3 ul { background:url("../images/help/list_bg0.gif"/*tpa=http://www.qycn.com/templates/images/help/list_bg0.gif*/);}
+.help_list3 li { line-height:32px; color:#525252;}
+.help_list3 li a { color:#326698; text-decoration:none;}
+.help_list3 li a:hover { color:#cc0000;}
+.help_list3 em { float:right;}
+.help_list3 img { line-height:32px;}
+
+#file_tab01 { width:660px; _width:658px; background:url("../images/help/list_bg0.gif"/*tpa=http://www.qycn.com/templates/images/help/list_bg0.gif*/);}
+#file_tab01 tr { height:32px; }
+.file_tab01_r1 { width:102px; color:#525252;}
+.file_tab01_r1 a { color:#326897;}
+
+.file_tab01_r2 { width:110px; color:#e5e5e5; text-align:right;}
+.file_tab01_r2 { color:#b5b5b5; margin-left:10px;}
+
+.file_tab01_r3 { width:95px; color:#e5e5e5;  }
+.file_tab01_r3 a { color:#4d4d4d; background:url("../images/help/file_down.gif"/*tpa=http://www.qycn.com/templates/images/help/file_down.gif*/) no-repeat; padding-left:18px;}
+.file_tab01_r4 { width:70px; color:#e5e5e5;  }
+.file_tab01_r4 a { color:#4d4d4d; background:url("../images/help/file_onreday.gif"/*tpa=http://www.qycn.com/templates/images/help/file_onreday.gif*/) no-repeat; padding-left:18px;}
+
+.help_list_search01 { margin:8px 15px 20px 20px;}
+.help_list_search01 span { color:#ff0000;}
+.help_list_search01_n0 { margin-top:20px; margin-bottom:10px; background:url("../images/help/list_bg0.gif"/*tpa=http://www.qycn.com/templates/images/help/list_bg0.gif*/) repeat-x left bottom; height:25px;}
+.help_list_search01_tit { background:url("../images/help/ico_list06.gif"/*tpa=http://www.qycn.com/templates/images/help/ico_list06.gif*/) no-repeat left center; height:28px; line-height:28px; text-indent:10px; margin-top:10px}
+.help_list_search01_tit a { color:#545454; text-decoration:none; font-weight:bold;}
+
+.help_list_search01_tit a:hover { color:#cc0000; text-decoration:underline;}
+
+.help_list_search01_dct { line-height:24px; color:#525252; background:url("../images/help/list_bg0.gif"/*tpa=http://www.qycn.com/templates/images/help/list_bg0.gif*/) repeat-x left bottom; padding: 0 0 10px 0px  }
+.help_list_search01_dct a { color:#069}
+.help_list_search01_dct a:hover { color:#cc0000; }
+
+.help_search2 { height:300px; padding-top:100px }
+.help_search2_ts { margin-top:0px; margin-bottom:30px; font-weight:bold; }
+.help_search2_ts li { height:26px; line-height:26px; background:url("../images/help/search_ico2.gif"/*tpa=http://www.qycn.com/templates/images/help/search_ico2.gif*/) no-repeat; text-indent:35px; margin-left:150px; list-style:none}
+.help_search2_ts span { color:#ff0000; }
+.help_search2_tsjy { width:400px; height:90px; border:1px solid #e5e5e5; background:#f5f5f5; text-align:left; line-height:22px; margin-left:150px; padding:5px 15px; }
+.help_search2_tsjy span { color:#ff0000; }
+
+
+.product_list4 { background:url("../images/help/cc_set_b02.gif"/*tpa=http://www.qycn.com/templates/images/help/cc_set_b02.gif*/) no-repeat bottom;}
+.product_list4_tit { width:87px; height:20px; background:url("../images/help/cc_set_b01.gif"/*tpa=http://www.qycn.com/templates/images/help/cc_set_b01.gif*/) no-repeat;
+					text-indent:15px; margin:10px 0 6px 15px; line-height:20px; color:#525252; font-weight:bold;}
+.product_list4 ul { height:65px;}
+.product_list4 li { float:left; margin:5px 15px 0 15px; _margin:5px 15px 0 13px}
+
+
+
+.help_contents_top{ height:40px; background:url("../images/help/list_bg0.gif"/*tpa=http://www.qycn.com/templates/images/help/list_bg0.gif*/) repeat-x left bottom; padding-top:30px}
+.help_contents_top .help_contents_tit{height:18px; line-height:18px; margin-left:200px; text-indent:23px; font-size:14px; font-weight:bold; color:#006699; _text-indent:6px; *text-indent:6px }
+.help_contents_top .fontSize{ float:right; margin-right:35px; _margin-right:15px;}
+.help_contents_top .fontSize .small{ cursor:pointer;}
+.help_contents_top .fontSize .big{ cursor:pointer; font-size:16px; color: #00F}
+.help_contents_info{ margin-top:20px; width:658px; overflow:hidden; padding-left:25px; color: #666; line-height:200%;}
+.help_contents_info span{ line-height:30px}
+.help_contents_info .help_contents_img_box{height:150px; padding:10px 0 0 40px}
+.help_contents_info .help_contents_foot_box{ height:40px;}

@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=8.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE>群英云考勤V1.14.1.22517</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=X-UA-Compatible content=IE=8>
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+<SCRIPT language=javascript src="/static/js/jquery-1.7.min.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/js.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/js.function.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/window_resize.js" type=text/javascript></SCRIPT>
+<SCRIPT language=javascript src="/static/js/ui.datepicker.js" type=text/javascript></SCRIPT>
+<script src="/static/js/dtree.js" language="javascript" type="text/javascript" ></script>
+<link href="/static/css/dtree.css" rel="StyleSheet" type="text/css" />
+<LINK href="/static/css/main.css" rel=stylesheet type=text/css>
+<LINK href="/static/css/main_add.css" rel=stylesheet type=text/css>
+<LINK href="/static/css/layout.css" rel=stylesheet type=text/css>
+<LINK href="/static/css/font.css" rel=stylesheet type=text/css>
+<LINK href="/static/css/attendance.css" rel=stylesheet type=text/css>
+<LINK href="/static/css/jquery-ui.css" rel=stylesheet type=text/css>
+<SCRIPT>
+$(document).ready(function(){		
+	var s_cfgid = '441833';
+	var s_userid = '1578433';
+	if(typeof($('#s_cfgid', top.document).val()) != 'undefined' && typeof($('#s_userid', top.document).val()) != 'undefined' && (parseInt(s_cfgid) != parseInt($('#s_cfgid', top.document).val()) || parseInt(s_userid) != parseInt($('#s_userid', top.document).val()))){
+		showinfo_tips('令牌失效，请重新登录。');
+		top.document.getElementById("if_sidebar").contentWindow.disableLinks();
+		var sid = setTimeout("logout()",4000);
+	}
+});
+function logout(){
+	// top.document.location.href = '/Synlogin/Index/logout';
+}
+</SCRIPT>
+
+<SCRIPT language=javascript 
+src="/Static/js/behavior.htm"></SCRIPT>
+
+<SCRIPT language=javascript 
+src="/Static/js/behavior_stat.htm"></SCRIPT>
+
+<META name=GENERATOR content="MSHTML 11.00.9600.18639"></HEAD>
+<BODY class=con>
+<DIV class=cls id=doc1>
+<DIV class=sub_title><LABEL class=index><SPAN>组织架构</SPAN></LABEL> </DIV>
+<DIV class="count_search cls">
+<DIV style="FLOAT: left"><BUTTON class=button6 onclick="add('root')" 
+type=submit>添加部门</BUTTON><BUTTON class=button6 style="MARGIN-LEFT: 5px" 
+onclick=go_location() type=submit>添加员工</BUTTON> </DIV></DIV>
+<DIV>
+<TABLE class=tab_attendance style="WIDTH: 100%" border=0 cellSpacing=0 
+cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD width=266 id=per_list vAlign=top style="PADDING-TOP: 1px"><!--
+	部门树html
+--><LINK 
+      href="/static/css/zTreeStyle.css" rel=stylesheet 
+      type=text/css>
+      <STYLE>.big_mian_box {
+	FONT-SIZE: 12px; BORDER-TOP: #c7dcef 1px solid; BORDER-RIGHT: #c7dcef 1px solid; BORDER-BOTTOM: #c7dcef 1px solid; BORDER-LEFT: #c7dcef 1px solid
+}
+.main_box {
+	WIDTH: 265px; FLOAT: left
+}
+.main_box .sub_title2 {
+	PADDING-RIGHT: 0px; MARGIN-RIGHT: 0px
+}
+.main_box .jobs_mgr {
+	PADDING-RIGHT: 0px; MARGIN-RIGHT: 0px
+}
+.main_box .tree-title {
+	FONT-SIZE: 14px; BORDER-TOP: #c7dcef 1px solid; BORDER-RIGHT: #c7dcef 1px solid; BACKGROUND: #ddeefe; BORDER-BOTTOM: medium none; FONT-WEIGHT: bold; COLOR: #395b7e; TEXT-ALIGN: center; BORDER-LEFT: #c7dcef 1px solid; LINE-HEIGHT: 26px
+}
+.main_box .key_div {
+	BORDER-TOP: #c7dcef 1px solid; BORDER-RIGHT: #c7dcef 1px solid; WIDTH: 263px; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: #c7dcef 1px solid
+}
+.key_div .key {
+	BORDER-TOP: medium none; HEIGHT: 21px; BORDER-RIGHT: medium none; WIDTH: 225px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+.perS A.Per_sel_Search {
+	RIGHT: 4px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; TOP: 5px; PADDING-RIGHT: 0px
+}
+.main_box .zTreeBackground {
+	BORDER-TOP: #c7dcef 1px solid; BORDER-RIGHT: #c7dcef 1px solid; OVERFLOW-X: hidden; OVERFLOW-Y: auto; BORDER-BOTTOM: #c7dcef 1px solid; POSITION: relative; MIN-HEIGHT: 500px; BORDER-LEFT: #c7dcef 1px solid; MAX-HEIGHT: 700px; BACKGROUND-COLOR: #f1f8ff; _height: 500px
+}
+.main_box .zTreeBackground #tree {
+	MARGIN-BOTTOM: 65px
+}
+.zTreeBackground #searchuserList DIV.com_name {
+	FONT-WEIGHT: bold; COLOR: #3f7d96; PADDING-BOTTOM: 0px; PADDING-TOP: 6px; PADDING-LEFT: 5px; MIN-HEIGHT: 18px; LINE-HEIGHT: 14px; PADDING-RIGHT: 0px
+}
+#searchuserList UL LI {
+	OVERFLOW: hidden; CURSOR: pointer; HEIGHT: 20px; COLOR: #686868; PADDING-BOTTOM: 0px; PADDING-TOP: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; lien-height: 20px
+}
+#searchuserList UL LI IMG {
+	VERTICAL-ALIGN: middle; MARGIN: -3px 6px 0px 0px
+}
+.com_employee_list {
+	OVERFLOW: hidden; WIDTH: 918px; FLOAT: left; MARGIN-LEFT: 5px; min-hiegth: 450px
+}
+.com_employee_list #employee_iframe {
+	HEIGHT: 100%
+}
+</STYLE>
+
+  <DIV class=main_box>
+    <DIV class="key_div perS"><INPUT class="key empty" id=key type=text 
+      value=输入关键字查找员工> <A class=Per_sel_Search href="javascript:"></A>
+    </DIV>
+    <div class="zTreeBackground">
+            <p style="margin-bottom:5px;margin-top:5px;"><a href="javascript: d.openAll();">展开所有</a> | <a href="javascript: d.closeAll();">关闭所有</a></p>
+            <script type="text/javascript">
+            var i = 1
+                d = new dTree('d');
+                d.add(0,-1,'海南祺曜互动娱乐有({{personnum}})');
+                {% for key,item in data.items %}
+                    d.add(i,0,"{{item.0.name}}",'logs');
+                    var j = 1
+                    {% for person in item.1 %}
+                        {% if person.sex == 2 %}
+                            d.add(i + j,i,"{{person.name}}",'logs','','',"/static/images/sex2_0.gif");
+                        {% else %}
+                            d.add(i + j,i,"{{person.name}}",'logs');
+                        {% endif %}
+                        j = j + 1;
+                    {%endfor%} 
+                    i = j + i
+                {%endfor%}
+                document.write(d);
+            </script>
+    </div>
+      <DIV class=treebuttom>
+        <a title=刷新 class="treebuttoma treebuttomalast" style="FONT-SIZE: 12px" onclick=treereload() href="javascript:;">[刷新]</A> 
+      </DIV>
+  </DIV>
+</TD>
+    <TD class=swicth>
+      <A title=收起/展开记录列表 id=perlist_swicth href="javascript:"></A>
+    </TD>
+    <TD vAlign=top style="PADDING-LEFT: 8px">
+
+      <IFRAME name=employee_iframe width="100%" height=600 id=employee_iframe src="/qiyao/Personnel/Staff/staffView/page/1" frameBorder=0 allowTransparency">100%?</IFRAME>
+      <DIV style="CLEAR: both"></DIV>
+    </TD>
+  </TR></TBODY></TABLE></DIV>
+<SCRIPT language=javascript 
+src="/Static/js/jquery.ztree.core-3.5.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript 
+src="/Static/js/jquery.ztree.excheck-3.5.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="/Static/js/jquery.ztree.core-3.5(1).js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="/Static/js/jquery.ztree.excheck-3.5.min(1).js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="/Static/js/jquery.ztree.exedit-3.5.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="/Static/js/jquery.cookie.min.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+        var dept_edit = 1;
+        var varadd = 1;
+        var varedit = 1;
+        var vardel = 1;
+        var znodes = {"id":1,"did":-1,"pid":-1,"name":"\u6d77\u5357\u797a\u66dc\u4e92\u52a8\u5a31\u4e50\u6709\u9650\u516c\u53f8","drag":false,"children":[{"did":"130719","pid":"0","name":"\u65a9\u4ed92","isParent":true,"top":"9","brief":null,"num":"19","havechilren":false,"showsub":[]},{"did":"131825","pid":"0","name":"\u5b9a\u6d77","isParent":true,"top":"8","brief":null,"num":"23","havechilren":false,"showsub":[]},{"did":"131892","pid":"0","name":"\u7f8e\u672f\u516c\u5171\u90e8","isParent":true,"top":"7","brief":null,"num":"84","havechilren":false,"showsub":[]},{"did":"132017","pid":"0","name":"\u516c\u5171\u652f\u6301\u90e8","isParent":true,"top":"6","brief":null,"num":"15","havechilren":false,"showsub":[]},{"did":"132018","pid":"0","name":"\u624b\u6e381","isParent":true,"top":"5","brief":null,"num":"23","havechilren":false,"showsub":[]},{"did":"132030","pid":"0","name":"\u624b\u6e382","isParent":true,"top":"4","brief":null,"num":"100","havechilren":false,"showsub":[]},{"did":"132142","pid":"0","name":"\u7ba1\u7406\u5c42","isParent":true,"top":"3","brief":null,"num":"2","havechilren":false,"showsub":[]},{"did":"144368","pid":"0","name":"\u7efc\u5408\u90e8","isParent":true,"top":"2","brief":null,"num":"12","havechilren":false,"showsub":[]},{"did":"151291","pid":"0","name":"\u624b\u6e383","isParent":true,"top":"1","brief":null,"num":"19","havechilren":false,"showsub":[]},{"did":"176827","pid":"0","name":"\u795e\u4ed9\u52ab\u624b\u6e38","isParent":true,"top":"0","brief":null,"num":"4","havechilren":false,"showsub":[]},{"did":-2,"pid":-2,"name":"\u672a\u5212\u5206\u90e8\u95e8","drag":true,"isParent":true,"num":"3","top":-100}],"open":true,"childOuter":false,"iconSkin":"pIcon01","num":304,"showsub":[{"id":"130719","name":"\u65a9\u4ed92"},{"id":"131825","name":"\u5b9a\u6d77"},{"id":"131892","name":"\u7f8e\u672f\u516c\u5171\u90e8"},{"id":"132017","name":"\u516c\u5171\u652f\u6301\u90e8"},{"id":"132018","name":"\u624b\u6e381"},{"id":"132030","name":"\u624b\u6e382"},{"id":"132142","name":"\u7ba1\u7406\u5c42"},{"id":"144368","name":"\u7efc\u5408\u90e8"},{"id":"151291","name":"\u624b\u6e383"},{"id":"176827","name":"\u795e\u4ed9\u52ab\u624b\u6e38"}],"havechilren":true,"type":1};
+    </SCRIPT>
+
+<SCRIPT language=javascript src="/Static/js/department_staff.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+$(document).ready(function(){
+       $(".datepicker").datepicker();
+
+       $("input[name=search]").click(function(){
+            var date = new Date();
+            var start_time = (new Date($('#start').val().replace(/-/g, '/'))).getTime();
+            var end_time = (new Date($('#end').val().replace(/-/g, '/'))).getTime();
+            var str = current_date();
+            var type = $('#type').attr('name');
+            var value = $('#type').val();
+            var start =$('#start').val();
+            var end = $('#end').val();
+            var keywords = $('#keywords').val();
+            if(end_time < start_time){
+                showinfo_tips('结束时间应比开始时间晚');
+                return false;
+            }
+
+            var url = '/personnel/staff/scheduleView/'+type+'/'+value+'/'+'start_time'+'/'+start+'/end_time/'+end+'/keywords/'+keywords;
+            $('#employee_iframe').attr('src',url);
+            $('#is_search').val('?start_time='+start+'&end_time='+end);
+
+        });
+
+});
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+       //删除回调函数
+       function deleteWork(id){
+
+           if(typeof(id) == 'undefined' || id == ''){
+               showinfo_tips('尝试非法操作',2);
+               return false;
+           }
+
+           $.ajax({
+               type: 'post',
+               url: '/personnel/staff/delete',
+               dataType: 'json',
+               data: 'workids='+id+',',
+               success: function(msg){
+                   top.closefloathint();
+                   if(msg.status == 1){
+                       showinfo_tips(msg.info,msg.data);
+                       employee_iframe.window.location.reload();
+                   }else{
+                       showinfo_tips(msg.info,msg.data);
+                   }
+
+               }
+           });
+       }
+
+       self.top.frames['if_sidebar'].all_changClass('item_3_1');
+</SCRIPT>
+</DIV></BODY></HTML>
