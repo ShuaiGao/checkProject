@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "E:\workspace\qiyao\celery_task\obtain_data_task.py", line 36, in checkData
+    cursor.execute(check_sql)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`qiyao`.`check_check`, CONSTRAINT `check_check_person_id_7f922222_fk_check_person_id` FOREIGN KEY (`person_id`) REFERENCES `check_person` (`id`))')
+(1452, 'Cannot add or update a child row: a foreign key constraint fails (`qiyao`.`check_check`, CONSTRAINT `check_check_person_id_7f922222_fk_check_person_id` FOREIGN KEY (`person_id`) REFERENCES `check_person` (`id`))')

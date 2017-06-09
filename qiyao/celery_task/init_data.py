@@ -111,7 +111,7 @@ def updateDepartment(conn = None, cursor = None):
 	email_data = emaildata.dataTable
 	personSqlStrList = []
 	for person in personList:
-		print type(person[0]),person[0]
+# 		print type(person[0]),person[0]
 		if person[0] in person_id_set:
 			continue
 		mail = email_data.get("%s" % person[1], "")
