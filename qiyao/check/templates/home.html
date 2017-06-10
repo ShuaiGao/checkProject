@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}默认标题{% endblock %} - 自强学堂</title>
+</head>
+<body>
+ 
+
+<table border="1">
+<tr>
+  <td>日</td>
+  <td>一</td>
+  <td>二</td>
+  <td>三</td>
+  <td>四</td>
+  <td>五</td>
+  <td>六</td>
+</tr>
+</table>
+
+
+<!-- {-% include 'nav.html' %-} -->
+ 
+<!-- {% block content %} -->
+<div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容。</div>
+<!-- {% endblock %} -->
+ 
+{% include 'bottom.html' %}
+ 
+<!-- {% include 'tongji.html' %} -->
+ 
+</body>
+</html>
